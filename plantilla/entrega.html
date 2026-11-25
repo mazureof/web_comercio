@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="{{lang}}">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<title>{{e.titulo}} · {{nombre}}</title>
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<style>
+@font-face{font-family:"Inclusive Sans";font-weight:400;font-display:swap;src:url(assets/fonts/mazure/inclusive-sans-400.woff2) format("woff2")}
+@font-face{font-family:"Inclusive Sans";font-weight:700;font-display:swap;src:url(assets/fonts/mazure/inclusive-sans-700.woff2) format("woff2")}
+@font-face{font-family:"Alegreya";font-style:italic;font-weight:400 900;font-display:swap;src:url(assets/fonts/mazure/alegreya-italic.woff2) format("woff2")}
+:root{--bg:#FAF7F2;--ink:#161512;--gris:#4B4E51;--card:#F5E6D3;--acento:#FFB970}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 1.05rem/1.6 "Inclusive Sans",system-ui,sans-serif;-webkit-font-smoothing:antialiased}
+.w{max-width:560px;margin:0 auto;padding:1.5rem 1.25rem 3rem}
+.top{display:flex;justify-content:space-between;align-items:center;padding-bottom:1rem;border-bottom:1px solid #E7E0D5;margin-bottom:2rem}
+.logo{font-weight:700;letter-spacing:.18em;color:var(--gris);font-size:.95rem}
+.top span:last-child{font-size:.8rem;color:var(--gris)}
+h1{font-size:clamp(1.9rem,7vw,2.5rem);line-height:1.1;margin:0 0 1rem;color:var(--gris);font-weight:700}
+h1 em,h2 em{font-family:Alegreya,Georgia,serif;font-style:italic;font-weight:500;color:var(--ink)}
+h2{font-size:1.35rem;line-height:1.25;margin:2.5rem 0 .75rem;color:var(--gris)}
+p{margin:0 0 1rem}
+.url{display:block;padding:1rem 1.1rem;background:#fff;border:1.5px solid var(--gris);border-radius:14px;font-weight:700;font-size:1.05rem;word-break:break-all;color:var(--ink);text-decoration:none}
+.btn{display:inline-flex;align-items:center;justify-content:center;min-height:48px;margin-top:.75rem;padding:.7rem 1.3rem;border-radius:999px;border:0;background:var(--gris);color:#FAF7F2;font:700 1rem "Inclusive Sans",system-ui,sans-serif;cursor:pointer;width:100%}
+.btn:focus-visible,.url:focus-visible{outline:3px solid var(--acento);outline-offset:3px}
+.qr{display:flex;gap:1.25rem;align-items:center;margin:1.75rem 0 0;padding:1.25rem;background:var(--card);border-radius:18px}
+.qr svg{width:132px;height:132px;flex:none;background:#fff;padding:10px;border-radius:10px}
+.qr p{margin:0;font-size:.95rem;color:var(--gris)}
+ol{counter-reset:p;list-style:none;padding:0;margin:0;display:grid;gap:.65rem}
+ol li{counter-increment:p;position:relative;padding:.85rem 1rem .85rem 3.4rem;background:#fff;border:1px solid #E7E0D5;border-radius:14px}
+ol li::before{content:counter(p);position:absolute;left:1rem;top:.85rem;width:1.7rem;height:1.7rem;border-radius:50%;background:var(--gris);color:#FAF7F2;display:grid;place-items:center;font-weight:700;font-size:.85rem}
+.nota{padding:1rem 1.1rem;border-left:4px solid var(--acento);background:#fff;border-radius:0 12px 12px 0}
+.firma{margin-top:2.5rem;padding-top:1.25rem;border-top:1px solid #E7E0D5;font-family:Alegreya,Georgia,serif;font-style:italic;font-size:1.2rem;color:var(--gris)}
+@media print{body{background:#fff}.btn{display:none}.w{max-width:none}ol li,.qr{break-inside:avoid}}
+</style>
+</head>
+<body>
+<div class="w">
+  <div class="top"><span class="logo">MAZURE</span><span>{{nombre}}</span></div>
+  <h1>{{e.titulo}}</h1>
+  <p>{{hola}}</p>
+  <a class="url" href="{{urlFinal}}">{{urlFinal}}</a>
+  <button class="btn" type="button" data-copy="{{urlFinal}}" data-ok="{{e.copiado}}">{{e.copiar}}</button>
+  <div class="qr">{{{qr}}}<p>{{e.qr}}</p></div>
+
+  <h2>{{e.googleTitulo}}</h2>
+  <p>{{e.googleIntro}}</p>
+  <ol>{{#e.googlePasos}}<li>{{.}}</li>{{/e.googlePasos}}</ol>
+
+  <h2>{{e.resenasTitulo}}</h2>
+  <p>{{e.resenasIntro}}</p>
+  <ol>{{#e.resenasPasos}}<li>{{.}}</li>{{/e.resenasPasos}}</ol>
+  {{#resenasUrl}}<p style="margin-top:1rem">{{e.resenasEnlace}}</p><a class="url" href="{{resenasUrl}}">{{resenasUrl}}</a>{{/resenasUrl}}
+
+  <h2>{{e.cambiosTitulo}}</h2>
+  <p class="nota">{{e.cambiosTexto}}</p>
+  <p class="firma">{{e.firma}}</p>
+</div>
+<script>
+document.querySelectorAll('[data-copy]').forEach(function(b){b.addEventListener('click',function(){var u=b.getAttribute('data-copy'),t=b.textContent;function ok(){b.textContent=b.getAttribute('data-ok');setTimeout(function(){b.textContent=t},1800)}if(navigator.clipboard){navigator.clipboard.writeText(u).then(ok)}else{var i=document.createElement('input');i.value=u;document.body.appendChild(i);i.select();document.execCommand('copy');i.remove();ok()}})});
+</script>
+</body>
+</html>

@@ -1,0 +1,135 @@
+{
+  "_nota": "Comercio FICTICIO de prueba (en catalán, sin fotos y con teléfono fijo, sin WhatsApp). Bórralo antes de salir a vender.",
+  "ejemplo": true,
+  "slug": "bar-can-pep-mollet",
+  "estado": "demo",
+  "codigoDemo": "p4ck",
+  "idioma": "ca",
+  "tipo": "bar",
+  "nombre": "Bar Can Pep",
+  "tipoLegible": "",
+  "poblacion": "Mollet del Vallès",
+  "claim": [
+    "El bar",
+    "de tota la vida."
+  ],
+  "resumen": "Bar a Mollet del Vallès. Esmorzars de forquilla, tapes casolanes i menú del dia.",
+  "puntosConfianza": [
+    "Cuina casolana",
+    "Terrassa",
+    "Menú del dia"
+  ],
+  "contacto": {
+    "telefono": "+34930000002",
+    "whatsapp": "",
+    "email": "",
+    "direccion": "Rambla Nova, 33, 08100 Mollet del Vallès",
+    "instagram": "",
+    "facebook": ""
+  },
+  "horario": {
+    "lun": [
+      [
+        "06:30",
+        "16:00"
+      ]
+    ],
+    "mar": [
+      [
+        "06:30",
+        "16:00"
+      ]
+    ],
+    "mie": [
+      [
+        "06:30",
+        "16:00"
+      ]
+    ],
+    "jue": [
+      [
+        "06:30",
+        "16:00"
+      ],
+      [
+        "19:00",
+        "23:00"
+      ]
+    ],
+    "vie": [
+      [
+        "06:30",
+        "16:00"
+      ],
+      [
+        "19:00",
+        "23:30"
+      ]
+    ],
+    "sab": [
+      [
+        "08:00",
+        "15:00"
+      ]
+    ],
+    "dom": []
+  },
+  "fotoHero": "",
+  "servicios": [
+    {
+      "titulo": "Esmorzars de forquilla",
+      "texto": "Cap-i-pota, botifarra amb mongetes i truites fetes al moment.",
+      "etiquetas": [],
+      "precio": "",
+      "foto": ""
+    },
+    {
+      "titulo": "Tapes",
+      "texto": "Braves de la casa, calamars, croquetes i pebrots del Padró.",
+      "etiquetas": [
+        "Braves",
+        "Croquetes"
+      ],
+      "precio": "",
+      "foto": ""
+    },
+    {
+      "titulo": "Menú del dia",
+      "texto": "Primer, segon, postres, pa i beguda. De dilluns a divendres.",
+      "etiquetas": [],
+      "precio": "13,50 €",
+      "foto": ""
+    },
+    {
+      "titulo": "Entrepans",
+      "texto": "Pa de pagès amb l'embotit i el formatge de sempre.",
+      "etiquetas": [],
+      "precio": "",
+      "foto": ""
+    }
+  ],
+  "seccionServiciosTitulo": "",
+  "datos": [],
+  "pasos": [],
+  "galeria": [],
+  "resenas": {},
+  "zonas": [
+    "Mollet del Vallès",
+    "Parets del Vallès",
+    "Martorelles"
+  ],
+  "geo": null,
+  "schemaTipo": "",
+  "titular": {
+    "nombre": "",
+    "nif": "",
+    "direccionFiscal": ""
+  },
+  "tema": {
+    "preset": "",
+    "primario": "",
+    "acento": ""
+  },
+  "mensajeWhatsApp": "",
+  "_revisar": []
+}

@@ -1,0 +1,58 @@
+{
+  "slug": "pilar-perez-canovelles",
+  "estado": "demo",
+  "codigoDemo": "k3x9",
+  "idioma": "es",
+  "tipo": "peluqueria",
+  "nombre": "Pilar Pérez",
+  "tipoLegible": "",
+  "poblacion": "Canovelles",
+  "claim": ["Tu pelo,", "en buenas manos."],
+  "resumen": "Peluquería en el centro de Canovelles. Color, mechas y corte para mujer y hombre.",
+  "puntosConfianza": ["Producto profesional", "Trato cercano", "Cita por WhatsApp"],
+  "contacto": {
+    "telefono": "+34930000000",
+    "whatsapp": "+34600000000",
+    "email": "hola@ejemplo.com",
+    "direccion": "Carrer Nou, 2, 08420 Canovelles",
+    "instagram": "https://www.instagram.com/ejemplo",
+    "facebook": ""
+  },
+  "horario": {
+    "lun": [],
+    "mar": [["09:00", "13:00"], ["15:00", "20:00"]],
+    "mie": [["09:00", "13:00"], ["15:00", "20:00"]],
+    "jue": [["09:00", "13:00"], ["15:00", "20:00"]],
+    "vie": [["09:00", "20:00"]],
+    "sab": [["08:00", "14:00"]],
+    "dom": []
+  },
+  "fotoHero": "",
+  "servicios": [
+    { "titulo": "Color y mechas", "texto": "Tintes, mechas y balayage pensados para tu tono de piel.", "etiquetas": ["Mechas", "Balayage"], "precio": "desde 35 €", "foto": "" },
+    { "titulo": "Corte y peinado", "texto": "Corte a tu medida para mujer y hombre.", "etiquetas": [], "precio": "", "foto": "" },
+    { "titulo": "Tratamientos", "texto": "Hidratación y keratina para un pelo más sano.", "etiquetas": ["Keratina"], "precio": "", "foto": "" }
+  ],
+  "seccionServiciosTitulo": "",
+  "datos": [
+    { "numero": 20, "sufijo": "+", "texto": "años en Canovelles" }
+  ],
+  "pasos": [],
+  "galeria": [],
+  "resenas": {
+    "nota": 4.8,
+    "total": 101,
+    "urlGoogle": "https://maps.google.com/?cid=0000000000",
+    "urlEscribir": "",
+    "destacadas": [
+      { "autor": "María G.", "texto": "Texto real copiado de su ficha de Google, con permiso de la dueña.", "estrellas": 5 }
+    ]
+  },
+  "zonas": ["Canovelles", "Granollers", "Les Franqueses"],
+  "geo": null,
+  "schemaTipo": "",
+  "titular": { "nombre": "", "nif": "", "direccionFiscal": "" },
+  "tema": { "preset": "", "primario": "", "acento": "" },
+  "mensajeWhatsApp": "Hola, vengo de vuestra web y quería pedir cita.",
+  "_revisar": []
+}

@@ -1,0 +1,183 @@
+{
+  "_info": "Un preset por tipo de comercio. colores: fondo, superficie, texto, suave (texto secundario), linea, primario, sobrePrimario (texto encima del primario), acento, sobreAcento, heroFondo/heroTexto (solo hero póster). fuentes: display, cursiva (para la 2.ª línea del claim) y cuerpo. hero: split | centro | poster. tarjetas: suave | recta | borde. patron: arcos | rayas | circulos | rejilla | puntos | ondas | rombos.",
+  "fuentes": {
+    "fraunces": { "familia": "Fraunces", "archivo": "fraunces", "fallback": "Georgia, 'Times New Roman', serif", "italica": true },
+    "playfair": { "familia": "Playfair Display", "archivo": "playfair-display", "fallback": "Georgia, 'Times New Roman', serif", "italica": true },
+    "oswald": { "familia": "Oswald", "archivo": "oswald", "fallback": "'Arial Narrow', Impact, sans-serif", "italica": false },
+    "archivo": { "familia": "Archivo", "archivo": "archivo", "fallback": "'Helvetica Neue', Arial, sans-serif", "italica": true },
+    "inter": { "familia": "Inter", "archivo": "inter", "fallback": "system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif", "italica": false },
+    "dmsans": { "familia": "DM Sans", "archivo": "dm-sans", "fallback": "system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif", "italica": false }
+  },
+  "presets": {
+    "salon": {
+      "colores": { "fondo": "#F7F1EA", "superficie": "#FFFDFB", "texto": "#2B1E17", "suave": "#6B5649", "linea": "#E6D9CC", "primario": "#A84B26", "sobrePrimario": "#FFFFFF", "acento": "#E7C3AA", "sobreAcento": "#2B1E17" },
+      "fuentes": { "display": "fraunces", "cursiva": "fraunces", "cuerpo": "inter" },
+      "hero": "split", "tarjetas": "suave", "patron": "arcos", "radio": 22, "displayPeso": 500, "displayMayus": false
+    },
+    "rosa": {
+      "colores": { "fondo": "#FAF3F1", "superficie": "#FFFFFF", "texto": "#2E2229", "suave": "#6E5A63", "linea": "#EBD9DC", "primario": "#934459", "sobrePrimario": "#FFFFFF", "acento": "#EBC6CF", "sobreAcento": "#2E2229" },
+      "fuentes": { "display": "playfair", "cursiva": "playfair", "cuerpo": "dmsans" },
+      "hero": "centro", "tarjetas": "suave", "patron": "ondas", "radio": 28, "displayPeso": 500, "displayMayus": false
+    },
+    "laton": {
+      "colores": { "fondo": "#121110", "superficie": "#1C1A18", "texto": "#F3EEE6", "suave": "#B9AF9F", "linea": "#34302B", "primario": "#C9A25C", "sobrePrimario": "#121110", "acento": "#C9A25C", "sobreAcento": "#121110", "heroFondo": "#0B0A09", "heroTexto": "#F3EEE6" },
+      "fuentes": { "display": "oswald", "cursiva": "playfair", "cuerpo": "inter" },
+      "hero": "poster", "tarjetas": "recta", "patron": "rayas", "radio": 3, "displayPeso": 600, "displayMayus": true
+    },
+    "taberna": {
+      "colores": { "fondo": "#F4EBDD", "superficie": "#FBF6EE", "texto": "#2A1A12", "suave": "#6A5345", "linea": "#E2D3BD", "primario": "#8A2E1E", "sobrePrimario": "#FFFFFF", "acento": "#E0A53C", "sobreAcento": "#2A1A12", "heroFondo": "#2A1A12", "heroTexto": "#F7EEDF" },
+      "fuentes": { "display": "playfair", "cursiva": "playfair", "cuerpo": "dmsans" },
+      "hero": "poster", "tarjetas": "borde", "patron": "circulos", "radio": 12, "displayPeso": 600, "displayMayus": false
+    },
+    "mesa": {
+      "colores": { "fondo": "#FBF7F0", "superficie": "#FFFFFF", "texto": "#1F1A16", "suave": "#5F574F", "linea": "#E7DFD2", "primario": "#3C5A38", "sobrePrimario": "#FFFFFF", "acento": "#C98B4A", "sobreAcento": "#1F1A16" },
+      "fuentes": { "display": "fraunces", "cursiva": "fraunces", "cuerpo": "dmsans" },
+      "hero": "centro", "tarjetas": "borde", "patron": "puntos", "radio": 14, "displayPeso": 500, "displayMayus": false
+    },
+    "horno": {
+      "colores": { "fondo": "#F6EEE3", "superficie": "#FFFBF5", "texto": "#3A2717", "suave": "#6E5541", "linea": "#E7D6BF", "primario": "#8F5222", "sobrePrimario": "#FFFFFF", "acento": "#E8C48A", "sobreAcento": "#3A2717" },
+      "fuentes": { "display": "fraunces", "cursiva": "fraunces", "cuerpo": "inter" },
+      "hero": "split", "tarjetas": "suave", "patron": "ondas", "radio": 26, "displayPeso": 600, "displayMayus": false
+    },
+    "mostrador": {
+      "colores": { "fondo": "#FAF6F2", "superficie": "#FFFFFF", "texto": "#241614", "suave": "#5E4C48", "linea": "#EADBD3", "primario": "#9A1C20", "sobrePrimario": "#FFFFFF", "acento": "#F0D3C1", "sobreAcento": "#241614" },
+      "fuentes": { "display": "archivo", "cursiva": "playfair", "cuerpo": "inter" },
+      "hero": "split", "tarjetas": "recta", "patron": "rombos", "radio": 6, "displayPeso": 800, "displayMayus": false
+    },
+    "taller": {
+      "colores": { "fondo": "#F3F4F6", "superficie": "#FFFFFF", "texto": "#0F1B2D", "suave": "#4A5568", "linea": "#DCE0E6", "primario": "#0F2A4A", "sobrePrimario": "#FFFFFF", "acento": "#F5C518", "sobreAcento": "#0F1B2D", "heroFondo": "#0B1F38", "heroTexto": "#FFFFFF" },
+      "fuentes": { "display": "archivo", "cursiva": "archivo", "cuerpo": "inter" },
+      "hero": "poster", "tarjetas": "recta", "patron": "rejilla", "radio": 4, "displayPeso": 800, "displayMayus": false
+    },
+    "obra": {
+      "colores": { "fondo": "#F4F5F2", "superficie": "#FFFFFF", "texto": "#14202E", "suave": "#4B5563", "linea": "#DDE1DA", "primario": "#12355B", "sobrePrimario": "#FFFFFF", "acento": "#FFB000", "sobreAcento": "#14202E" },
+      "fuentes": { "display": "archivo", "cursiva": "archivo", "cuerpo": "inter" },
+      "hero": "split", "tarjetas": "recta", "patron": "rejilla", "radio": 6, "displayPeso": 800, "displayMayus": false
+    },
+    "escaparate": {
+      "colores": { "fondo": "#FAFAF7", "superficie": "#FFFFFF", "texto": "#161616", "suave": "#555555", "linea": "#E4E4DF", "primario": "#161616", "sobrePrimario": "#FFFFFF", "acento": "#FF5A36", "sobreAcento": "#161616" },
+      "fuentes": { "display": "archivo", "cursiva": "fraunces", "cuerpo": "inter" },
+      "hero": "centro", "tarjetas": "borde", "patron": "puntos", "radio": 10, "displayPeso": 700, "displayMayus": false
+    },
+    "mercado": {
+      "colores": { "fondo": "#F5F7F0", "superficie": "#FFFFFF", "texto": "#1C2618", "suave": "#4F5B48", "linea": "#DCE3D2", "primario": "#2E632E", "sobrePrimario": "#FFFFFF", "acento": "#F2B33D", "sobreAcento": "#1C2618" },
+      "fuentes": { "display": "fraunces", "cursiva": "fraunces", "cuerpo": "inter" },
+      "hero": "split", "tarjetas": "suave", "patron": "circulos", "radio": 20, "displayPeso": 600, "displayMayus": false
+    },
+    "neutro": {
+      "colores": { "fondo": "#F7F6F3", "superficie": "#FFFFFF", "texto": "#1D1D1B", "suave": "#57574F", "linea": "#E3E1DA", "primario": "#2D4B73", "sobrePrimario": "#FFFFFF", "acento": "#D9A441", "sobreAcento": "#1D1D1B" },
+      "fuentes": { "display": "fraunces", "cursiva": "fraunces", "cuerpo": "inter" },
+      "hero": "split", "tarjetas": "suave", "patron": "arcos", "radio": 18, "displayPeso": 500, "displayMayus": false
+    }
+  },
+  "tipos": {
+    "peluqueria": {
+      "preset": "salon", "schema": "HairSalon", "seccionServicios": "servicios", "cta": "cita",
+      "es": { "legible": "Peluquería", "metodo": "Cómo trabajamos", "pasos": [["Pides cita", "Por WhatsApp o por teléfono, cuando te vaya bien."], ["Te asesoramos", "Vemos juntos qué te favorece y qué quieres conseguir."], ["Resultado", "Trabajamos con calma y con producto profesional."], ["Te recordamos la próxima", "Te avisamos cuando toque volver, sin agobios."]] },
+      "ca": { "legible": "Perruqueria", "metodo": "Com treballem", "pasos": [["Demanes hora", "Per WhatsApp o per telèfon, quan et vagi bé."], ["T'assessorem", "Mirem junts què et queda bé i què vols aconseguir."], ["Resultat", "Treballem amb calma i amb producte professional."], ["Et recordem la propera", "T'avisem quan toqui tornar, sense presses."]] },
+      "propuesta": {
+        "es": { "claim": ["Tu pelo,", "en buenas manos."], "resumen": "Peluquería en {{poblacion}}. Corte, color y peinado con trato cercano.", "puntos": ["Producto profesional", "Trato cercano", "Cita por WhatsApp"], "servicios": [["Corte y peinado", "Corte a tu medida y peinado para el día a día o para una ocasión especial."], ["Color y mechas", "Tintes, mechas y matices pensados para tu tono de piel y tu estilo."], ["Tratamientos", "Hidratación y cuidado para un pelo más sano y con más brillo."]] },
+        "ca": { "claim": ["El teu cabell,", "en bones mans."], "resumen": "Perruqueria a {{poblacion}}. Tall, color i pentinat amb tracte proper.", "puntos": ["Producte professional", "Tracte proper", "Hora per WhatsApp"], "servicios": [["Tall i pentinat", "Tall a la teva mida i pentinat per al dia a dia o per a una ocasió especial."], ["Color i metxes", "Tints, metxes i matisos pensats per al teu to de pell i el teu estil."], ["Tractaments", "Hidratació i cura per a un cabell més sa i amb més brillantor."]] }
+      }
+    },
+    "barberia": {
+      "preset": "laton", "schema": "HairSalon", "seccionServicios": "servicios", "cta": "cita",
+      "es": { "legible": "Barbería", "metodo": "Cómo trabajamos", "pasos": [["Reservas", "Escríbenos por WhatsApp y te damos hora."], ["Hablamos del corte", "Nos cuentas qué buscas y te aconsejamos."], ["Corte y barba", "Navaja, tijera y toalla caliente, sin prisas."], ["Vuelves cuando toque", "Te guardamos el hueco para la próxima."]] },
+      "ca": { "legible": "Barberia", "metodo": "Com treballem", "pasos": [["Reserves", "Escriu-nos per WhatsApp i et donem hora."], ["Parlem del tall", "Ens expliques què busques i t'aconsellem."], ["Tall i barba", "Navalla, tisora i tovallola calenta, sense presses."], ["Tornes quan toqui", "Et guardem el forat per a la propera."]] },
+      "propuesta": {
+        "es": { "claim": ["Corte clásico,", "estilo de hoy."], "resumen": "Barbería en {{poblacion}}. Corte, degradado y arreglo de barba.", "puntos": ["Cita sin esperas", "Navaja y toalla caliente", "Trato de barrio"], "servicios": [["Corte de pelo", "Clásico o degradado, a tijera o a máquina."], ["Arreglo de barba", "Perfilado a navaja y toalla caliente."], ["Corte + barba", "El servicio completo para salir como nuevo."]] },
+        "ca": { "claim": ["Tall clàssic,", "estil d'avui."], "resumen": "Barberia a {{poblacion}}. Tall, degradat i arranjament de barba.", "puntos": ["Hora sense esperes", "Navalla i tovallola calenta", "Tracte de barri"], "servicios": [["Tall de cabell", "Clàssic o degradat, a tisora o a màquina."], ["Arranjament de barba", "Perfilat a navalla i tovallola calenta."], ["Tall + barba", "El servei complet per sortir com nou."]] }
+      }
+    },
+    "estetica": {
+      "preset": "rosa", "schema": "BeautySalon", "seccionServicios": "servicios", "cta": "cita",
+      "es": { "legible": "Centro de estética", "metodo": "Cómo trabajamos", "pasos": [["Pides cita", "Por WhatsApp o por teléfono."], ["Valoramos tu caso", "Te escuchamos y te recomendamos el tratamiento."], ["Tratamiento", "En un espacio tranquilo y con producto de calidad."], ["Seguimiento", "Te damos pautas para mantener el resultado."]] },
+      "ca": { "legible": "Centre d'estètica", "metodo": "Com treballem", "pasos": [["Demanes hora", "Per WhatsApp o per telèfon."], ["Valorem el teu cas", "T'escoltem i et recomanem el tractament."], ["Tractament", "En un espai tranquil i amb producte de qualitat."], ["Seguiment", "Et donem pautes per mantenir el resultat."]] },
+      "propuesta": {
+        "es": { "claim": ["Cuidarte", "es lo primero."], "resumen": "Centro de estética en {{poblacion}}. Tratamientos faciales, corporales, uñas y depilación.", "puntos": ["Producto de calidad", "Espacio tranquilo", "Cita por WhatsApp"], "servicios": [["Tratamientos faciales", "Limpieza e hidratación adaptadas a tu piel."], ["Manicura y pedicura", "Uñas cuidadas, con esmaltado normal o semipermanente."], ["Depilación", "Con cera o con el método que mejor te vaya."]] },
+        "ca": { "claim": ["Cuidar-te", "és el primer."], "resumen": "Centre d'estètica a {{poblacion}}. Tractaments facials, corporals, ungles i depilació.", "puntos": ["Producte de qualitat", "Espai tranquil", "Hora per WhatsApp"], "servicios": [["Tractaments facials", "Neteja i hidratació adaptades a la teva pell."], ["Manicura i pedicura", "Ungles cuidades, amb esmaltat normal o semipermanent."], ["Depilació", "Amb cera o amb el mètode que millor et vagi."]] }
+      }
+    },
+    "bar": {
+      "preset": "taberna", "schema": "BarOrPub", "seccionServicios": "carta", "cta": "visita",
+      "es": { "legible": "Bar", "metodo": "Por qué venir", "pasos": [["Entras", "Sin reserva para el día a día; escríbenos si venís en grupo."], ["Pides", "Desayunos, tapas o menú, según la hora."], ["Disfrutas", "Producto de aquí y trato de casa."], ["Vuelves", "Como hacen nuestros clientes de siempre."]] },
+      "ca": { "legible": "Bar", "metodo": "Per què venir", "pasos": [["Entres", "Sense reserva per al dia a dia; escriu-nos si veniu en grup."], ["Demanes", "Esmorzars, tapes o menú, segons l'hora."], ["Gaudeixes", "Producte d'aquí i tracte de casa."], ["Tornes", "Com fan els nostres clients de sempre."]] },
+      "propuesta": {
+        "es": { "claim": ["El bar", "de toda la vida."], "resumen": "Bar en {{poblacion}}. Desayunos, tapas y menú del día.", "puntos": ["Cocina casera", "Terraza", "Grupos por WhatsApp"], "servicios": [["Desayunos", "Bocadillos, cafés y tostadas para empezar el día."], ["Tapas", "Raciones para compartir a cualquier hora."], ["Menú del día", "Cocina casera de lunes a viernes."]] },
+        "ca": { "claim": ["El bar", "de tota la vida."], "resumen": "Bar a {{poblacion}}. Esmorzars, tapes i menú del dia.", "puntos": ["Cuina casolana", "Terrassa", "Grups per WhatsApp"], "servicios": [["Esmorzars", "Entrepans, cafès i torrades per començar el dia."], ["Tapes", "Racions per compartir a qualsevol hora."], ["Menú del dia", "Cuina casolana de dilluns a divendres."]] }
+      }
+    },
+    "restaurante": {
+      "preset": "mesa", "schema": "Restaurant", "seccionServicios": "carta", "cta": "reserva",
+      "es": { "legible": "Restaurante", "metodo": "Por qué venir", "pasos": [["Reservas", "Por WhatsApp o por teléfono, en un minuto."], ["Te sentamos", "Mesa preparada a tu llegada."], ["Comes bien", "Cocina de mercado hecha cada día."], ["Sobremesa", "Sin prisas, como tiene que ser."]] },
+      "ca": { "legible": "Restaurant", "metodo": "Per què venir", "pasos": [["Reserves", "Per WhatsApp o per telèfon, en un minut."], ["T'asseiem", "Taula preparada quan arribes."], ["Menges bé", "Cuina de mercat feta cada dia."], ["Sobretaula", "Sense presses, com ha de ser."]] },
+      "propuesta": {
+        "es": { "claim": ["Cocina de mercado,", "hecha cada día."], "resumen": "Restaurante en {{poblacion}}. Menú del día, carta y comidas de grupo.", "puntos": ["Producto de temporada", "Menú del día", "Reservas por WhatsApp"], "servicios": [["Menú del día", "Primero, segundo, postre y bebida."], ["Carta", "Platos de temporada y especialidades de la casa."], ["Grupos y celebraciones", "Menús cerrados para comidas y cenas de grupo."]] },
+        "ca": { "claim": ["Cuina de mercat,", "feta cada dia."], "resumen": "Restaurant a {{poblacion}}. Menú del dia, carta i àpats de grup.", "puntos": ["Producte de temporada", "Menú del dia", "Reserves per WhatsApp"], "servicios": [["Menú del dia", "Primer, segon, postres i beguda."], ["Carta", "Plats de temporada i especialitats de la casa."], ["Grups i celebracions", "Menús tancats per a dinars i sopars de grup."]] }
+      }
+    },
+    "panaderia": {
+      "preset": "horno", "schema": "Bakery", "seccionServicios": "productos", "cta": "encargo",
+      "es": { "legible": "Panadería", "metodo": "Por qué venir", "pasos": [["Horneamos", "Cada mañana, desde primera hora."], ["Eliges", "Pan, bollería y dulces del día."], ["Encargas", "Tartas y pedidos grandes por WhatsApp."], ["Recoges", "Listo a la hora que nos digas."]] },
+      "ca": { "legible": "Fleca", "metodo": "Per què venir", "pasos": [["Fornegem", "Cada matí, des de primera hora."], ["Tries", "Pa, brioixeria i dolços del dia."], ["Encarregues", "Pastissos i comandes grans per WhatsApp."], ["Recull", "A punt a l'hora que ens diguis."]] },
+      "propuesta": {
+        "es": { "claim": ["Pan del día,", "como el de siempre."], "resumen": "Panadería en {{poblacion}}. Pan, bollería y encargos.", "puntos": ["Horneado cada día", "Encargos por WhatsApp", "Producto de proximidad"], "servicios": [["Pan", "Barras, hogazas y panes especiales."], ["Bollería", "Croissants, ensaimadas y dulces para el desayuno."], ["Encargos", "Tartas y bandejas para celebraciones."]] },
+        "ca": { "claim": ["Pa del dia,", "com el de sempre."], "resumen": "Fleca a {{poblacion}}. Pa, brioixeria i encàrrecs.", "puntos": ["Fornejat cada dia", "Encàrrecs per WhatsApp", "Producte de proximitat"], "servicios": [["Pa", "Barres, pans de pagès i pans especials."], ["Brioixeria", "Croissants, ensaïmades i dolços per esmorzar."], ["Encàrrecs", "Pastissos i safates per a celebracions."]] }
+      }
+    },
+    "carniceria": {
+      "preset": "mostrador", "schema": "Store", "seccionServicios": "productos", "cta": "encargo",
+      "es": { "legible": "Carnicería", "metodo": "Por qué venir", "pasos": [["Seleccionamos", "Carne de confianza, elegida pieza a pieza."], ["Preparamos", "Cortada a tu gusto, en el momento."], ["Encargas", "Pídenos por WhatsApp y te lo dejamos listo."], ["Recoges", "Sin colas, a la hora que te vaya bien."]] },
+      "ca": { "legible": "Carnisseria", "metodo": "Per què venir", "pasos": [["Seleccionem", "Carn de confiança, triada peça a peça."], ["Preparem", "Tallada al teu gust, al moment."], ["Encarregues", "Demana'ns per WhatsApp i t'ho deixem a punt."], ["Recull", "Sense cues, a l'hora que et vagi bé."]] },
+      "propuesta": {
+        "es": { "claim": ["Carne de confianza,", "cortada a tu gusto."], "resumen": "Carnicería en {{poblacion}}. Carne fresca, elaborados y encargos.", "puntos": ["Producto fresco", "Corte a tu gusto", "Encargos por WhatsApp"], "servicios": [["Carne fresca", "Ternera, cerdo, pollo y cordero."], ["Elaborados", "Hamburguesas, salchichas y preparados de la casa."], ["Encargos", "Bandejas y piezas para celebraciones."]] },
+        "ca": { "claim": ["Carn de confiança,", "tallada al teu gust."], "resumen": "Carnisseria a {{poblacion}}. Carn fresca, elaborats i encàrrecs.", "puntos": ["Producte fresc", "Tall al teu gust", "Encàrrecs per WhatsApp"], "servicios": [["Carn fresca", "Vedella, porc, pollastre i xai."], ["Elaborats", "Hamburgueses, botifarres i preparats de la casa."], ["Encàrrecs", "Safates i peces per a celebracions."]] }
+      }
+    },
+    "taller": {
+      "preset": "taller", "schema": "AutoRepair", "seccionServicios": "servicios", "cta": "presupuesto",
+      "es": { "legible": "Taller mecánico", "metodo": "Cómo trabajamos", "pasos": [["Nos traes el coche", "Pide hora por WhatsApp o por teléfono."], ["Diagnóstico y presupuesto", "Te explicamos qué tiene y cuánto cuesta antes de tocar nada."], ["Reparación", "Solo lo que has aprobado, con recambio de calidad."], ["Entrega y garantía", "Te lo devolvemos revisado y con garantía."]] },
+      "ca": { "legible": "Taller mecànic", "metodo": "Com treballem", "pasos": [["Ens portes el cotxe", "Demana hora per WhatsApp o per telèfon."], ["Diagnosi i pressupost", "T'expliquem què té i quant costa abans de tocar res."], ["Reparació", "Només el que has aprovat, amb recanvi de qualitat."], ["Lliurament i garantia", "Te'l tornem revisat i amb garantia."]] },
+      "propuesta": {
+        "es": { "claim": ["Tu coche,", "en buenas manos."], "resumen": "Taller mecánico en {{poblacion}}. Mantenimiento, reparación y pre-ITV.", "puntos": ["Presupuesto antes de reparar", "Mecánica de todas las marcas", "Cita por WhatsApp"], "servicios": [["Mantenimiento", "Cambio de aceite, filtros y revisión general."], ["Frenos y neumáticos", "Pastillas, discos, alineado y equilibrado."], ["Diagnosis", "Lectura de averías con equipo de diagnosis."], ["Pre-ITV", "Revisamos el coche para que pase la ITV a la primera."]] },
+        "ca": { "claim": ["El teu cotxe,", "en bones mans."], "resumen": "Taller mecànic a {{poblacion}}. Manteniment, reparació i pre-ITV.", "puntos": ["Pressupost abans de reparar", "Mecànica de totes les marques", "Hora per WhatsApp"], "servicios": [["Manteniment", "Canvi d'oli, filtres i revisió general."], ["Frens i pneumàtics", "Pastilles, discos, alineació i equilibratge."], ["Diagnosi", "Lectura d'avaries amb equip de diagnosi."], ["Pre-ITV", "Revisem el cotxe perquè passi la ITV a la primera."]] }
+      }
+    },
+    "oficio": {
+      "preset": "obra", "schema": "HomeAndConstructionBusiness", "seccionServicios": "servicios", "cta": "presupuesto",
+      "es": { "legible": "Profesional", "metodo": "Cómo trabajamos", "pasos": [["Nos cuentas qué necesitas", "Por WhatsApp, con una foto si puedes."], ["Visita y presupuesto", "Vamos, lo vemos y te damos precio cerrado."], ["Trabajo", "En el plazo acordado, limpio y ordenado."], ["Garantía", "Si algo falla, volvemos."]] },
+      "ca": { "legible": "Professional", "metodo": "Com treballem", "pasos": [["Ens expliques què necessites", "Per WhatsApp, amb una foto si pots."], ["Visita i pressupost", "Venim, ho mirem i et donem preu tancat."], ["Feina", "En el termini acordat, net i endreçat."], ["Garantia", "Si alguna cosa falla, tornem."]] },
+      "propuesta": {
+        "es": { "claim": ["Trabajos bien hechos,", "a la primera."], "resumen": "Profesional en {{poblacion}} y alrededores. Reparaciones e instalaciones con presupuesto sin compromiso.", "puntos": ["Presupuesto sin compromiso", "Precio cerrado", "Respuesta rápida"], "servicios": [["Reparaciones", "Averías y arreglos del día a día."], ["Instalaciones", "Instalaciones nuevas y reformas."], ["Urgencias", "Te atendemos lo antes posible."]] },
+        "ca": { "claim": ["Feines ben fetes,", "a la primera."], "resumen": "Professional a {{poblacion}} i rodalies. Reparacions i instal·lacions amb pressupost sense compromís.", "puntos": ["Pressupost sense compromís", "Preu tancat", "Resposta ràpida"], "servicios": [["Reparacions", "Avaries i arranjaments del dia a dia."], ["Instal·lacions", "Instal·lacions noves i reformes."], ["Urgències", "T'atenem al més aviat possible."]] }
+      }
+    },
+    "tienda": {
+      "preset": "escaparate", "schema": "Store", "seccionServicios": "tienda", "cta": "visita",
+      "es": { "legible": "Tienda", "metodo": "Por qué venir", "pasos": [["Vienes", "Te atendemos en persona, sin prisas."], ["Te aconsejamos", "Te ayudamos a encontrar lo que buscas."], ["Encargas", "Si no lo tenemos, te lo pedimos."], ["Vuelves", "Para lo que necesites."]] },
+      "ca": { "legible": "Botiga", "metodo": "Per què venir", "pasos": [["Vens", "T'atenem en persona, sense presses."], ["T'aconsellem", "T'ajudem a trobar el que busques."], ["Encarregues", "Si no ho tenim, t'ho demanem."], ["Tornes", "Per al que necessitis."]] },
+      "propuesta": {
+        "es": { "claim": ["La tienda", "de tu barrio."], "resumen": "Tienda en {{poblacion}}. Atención personal y encargos.", "puntos": ["Atención personal", "Encargos", "Consultas por WhatsApp"], "servicios": [["Productos", "Una selección pensada para el día a día."], ["Encargos", "Si no lo tenemos, te lo conseguimos."], ["Regalos", "Te ayudamos a acertar y te lo envolvemos."]] },
+        "ca": { "claim": ["La botiga", "del teu barri."], "resumen": "Botiga a {{poblacion}}. Atenció personal i encàrrecs.", "puntos": ["Atenció personal", "Encàrrecs", "Consultes per WhatsApp"], "servicios": [["Productes", "Una selecció pensada per al dia a dia."], ["Encàrrecs", "Si no ho tenim, t'ho aconseguim."], ["Regals", "T'ajudem a encertar i t'ho emboliquem."]] }
+      }
+    },
+    "alimentacion": {
+      "preset": "mercado", "schema": "GroceryStore", "seccionServicios": "tienda", "cta": "encargo",
+      "es": { "legible": "Tienda de alimentación", "metodo": "Por qué venir", "pasos": [["Producto fresco", "Recibimos género cada semana."], ["Eliges", "Fruta, verdura y despensa en un solo sitio."], ["Encargas", "Haz tu pedido por WhatsApp."], ["Recoges", "Te lo tenemos preparado."]] },
+      "ca": { "legible": "Botiga d'alimentació", "metodo": "Per què venir", "pasos": [["Producte fresc", "Rebem gènere cada setmana."], ["Tries", "Fruita, verdura i rebost en un sol lloc."], ["Encarregues", "Fes la comanda per WhatsApp."], ["Recull", "Te la tenim preparada."]] },
+      "propuesta": {
+        "es": { "claim": ["Producto fresco,", "a la vuelta de la esquina."], "resumen": "Tienda de alimentación en {{poblacion}}. Fruta, verdura y productos del día a día.", "puntos": ["Producto fresco", "Pedidos por WhatsApp", "Trato cercano"], "servicios": [["Fruta y verdura", "Producto de temporada."], ["Despensa", "Todo lo básico para tu compra diaria."], ["Pedidos", "Encarga por WhatsApp y recoge cuando quieras."]] },
+        "ca": { "claim": ["Producte fresc,", "a la cantonada."], "resumen": "Botiga d'alimentació a {{poblacion}}. Fruita, verdura i productes del dia a dia.", "puntos": ["Producte fresc", "Comandes per WhatsApp", "Tracte proper"], "servicios": [["Fruita i verdura", "Producte de temporada."], ["Rebost", "Tot el bàsic per a la compra diària."], ["Comandes", "Encarrega per WhatsApp i recull quan vulguis."]] }
+      }
+    },
+    "otro": {
+      "preset": "neutro", "schema": "LocalBusiness", "seccionServicios": "servicios", "cta": "contacto",
+      "es": { "legible": "Comercio", "metodo": "Cómo trabajamos", "pasos": [["Nos contactas", "Por WhatsApp o por teléfono."], ["Te atendemos", "Escuchamos lo que necesitas."], ["Lo resolvemos", "Con cuidado y en el plazo acordado."]] },
+      "ca": { "legible": "Comerç", "metodo": "Com treballem", "pasos": [["Ens contactes", "Per WhatsApp o per telèfon."], ["T'atenem", "Escoltem el que necessites."], ["Ho resolem", "Amb cura i en el termini acordat."]] },
+      "propuesta": {
+        "es": { "claim": ["Cerca de ti,", "como siempre."], "resumen": "Comercio en {{poblacion}}. Atención personal y trato cercano.", "puntos": ["Atención personal", "Trato cercano", "Consultas por WhatsApp"], "servicios": [["Servicio 1", "Describe aquí el servicio principal."], ["Servicio 2", "Describe aquí otro servicio."], ["Servicio 3", "Describe aquí otro servicio."]] },
+        "ca": { "claim": ["A prop teu,", "com sempre."], "resumen": "Comerç a {{poblacion}}. Atenció personal i tracte proper.", "puntos": ["Atenció personal", "Tracte proper", "Consultes per WhatsApp"], "servicios": [["Servei 1", "Descriu aquí el servei principal."], ["Servei 2", "Descriu aquí un altre servei."], ["Servei 3", "Descriu aquí un altre servei."]] }
+      }
+    }
+  }
+}

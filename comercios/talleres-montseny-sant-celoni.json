@@ -1,0 +1,175 @@
+{
+  "_nota": "Comercio FICTICIO de prueba (sin fotos). Bórralo antes de salir a vender.",
+  "ejemplo": true,
+  "slug": "talleres-montseny-sant-celoni",
+  "estado": "demo",
+  "codigoDemo": "t9vz",
+  "idioma": "es",
+  "tipo": "taller",
+  "nombre": "Talleres Montseny",
+  "tipoLegible": "",
+  "poblacion": "Sant Celoni",
+  "claim": [
+    "Tu coche,",
+    "en buenas manos."
+  ],
+  "resumen": "Taller mecánico en Sant Celoni. Mantenimiento, frenos, neumáticos, diagnosis y pre-ITV para todas las marcas.",
+  "puntosConfianza": [
+    "Presupuesto antes de reparar",
+    "Todas las marcas",
+    "Coche de cortesía"
+  ],
+  "contacto": {
+    "telefono": "+34930000003",
+    "whatsapp": "+34600000003",
+    "email": "",
+    "direccion": "Carrer del Montseny, 52, 08470 Sant Celoni",
+    "instagram": "",
+    "facebook": "https://www.facebook.com/talleresmontseny.example"
+  },
+  "horario": {
+    "lun": [
+      [
+        "08:00",
+        "13:00"
+      ],
+      [
+        "15:00",
+        "19:00"
+      ]
+    ],
+    "mar": [
+      [
+        "08:00",
+        "13:00"
+      ],
+      [
+        "15:00",
+        "19:00"
+      ]
+    ],
+    "mie": [
+      [
+        "08:00",
+        "13:00"
+      ],
+      [
+        "15:00",
+        "19:00"
+      ]
+    ],
+    "jue": [
+      [
+        "08:00",
+        "13:00"
+      ],
+      [
+        "15:00",
+        "19:00"
+      ]
+    ],
+    "vie": [
+      [
+        "08:00",
+        "14:00"
+      ]
+    ],
+    "sab": [],
+    "dom": []
+  },
+  "fotoHero": "",
+  "servicios": [
+    {
+      "titulo": "Mantenimiento",
+      "texto": "Cambio de aceite y filtros, revisión de niveles y puesta a punto según el fabricante.",
+      "etiquetas": [
+        "Aceite",
+        "Filtros"
+      ],
+      "precio": "",
+      "foto": ""
+    },
+    {
+      "titulo": "Frenos y neumáticos",
+      "texto": "Pastillas, discos, líquido de frenos, alineado y equilibrado.",
+      "etiquetas": [
+        "Pastillas",
+        "Alineado"
+      ],
+      "precio": "",
+      "foto": ""
+    },
+    {
+      "titulo": "Diagnosis",
+      "texto": "Leemos las averías con equipo de diagnosis y te explicamos qué tiene el coche.",
+      "etiquetas": [],
+      "precio": "",
+      "foto": ""
+    },
+    {
+      "titulo": "Pre-ITV",
+      "texto": "Revisamos luces, frenos y emisiones para que pases la ITV a la primera.",
+      "etiquetas": [],
+      "precio": "desde 30 €",
+      "foto": ""
+    }
+  ],
+  "seccionServiciosTitulo": "",
+  "datos": [
+    {
+      "numero": 25,
+      "sufijo": "",
+      "texto": "años en Sant Celoni"
+    },
+    {
+      "numero": 3,
+      "sufijo": "",
+      "texto": "mecánicos en el equipo"
+    },
+    {
+      "numero": 12,
+      "sufijo": " meses",
+      "texto": "de garantía en reparaciones"
+    }
+  ],
+  "pasos": [],
+  "galeria": [],
+  "resenas": {
+    "nota": 4.7,
+    "total": 86,
+    "urlGoogle": "https://maps.google.com/?cid=2",
+    "urlEscribir": "",
+    "destacadas": [
+      {
+        "autor": "Xavier P.",
+        "texto": "Me dieron presupuesto antes de tocar nada y cumplieron con el precio. Honrados.",
+        "estrellas": 5
+      },
+      {
+        "autor": "Núria F.",
+        "texto": "Me arreglaron los frenos el mismo día. Muy recomendable.",
+        "estrellas": 5
+      }
+    ]
+  },
+  "zonas": [
+    "Sant Celoni",
+    "Santa Maria de Palautordera",
+    "Gualba",
+    "Vallgorguina"
+  ],
+  "geo": null,
+  "schemaTipo": "",
+  "titular": {
+    "nombre": "",
+    "nif": "",
+    "direccionFiscal": ""
+  },
+  "tema": {
+    "preset": "",
+    "primario": "",
+    "acento": ""
+  },
+  "mensajeWhatsApp": "Hola, vengo de vuestra web y quería pedir presupuesto.",
+  "_revisar": []
+}

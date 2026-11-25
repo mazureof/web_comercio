@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="{{lang}}">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{{titulo}} · {{nombre}}</title>
+<meta name="robots" content="noindex,follow">
+<link rel="canonical" href="{{seo.url}}aviso-legal.html">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body class="cards-{{estilo.tarjetas}}{{#estilo.mayus}} display-upper{{/estilo.mayus}}">
+<header class="nav"><div class="wrap nav__in"><a class="brand" href="./">{{nombre}}</a></div></header>
+<main class="page">
+  <div class="wrap">
+    <a class="page__back" href="./">← {{t.pie.volver}}</a>
+    <h1 class="display">{{titulo}}</h1>
+    <p class="page__meta">{{actualizado}}</p>
+    {{#secciones}}
+    <h2>{{titulo}}</h2>
+    <p>{{texto}}</p>
+    {{#conDatos}}<dl>{{#filas}}<dt>{{k}}</dt><dd>{{{v}}}</dd>{{/filas}}</dl>{{/conDatos}}
+    {{/secciones}}
+  </div>
+</main>
+<footer class="foot"><div class="wrap foot__bottom"><span>© {{anio}} {{nombre}}</span><span class="foot__legal"><a href="aviso-legal.html">{{t.pie.avisoLegal}}</a> · <a href="privacidad.html">{{t.pie.privacidad}}</a></span></div></footer>
+</body>
+</html>
