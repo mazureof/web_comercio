@@ -1,0 +1,145 @@
+{
+  "slug": "tamu-the-barber-la-batlloria",
+  "estado": "demo",
+  "codigoDemo": "b37b",
+  "idioma": "es",
+  "tipo": "barberia",
+  "nombre": "Tamu The Barber",
+  "tipoLegible": "",
+  "poblacion": "La Batllòria",
+  "claim": [
+    "Tu barbería",
+    "en La Batllòria."
+  ],
+  "resumen": "Barbería en La Batllòria. Corte, degradado y arreglo de barba con buen trato.",
+  "puntosConfianza": [
+    "Buen trato",
+    "Abierto sábados por la mañana"
+  ],
+  "contacto": {
+    "telefono": "+34936775686",
+    "whatsapp": "",
+    "email": "",
+    "direccion": "Carretera Vella, 33, 08476 La Batllòria",
+    "instagram": "",
+    "facebook": ""
+  },
+  "horario": {
+    "lun": [
+      [
+        "09:30",
+        "13:30"
+      ],
+      [
+        "15:00",
+        "20:00"
+      ]
+    ],
+    "mar": [
+      [
+        "09:30",
+        "13:30"
+      ],
+      [
+        "15:00",
+        "20:00"
+      ]
+    ],
+    "mie": [
+      [
+        "09:30",
+        "13:30"
+      ],
+      [
+        "15:00",
+        "20:00"
+      ]
+    ],
+    "jue": [
+      [
+        "09:30",
+        "13:30"
+      ],
+      [
+        "15:00",
+        "20:00"
+      ]
+    ],
+    "vie": [
+      [
+        "09:30",
+        "13:30"
+      ],
+      [
+        "15:00",
+        "20:00"
+      ]
+    ],
+    "sab": [
+      [
+        "09:30",
+        "14:00"
+      ]
+    ],
+    "dom": []
+  },
+  "fotoHero": "",
+  "servicios": [
+    {
+      "titulo": "Corte de pelo",
+      "texto": "Clásico o degradado, a tijera o a máquina.",
+      "etiquetas": [],
+      "precio": "",
+      "foto": ""
+    },
+    {
+      "titulo": "Arreglo de barba",
+      "texto": "Perfilado a navaja y toalla caliente.",
+      "etiquetas": [],
+      "precio": "",
+      "foto": ""
+    },
+    {
+      "titulo": "Corte + barba",
+      "texto": "El servicio completo para salir como nuevo.",
+      "etiquetas": [],
+      "precio": "",
+      "foto": ""
+    }
+  ],
+  "seccionServiciosTitulo": "",
+  "datos": [],
+  "pasos": [],
+  "galeria": [],
+  "resenas": {
+    "nota": 4.6,
+    "total": 31,
+    "urlGoogle": "https://www.google.com/maps/search/?api=1&query=Tamu%20The%20Barber%2C%20Carretera%20Vella%2C%2033%2C%2008476%20La%20Batll%C3%B2ria",
+    "urlEscribir": "",
+    "destacadas": []
+  },
+  "zonas": [
+    "La Batllòria"
+  ],
+  "geo": null,
+  "schemaTipo": "",
+  "titular": {
+    "nombre": "",
+    "nif": "",
+    "direccionFiscal": ""
+  },
+  "tema": {
+    "preset": "",
+    "primario": "#C2413A",
+    "acento": "#C2413A"
+  },
+  "mensajeWhatsApp": "Hola, vengo de vuestra web y quería pedir cita.",
+  "_revisar": [
+    "servicios"
+  ],
+  "_visita": {
+    "socio": "Arnau",
+    "cuandoIr": "Mar/Jue 15:15-19:15 · Sáb 9:30-14:00",
+    "notas": "Barberos: Aitor y Juan"
+  }
+}

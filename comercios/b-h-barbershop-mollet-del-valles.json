@@ -1,0 +1,149 @@
+{
+  "slug": "b-h-barbershop-mollet-del-valles",
+  "estado": "demo",
+  "codigoDemo": "2anz",
+  "idioma": "es",
+  "tipo": "barberia",
+  "nombre": "B&H Barbershop",
+  "tipoLegible": "",
+  "poblacion": "Mollet del Vallès",
+  "claim": [
+    "Tu barbería",
+    "en el centro de Mollet."
+  ],
+  "resumen": "Barbería en Mollet del Vallès. Corte, degradado y barba, abierto de lunes a sábado hasta las 21:00.",
+  "puntosConfianza": [
+    "Abierto sábados por la tarde",
+    "Cita por WhatsApp"
+  ],
+  "contacto": {
+    "telefono": "+34600820747",
+    "whatsapp": "",
+    "email": "",
+    "direccion": "Carrer d'Anselm Clavé, 31, 08100 Mollet del Vallès",
+    "instagram": "",
+    "facebook": ""
+  },
+  "horario": {
+    "lun": [
+      [
+        "09:30",
+        "14:00"
+      ],
+      [
+        "15:00",
+        "21:00"
+      ]
+    ],
+    "mar": [
+      [
+        "09:30",
+        "14:00"
+      ],
+      [
+        "15:00",
+        "21:00"
+      ]
+    ],
+    "mie": [
+      [
+        "09:30",
+        "14:00"
+      ],
+      [
+        "15:00",
+        "21:00"
+      ]
+    ],
+    "jue": [
+      [
+        "09:30",
+        "14:00"
+      ],
+      [
+        "15:00",
+        "21:00"
+      ]
+    ],
+    "vie": [
+      [
+        "09:30",
+        "14:00"
+      ],
+      [
+        "15:00",
+        "21:00"
+      ]
+    ],
+    "sab": [
+      [
+        "08:00",
+        "14:00"
+      ],
+      [
+        "15:00",
+        "21:00"
+      ]
+    ],
+    "dom": []
+  },
+  "fotoHero": "",
+  "servicios": [
+    {
+      "titulo": "Corte de pelo",
+      "texto": "Clásico o degradado, a tijera o a máquina.",
+      "etiquetas": [],
+      "precio": "",
+      "foto": ""
+    },
+    {
+      "titulo": "Arreglo de barba",
+      "texto": "Perfilado a navaja y toalla caliente.",
+      "etiquetas": [],
+      "precio": "",
+      "foto": ""
+    },
+    {
+      "titulo": "Corte + barba",
+      "texto": "El servicio completo para salir como nuevo.",
+      "etiquetas": [],
+      "precio": "",
+      "foto": ""
+    }
+  ],
+  "seccionServiciosTitulo": "",
+  "datos": [],
+  "pasos": [],
+  "galeria": [],
+  "resenas": {
+    "nota": 5,
+    "total": 58,
+    "urlGoogle": "https://www.google.com/maps/search/?api=1&query=B%26H%20Barbershop%2C%20Carrer%20d'Anselm%20Clav%C3%A9%2C%2031%2C%2008100%20Mollet%20del%20Vall%C3%A8s",
+    "urlEscribir": "",
+    "destacadas": []
+  },
+  "zonas": [
+    "Mollet del Vallès"
+  ],
+  "geo": null,
+  "schemaTipo": "",
+  "titular": {
+    "nombre": "",
+    "nif": "",
+    "direccionFiscal": ""
+  },
+  "tema": {
+    "preset": "",
+    "primario": "#5FA8A0",
+    "acento": "#5FA8A0"
+  },
+  "mensajeWhatsApp": "Hola, vengo de vuestra web y quería pedir cita.",
+  "_revisar": [
+    "servicios"
+  ],
+  "_visita": {
+    "socio": "Mateo",
+    "cuandoIr": "Mié/Jue 15:15-16:40 · Sáb 9:30-14:00 o 16:00-19:00",
+    "notas": "Encaja con todas las franjas de Mateo"
+  }
+}

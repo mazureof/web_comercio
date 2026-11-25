@@ -44,9 +44,9 @@ function resolverTema(c) {
   const pre = TEMAS.presets[nombre];
   if (!pre) throw new Error(`tema.preset «${nombre}» no existe en temas.json`);
   const k = { ...pre.colores };
-  if (c.tema?.primario) { k.primario = c.tema.primario; k.sobrePrimario = mejorSobre(k.primario, '#FFFFFF', k.texto); }
+  if (c.tema?.primario) { k.primario = c.tema.primario; k.sobrePrimario = mejorSobre(k.primario, '#FFFFFF', lum(k.texto) > 0.5 ? '#111111' : k.texto); }
   if (c.tema?.acento) k.acento = c.tema.acento;
-  if (c.tema?.cabecera) { k.cabecera = c.tema.cabecera; k.sobreCabecera = mejorSobre(k.cabecera, '#FFFFFF', k.texto); }
+  if (c.tema?.cabecera) { k.cabecera = c.tema.cabecera; k.sobreCabecera = mejorSobre(k.cabecera, '#FFFFFF', '#111111'); }
   const oscuro = lum(k.fondo) < 0.2;
   const primarioTexto = ajustaContraste(k.primario, [k.fondo, k.superficie], oscuro ? '#FFFFFF' : k.texto);
   // Botón principal dentro del hero de color: el primario si destaca, si no el color del texto del hero
@@ -110,7 +110,7 @@ function jsonLd(c, v, tipoDef) {
   const dir = partirDireccion(c.contacto.direccion);
   const o = {
     '@context': 'https://schema.org', '@type': c.schemaTipo || tipoDef.schema, '@id': v.seo.url + '#negocio',
-    name: c.nombre, description: c.resumen, url: v.seo.url, telephone: c.contacto.telefono,
+    name: c.nombre, description: c.resumen, url: v.seo.url, ...(c.contacto.telefono ? { telephone: c.contacto.telefono } : {}),
     image: v.seo.url + (v.hero.foto ? v.hero.foto.full : 'og.png'),
     address: { '@type': 'PostalAddress', ...dir, ...(dir.postalCode && provinciaDeCP(dir.postalCode) ? { addressRegion: provinciaDeCP(dir.postalCode) } : {}), addressCountry: 'ES' },
   };
@@ -174,7 +174,8 @@ async function generarWeb(c) {
     cta: `https://wa.me/${waNum}${msgDef ? `?text=${encodeURIComponent(msgDef)}` : ''}`,
     legible: telefonoLegible('+' + waNum),
   } : null;
-  const telHref = `tel:${c.contacto.telefono}`;
+  const telHref = c.contacto.telefono ? `tel:${c.contacto.telefono}` : '';
+  const llegarHref = `https://www.google.com/maps/dir/?api=1&destination=${encodeURIComponent(`${c.nombre}, ${c.contacto.direccion}`)}`;
 
   // Imágenes
   const fotoAlt = (txt) => [txt, c.nombre, poblacion].filter(Boolean).join(' · ');
@@ -185,7 +186,7 @@ async function generarWeb(c) {
   }
   const servicios = [];
   for (const [i, s] of (c.servicios || []).entries()) {
-    const href = wa ? `${wa.base}?text=${encodeURIComponent(fill(t.contacto.tarjetaMensaje, { servicio: s.titulo }))}` : telHref;
+    const href = wa ? `${wa.base}?text=${encodeURIComponent(fill(t.contacto.tarjetaMensaje, { servicio: s.titulo }))}` : telHref || llegarHref;
     servicios.push({
       ...s, num: String(i + 1).padStart(2, '0'), tieneEtiquetas: !!s.etiquetas?.length, href, externo: !!wa,
       ctaTarjeta: t.ctaTarjeta[ctaTipo], foto: s.foto ? await procesarFoto(c, s.foto, dest, fotoAlt(s.titulo)) : null,
@@ -231,8 +232,8 @@ async function generarWeb(c) {
     claim1: c.claim[0], claim2: c.claim[1], resumen: c.resumen,
     puntosConfianza: (c.puntosConfianza || []).slice(0, 3), tienePuntos: !!c.puntosConfianza?.length,
     contacto: { ...c.contacto, telefonoLegible: telefonoLegible(c.contacto.telefono) }, wa,
-    ctaPrincipal: wa ? { href: wa.cta, texto: t.cta[ctaTipo], icono: ICONOS.wa, externo: true } : { href: telHref, texto: `${t.llamar} · ${telefonoLegible(c.contacto.telefono)}`, icono: ICONOS.phone, externo: false },
-    ctaSecundario: wa ? { href: telHref, texto: t.llamar, icono: ICONOS.phone } : { href: `https://www.google.com/maps/dir/?api=1&destination=${encodeURIComponent(`${c.nombre}, ${c.contacto.direccion}`)}`, texto: t.horario.comoLlegar, icono: ICONOS.route, externo: true },
+    ctaPrincipal: wa ? { href: wa.cta, texto: t.cta[ctaTipo], icono: ICONOS.wa, externo: true } : telHref ? { href: telHref, texto: `${t.llamar} · ${telefonoLegible(c.contacto.telefono)}`, icono: ICONOS.phone, externo: false } : { href: llegarHref, texto: t.horario.comoLlegar, icono: ICONOS.route, externo: true },
+    ctaSecundario: wa ? { href: telHref, texto: t.llamar, icono: ICONOS.phone } : !telHref ? null : { href: `https://www.google.com/maps/dir/?api=1&destination=${encodeURIComponent(`${c.nombre}, ${c.contacto.direccion}`)}`, texto: t.horario.comoLlegar, icono: ICONOS.route, externo: true },
     hero: { foto: heroFoto, patron: patron(tema.pre.patron, c.slug), patronMapa: patron('mapa', c.slug) },
     claim: c.claim.map((x) => x.trim()).join(' '), serviciosConFoto: servicios.some((s) => s.foto), numServicios: servicios.length, numGaleria: galeria.length, hayPrecios: servicios.some((s) => s.precio), zonasTexto: (c.zonas || []).join(', '),
     tieneCinta: cinta.length > 0, cinta,
@@ -282,7 +283,7 @@ async function generarWeb(c) {
     [t.legal.campos.titular, campo(ti.nombre)], [t.legal.campos.nif, campo(ti.nif)],
     [t.legal.campos.domicilio, campo(ti.direccionFiscal || c.contacto.direccion)],
     [t.legal.campos.actividad, esc(tipoLegible)],
-    [t.legal.campos.telefono, esc(telefonoLegible(c.contacto.telefono))],
+      c.contacto.telefono && [t.legal.campos.telefono, esc(telefonoLegible(c.contacto.telefono))],
     c.contacto.email && [t.legal.campos.email, esc(c.contacto.email)],
   ].filter(Boolean).map(([a, b]) => ({ k: a, v: b }));
   const legalV = {
@@ -312,7 +313,7 @@ async function generarWeb(c) {
     `${tipoLegible} en ${poblacion}.`, '',
     '## Servicios', ...servicios.map((s) => `- ${s.titulo}: ${s.texto}${s.precio ? ` (${s.precio})` : ''}`), '',
     ...(tieneHorario ? ['## Horario', horarioTxt, ''] : []),
-    '## Contacto', `- Teléfono: ${c.contacto.telefono}`, ...(wa ? [`- WhatsApp: https://wa.me/${waNum}`] : []),
+    '## Contacto', ...(c.contacto.telefono ? [`- Teléfono: ${c.contacto.telefono}`] : []), ...(wa ? [`- WhatsApp: https://wa.me/${waNum}`] : []),
     ...(c.contacto.email ? [`- Email: ${c.contacto.email}`] : []), `- Dirección: ${c.contacto.direccion}`,
     ...(c.zonas?.length ? [`- Zonas: ${c.zonas.join(', ')}`] : []), `- Web: ${url}`, '',
   ].join('\n'));

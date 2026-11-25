@@ -1,0 +1,136 @@
+{
+  "slug": "barberia-ramon-jaimez-mollet-del-valles",
+  "estado": "demo",
+  "codigoDemo": "w5d3",
+  "idioma": "es",
+  "tipo": "barberia",
+  "nombre": "Barberia Ramón Jaimez",
+  "tipoLegible": "Peluquería y barbería",
+  "poblacion": "Mollet del Vallès",
+  "claim": [
+    "Sin florituras,",
+    "cortes bien hechos."
+  ],
+  "resumen": "Peluquería y barbería en Mollet del Vallès. Trabajamos con cita: llámanos y te damos hora.",
+  "puntosConfianza": [
+    "Con cita",
+    "Sábados hasta las 18 h"
+  ],
+  "contacto": {
+    "telefono": "+34935700630",
+    "whatsapp": "",
+    "email": "",
+    "direccion": "Carrer del Sol, 36, 08100 Mollet del Vallès",
+    "instagram": "",
+    "facebook": ""
+  },
+  "horario": {
+    "lun": [],
+    "mar": [
+      [
+        "09:00",
+        "13:30"
+      ],
+      [
+        "16:00",
+        "20:30"
+      ]
+    ],
+    "mie": [
+      [
+        "09:00",
+        "13:30"
+      ],
+      [
+        "16:00",
+        "20:30"
+      ]
+    ],
+    "jue": [
+      [
+        "09:00",
+        "13:30"
+      ],
+      [
+        "16:00",
+        "20:30"
+      ]
+    ],
+    "vie": [
+      [
+        "09:00",
+        "13:30"
+      ],
+      [
+        "16:00",
+        "20:30"
+      ]
+    ],
+    "sab": [
+      [
+        "09:00",
+        "18:00"
+      ]
+    ],
+    "dom": []
+  },
+  "fotoHero": "",
+  "servicios": [
+    {
+      "titulo": "Corte de pelo",
+      "texto": "Clásico o degradado, a tijera o a máquina.",
+      "etiquetas": [],
+      "precio": "",
+      "foto": ""
+    },
+    {
+      "titulo": "Arreglo de barba",
+      "texto": "Perfilado a navaja y toalla caliente.",
+      "etiquetas": [],
+      "precio": "",
+      "foto": ""
+    },
+    {
+      "titulo": "Corte + barba",
+      "texto": "El servicio completo para salir como nuevo.",
+      "etiquetas": [],
+      "precio": "",
+      "foto": ""
+    }
+  ],
+  "seccionServiciosTitulo": "",
+  "datos": [],
+  "pasos": [],
+  "galeria": [],
+  "resenas": {
+    "nota": 4.8,
+    "total": 146,
+    "urlGoogle": "https://www.google.com/maps/search/?api=1&query=Barberia%20Ram%C3%B3n%20Jaimez%2C%20Carrer%20del%20Sol%2C%2036%2C%2008100%20Mollet%20del%20Vall%C3%A8s",
+    "urlEscribir": "",
+    "destacadas": []
+  },
+  "zonas": [
+    "Mollet del Vallès"
+  ],
+  "geo": null,
+  "schemaTipo": "",
+  "titular": {
+    "nombre": "",
+    "nif": "",
+    "direccionFiscal": ""
+  },
+  "tema": {
+    "preset": "",
+    "primario": "#8FA6C9",
+    "acento": "#8FA6C9"
+  },
+  "mensajeWhatsApp": "Hola, vengo de vuestra web y quería pedir cita.",
+  "_revisar": [
+    "servicios"
+  ],
+  "_visita": {
+    "socio": "Mateo",
+    "cuandoIr": "Mié/Jue 16:00-16:40 · Sáb 9:30-14:00 o 16:00-18:00",
+    "notas": "Ya trabajan con cita: la web puede llevar un botón de WhatsApp para reservar"
+  }
+}

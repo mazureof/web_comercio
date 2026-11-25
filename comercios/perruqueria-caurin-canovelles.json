@@ -1,0 +1,137 @@
+{
+  "slug": "perruqueria-caurin-canovelles",
+  "estado": "demo",
+  "codigoDemo": "fee7",
+  "idioma": "es",
+  "tipo": "peluqueria",
+  "nombre": "Perruqueria Caurín",
+  "tipoLegible": "",
+  "poblacion": "Canovelles",
+  "claim": [
+    "Tu pelo,",
+    "como te gusta."
+  ],
+  "resumen": "Peluquería en Canovelles. Corte, color y peinado, y los sábados abrimos hasta las 15:00.",
+  "puntosConfianza": [
+    "Sábados hasta las 15 h",
+    "Trato cercano"
+  ],
+  "contacto": {
+    "telefono": "+34938402584",
+    "whatsapp": "",
+    "email": "",
+    "direccion": "Carrer Diagonal, 13, 08420 Canovelles",
+    "instagram": "",
+    "facebook": ""
+  },
+  "horario": {
+    "lun": [],
+    "mar": [
+      [
+        "09:00",
+        "13:00"
+      ],
+      [
+        "15:00",
+        "19:00"
+      ]
+    ],
+    "mie": [
+      [
+        "09:00",
+        "13:00"
+      ],
+      [
+        "15:00",
+        "19:00"
+      ]
+    ],
+    "jue": [
+      [
+        "09:00",
+        "13:00"
+      ],
+      [
+        "15:00",
+        "19:00"
+      ]
+    ],
+    "vie": [
+      [
+        "09:00",
+        "13:00"
+      ],
+      [
+        "15:00",
+        "19:00"
+      ]
+    ],
+    "sab": [
+      [
+        "08:00",
+        "15:00"
+      ]
+    ],
+    "dom": []
+  },
+  "fotoHero": "",
+  "servicios": [
+    {
+      "titulo": "Corte y peinado",
+      "texto": "Corte a tu medida y peinado para el día a día o para una ocasión especial.",
+      "etiquetas": [],
+      "precio": "",
+      "foto": ""
+    },
+    {
+      "titulo": "Color y mechas",
+      "texto": "Tintes, mechas y matices pensados para tu tono de piel y tu estilo.",
+      "etiquetas": [],
+      "precio": "",
+      "foto": ""
+    },
+    {
+      "titulo": "Tratamientos",
+      "texto": "Hidratación y cuidado para un pelo más sano y con más brillo.",
+      "etiquetas": [],
+      "precio": "",
+      "foto": ""
+    }
+  ],
+  "seccionServiciosTitulo": "",
+  "datos": [],
+  "pasos": [],
+  "galeria": [],
+  "resenas": {
+    "nota": 4.7,
+    "total": 78,
+    "urlGoogle": "https://www.google.com/maps/search/?api=1&query=Perruqueria%20Caur%C3%ADn%2C%20Carrer%20Diagonal%2C%2013%2C%2008420%20Canovelles",
+    "urlEscribir": "",
+    "destacadas": []
+  },
+  "zonas": [
+    "Canovelles"
+  ],
+  "geo": null,
+  "schemaTipo": "",
+  "titular": {
+    "nombre": "",
+    "nif": "",
+    "direccionFiscal": ""
+  },
+  "tema": {
+    "preset": "",
+    "primario": "#8C4A2F",
+    "acento": "#E0B48F",
+    "cabecera": "#5E3020"
+  },
+  "mensajeWhatsApp": "Hola, vengo de vuestra web y quería pedir cita.",
+  "_revisar": [
+    "servicios"
+  ],
+  "_visita": {
+    "socio": "Mateo",
+    "cuandoIr": "",
+    "notas": "Añadido por Claude: sin web en Google Maps"
+  }
+}

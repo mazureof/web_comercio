@@ -1,0 +1,96 @@
+{
+  "slug": "siberia-minimarket-mollet-del-valles",
+  "estado": "demo",
+  "codigoDemo": "tdrr",
+  "idioma": "es",
+  "tipo": "alimentacion",
+  "nombre": "Sibèria Minimarket",
+  "tipoLegible": "Tienda de productos del Este",
+  "poblacion": "Mollet del Vallès",
+  "claim": [
+    "Productos del Este",
+    "en Mollet."
+  ],
+  "resumen": "Minimarket de productos del Este en Mollet del Vallès. Cervezas, embutidos y mucha variedad.",
+  "puntosConfianza": [
+    "Mucha variedad",
+    "Cervezas y embutidos"
+  ],
+  "contacto": {
+    "telefono": "+34637565491",
+    "whatsapp": "",
+    "email": "",
+    "direccion": "Carrer de Joan Maragall, 23, 08100 Mollet del Vallès",
+    "instagram": "",
+    "facebook": ""
+  },
+  "horario": {
+    "lun": [],
+    "mar": [],
+    "mie": [],
+    "jue": [],
+    "vie": [],
+    "sab": [],
+    "dom": []
+  },
+  "fotoHero": "",
+  "servicios": [
+    {
+      "titulo": "Cervezas",
+      "texto": "Cervezas que no encontrarás en el súper.",
+      "etiquetas": [],
+      "precio": "",
+      "foto": ""
+    },
+    {
+      "titulo": "Embutidos",
+      "texto": "Embutidos y ahumados.",
+      "etiquetas": [],
+      "precio": "",
+      "foto": ""
+    },
+    {
+      "titulo": "Despensa",
+      "texto": "Conservas, dulces y productos del día a día.",
+      "etiquetas": [],
+      "precio": "",
+      "foto": ""
+    }
+  ],
+  "seccionServiciosTitulo": "",
+  "datos": [],
+  "pasos": [],
+  "galeria": [],
+  "resenas": {
+    "nota": 4.6,
+    "total": 80,
+    "urlGoogle": "https://www.google.com/maps/search/?api=1&query=Sib%C3%A8ria%20Minimarket%2C%20Carrer%20de%20Joan%20Maragall%2C%2023%2C%2008100%20Mollet%20del%20Vall%C3%A8s",
+    "urlEscribir": "",
+    "destacadas": []
+  },
+  "zonas": [
+    "Mollet del Vallès"
+  ],
+  "geo": null,
+  "schemaTipo": "",
+  "titular": {
+    "nombre": "",
+    "nif": "",
+    "direccionFiscal": ""
+  },
+  "tema": {
+    "preset": "",
+    "primario": "#1D4E89",
+    "acento": "#C8102E",
+    "cabecera": "#13355E"
+  },
+  "mensajeWhatsApp": "Hola, vengo de vuestra web y quería hacer un encargo.",
+  "_revisar": [
+    "horario"
+  ],
+  "_visita": {
+    "socio": "Mateo",
+    "cuandoIr": "Mié 16:00-16:40 · Jue 15:15-16:40 · Sáb/Dom 10:00-14:30",
+    "notas": "Prioridad baja"
+  }
+}

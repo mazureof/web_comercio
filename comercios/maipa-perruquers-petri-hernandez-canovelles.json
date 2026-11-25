@@ -1,0 +1,121 @@
+{
+  "slug": "maipa-perruquers-petri-hernandez-canovelles",
+  "estado": "demo",
+  "codigoDemo": "ua7x",
+  "idioma": "es",
+  "tipo": "peluqueria",
+  "nombre": "Maipa Perruquers Petri Hernández",
+  "tipoLegible": "",
+  "poblacion": "Canovelles",
+  "claim": [
+    "Tu peluquería",
+    "en Canovelles."
+  ],
+  "resumen": "Peluquería en Canovelles abierta de martes a viernes de 9:00 a 19:00 sin cerrar al mediodía. Corte, color y peinado.",
+  "puntosConfianza": [
+    "Sin cerrar al mediodía",
+    "Abierto sábados"
+  ],
+  "contacto": {
+    "telefono": "+34938466431",
+    "whatsapp": "",
+    "email": "",
+    "direccion": "Carrer Centelles, 3, 08420 Canovelles",
+    "instagram": "",
+    "facebook": ""
+  },
+  "horario": {
+    "lun": [],
+    "mar": [
+      [
+        "09:00",
+        "19:00"
+      ]
+    ],
+    "mie": [
+      [
+        "09:00",
+        "19:00"
+      ]
+    ],
+    "jue": [
+      [
+        "09:00",
+        "19:00"
+      ]
+    ],
+    "vie": [
+      [
+        "09:00",
+        "19:00"
+      ]
+    ],
+    "sab": [
+      [
+        "08:00",
+        "13:00"
+      ]
+    ],
+    "dom": []
+  },
+  "fotoHero": "",
+  "servicios": [
+    {
+      "titulo": "Corte y peinado",
+      "texto": "Corte a tu medida y peinado para el día a día o para una ocasión especial.",
+      "etiquetas": [],
+      "precio": "",
+      "foto": ""
+    },
+    {
+      "titulo": "Color y mechas",
+      "texto": "Tintes, mechas y matices pensados para tu tono de piel y tu estilo.",
+      "etiquetas": [],
+      "precio": "",
+      "foto": ""
+    },
+    {
+      "titulo": "Tratamientos",
+      "texto": "Hidratación y cuidado para un pelo más sano y con más brillo.",
+      "etiquetas": [],
+      "precio": "",
+      "foto": ""
+    }
+  ],
+  "seccionServiciosTitulo": "",
+  "datos": [],
+  "pasos": [],
+  "galeria": [],
+  "resenas": {
+    "nota": 4.9,
+    "total": 73,
+    "urlGoogle": "https://www.google.com/maps/search/?api=1&query=Maipa%20Perruquers%20Petri%20Hern%C3%A1ndez%2C%20Carrer%20Centelles%2C%203%2C%2008420%20Canovelles",
+    "urlEscribir": "",
+    "destacadas": []
+  },
+  "zonas": [
+    "Canovelles"
+  ],
+  "geo": null,
+  "schemaTipo": "",
+  "titular": {
+    "nombre": "",
+    "nif": "",
+    "direccionFiscal": ""
+  },
+  "tema": {
+    "preset": "",
+    "primario": "#2E4A6B",
+    "acento": "#C9D6E3",
+    "cabecera": "#22374F"
+  },
+  "mensajeWhatsApp": "Hola, vengo de vuestra web y quería pedir cita.",
+  "_revisar": [
+    "servicios"
+  ],
+  "_visita": {
+    "socio": "Mateo",
+    "cuandoIr": "",
+    "notas": "Añadido por Claude: sin web en Google Maps"
+  }
+}

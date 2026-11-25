@@ -1,0 +1,137 @@
+{
+  "slug": "peluqueria-carmen-riells-i-viabrea",
+  "estado": "demo",
+  "codigoDemo": "5533",
+  "idioma": "es",
+  "tipo": "peluqueria",
+  "nombre": "Peluquería Carmen",
+  "tipoLegible": "",
+  "poblacion": "Riells i Viabrea",
+  "claim": [
+    "Tu pelo,",
+    "en buenas manos."
+  ],
+  "resumen": "Peluquería en Riells i Viabrea. Corte, color y tratamientos con cita por WhatsApp.",
+  "puntosConfianza": [
+    "Cita por WhatsApp",
+    "Trato personal"
+  ],
+  "contacto": {
+    "telefono": "+34666786893",
+    "whatsapp": "",
+    "email": "",
+    "direccion": "Carrer Girona, 12, 17404 Riells i Viabrea",
+    "instagram": "",
+    "facebook": ""
+  },
+  "horario": {
+    "lun": [],
+    "mar": [
+      [
+        "09:00",
+        "13:00"
+      ],
+      [
+        "15:00",
+        "19:00"
+      ]
+    ],
+    "mie": [
+      [
+        "09:00",
+        "13:00"
+      ],
+      [
+        "15:00",
+        "19:00"
+      ]
+    ],
+    "jue": [
+      [
+        "09:00",
+        "13:00"
+      ],
+      [
+        "15:00",
+        "19:00"
+      ]
+    ],
+    "vie": [
+      [
+        "09:00",
+        "13:00"
+      ],
+      [
+        "15:00",
+        "19:00"
+      ]
+    ],
+    "sab": [
+      [
+        "09:00",
+        "13:00"
+      ]
+    ],
+    "dom": []
+  },
+  "fotoHero": "",
+  "servicios": [
+    {
+      "titulo": "Corte y peinado",
+      "texto": "Corte a tu medida y peinado para el día a día o para una ocasión especial.",
+      "etiquetas": [],
+      "precio": "",
+      "foto": ""
+    },
+    {
+      "titulo": "Color y mechas",
+      "texto": "Tintes, mechas y matices pensados para tu tono de piel y tu estilo.",
+      "etiquetas": [],
+      "precio": "",
+      "foto": ""
+    },
+    {
+      "titulo": "Tratamientos",
+      "texto": "Hidratación y cuidado para un pelo más sano y con más brillo.",
+      "etiquetas": [],
+      "precio": "",
+      "foto": ""
+    }
+  ],
+  "seccionServiciosTitulo": "",
+  "datos": [],
+  "pasos": [],
+  "galeria": [],
+  "resenas": {
+    "nota": 5,
+    "total": 9,
+    "urlGoogle": "https://www.google.com/maps/search/?api=1&query=Peluquer%C3%ADa%20Carmen%2C%20Carrer%20Girona%2C%2012%2C%2017404%20Riells%20i%20Viabrea",
+    "urlEscribir": "",
+    "destacadas": []
+  },
+  "zonas": [
+    "Riells i Viabrea"
+  ],
+  "geo": null,
+  "schemaTipo": "",
+  "titular": {
+    "nombre": "",
+    "nif": "",
+    "direccionFiscal": ""
+  },
+  "tema": {
+    "preset": "",
+    "primario": "#6B3A5A",
+    "acento": "#D6A8C2",
+    "cabecera": "#4E2A41"
+  },
+  "mensajeWhatsApp": "Hola, vengo de vuestra web y quería pedir cita.",
+  "_revisar": [
+    "servicios"
+  ],
+  "_visita": {
+    "socio": "Arnau",
+    "cuandoIr": "",
+    "notas": "Añadido por Claude: sin web en Google Maps"
+  }
+}

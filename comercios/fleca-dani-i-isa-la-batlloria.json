@@ -1,0 +1,142 @@
+{
+  "slug": "fleca-dani-i-isa-la-batlloria",
+  "estado": "demo",
+  "codigoDemo": "4vhh",
+  "idioma": "ca",
+  "tipo": "panaderia",
+  "nombre": "Fleca Dani i Isa",
+  "tipoLegible": "",
+  "poblacion": "La Batllòria",
+  "claim": [
+    "La fleca del poble,",
+    "de tota la vida."
+  ],
+  "resumen": "Fleca i obrador familiar a La Batllòria. Pa del dia, brioixeria i encàrrecs.",
+  "puntosConfianza": [
+    "Negoci familiar",
+    "Obrador propi",
+    "Encàrrecs per telèfon"
+  ],
+  "contacto": {
+    "telefono": "+34938472260",
+    "whatsapp": "",
+    "email": "",
+    "direccion": "Carrer Major, 1, 08476 La Batllòria",
+    "instagram": "",
+    "facebook": ""
+  },
+  "horario": {
+    "lun": [],
+    "mar": [
+      [
+        "08:00",
+        "13:30"
+      ],
+      [
+        "16:30",
+        "20:00"
+      ]
+    ],
+    "mie": [
+      [
+        "08:00",
+        "13:30"
+      ],
+      [
+        "16:30",
+        "20:00"
+      ]
+    ],
+    "jue": [
+      [
+        "08:00",
+        "13:30"
+      ],
+      [
+        "16:30",
+        "20:00"
+      ]
+    ],
+    "vie": [
+      [
+        "08:00",
+        "13:30"
+      ],
+      [
+        "16:30",
+        "20:00"
+      ]
+    ],
+    "sab": [
+      [
+        "08:00",
+        "14:00"
+      ]
+    ],
+    "dom": [
+      [
+        "08:00",
+        "14:00"
+      ]
+    ]
+  },
+  "fotoHero": "",
+  "servicios": [
+    {
+      "titulo": "Pa del dia",
+      "texto": "Pa fet cada dia al nostre obrador.",
+      "etiquetas": [],
+      "precio": "",
+      "foto": ""
+    },
+    {
+      "titulo": "Brioixeria",
+      "texto": "Croissants, també de pernil i formatge, i dolços per esmorzar.",
+      "etiquetas": [],
+      "precio": "",
+      "foto": ""
+    },
+    {
+      "titulo": "Encàrrecs",
+      "texto": "Coques i pastissos per encàrrec.",
+      "etiquetas": [],
+      "precio": "",
+      "foto": ""
+    }
+  ],
+  "seccionServiciosTitulo": "",
+  "datos": [],
+  "pasos": [],
+  "galeria": [],
+  "resenas": {
+    "nota": 4.7,
+    "total": 154,
+    "urlGoogle": "https://www.google.com/maps/search/?api=1&query=Fleca%20Dani%20i%20Isa%2C%20Carrer%20Major%2C%201%2C%2008476%20La%20Batll%C3%B2ria",
+    "urlEscribir": "",
+    "destacadas": []
+  },
+  "zonas": [
+    "La Batllòria"
+  ],
+  "geo": null,
+  "schemaTipo": "",
+  "titular": {
+    "nombre": "",
+    "nif": "",
+    "direccionFiscal": ""
+  },
+  "tema": {
+    "preset": "",
+    "primario": "",
+    "acento": ""
+  },
+  "mensajeWhatsApp": "Hola, vinc del vostre web i voldria informació.",
+  "_revisar": [
+    "servicios"
+  ],
+  "_visita": {
+    "socio": "Arnau",
+    "cuandoIr": "Mar/Jue 16:30-19:15 · Dom 11:00-14:00",
+    "notas": "Negocio familiar muy bien valorado (4,7 con 154 reseñas). Tarde entre semana = poca gente"
+  }
+}

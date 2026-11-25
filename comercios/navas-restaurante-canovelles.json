@@ -1,0 +1,130 @@
+{
+  "slug": "navas-restaurante-canovelles",
+  "estado": "demo",
+  "codigoDemo": "pwx4",
+  "idioma": "es",
+  "tipo": "restaurante",
+  "nombre": "Navas Restaurante",
+  "tipoLegible": "",
+  "poblacion": "Canovelles",
+  "claim": [
+    "Abierto cada día,",
+    "con gran terraza."
+  ],
+  "resumen": "Restaurante en Canovelles abierto todos los días de 7:30 a 23:00. Desayunos, bocadillos, comidas y gran terraza.",
+  "puntosConfianza": [
+    "Todos los días",
+    "Gran terraza"
+  ],
+  "contacto": {
+    "telefono": "+34931422805",
+    "whatsapp": "",
+    "email": "",
+    "direccion": "Carrer Isidre Duran, 2, 08420 Canovelles",
+    "instagram": "",
+    "facebook": ""
+  },
+  "horario": {
+    "lun": [
+      [
+        "07:30",
+        "23:00"
+      ]
+    ],
+    "mar": [
+      [
+        "07:30",
+        "23:00"
+      ]
+    ],
+    "mie": [
+      [
+        "07:30",
+        "23:00"
+      ]
+    ],
+    "jue": [
+      [
+        "07:30",
+        "23:00"
+      ]
+    ],
+    "vie": [
+      [
+        "07:30",
+        "23:00"
+      ]
+    ],
+    "sab": [
+      [
+        "07:30",
+        "23:00"
+      ]
+    ],
+    "dom": [
+      [
+        "07:30",
+        "23:00"
+      ]
+    ]
+  },
+  "fotoHero": "",
+  "servicios": [
+    {
+      "titulo": "Desayunos y bocadillos",
+      "texto": "Como el bocata de pinchos con alioli.",
+      "etiquetas": [],
+      "precio": "",
+      "foto": ""
+    },
+    {
+      "titulo": "Comidas",
+      "texto": "Platos para comer o cenar.",
+      "etiquetas": [],
+      "precio": "",
+      "foto": ""
+    },
+    {
+      "titulo": "Terraza",
+      "texto": "Gran terraza para disfrutar al aire libre.",
+      "etiquetas": [],
+      "precio": "",
+      "foto": ""
+    }
+  ],
+  "seccionServiciosTitulo": "",
+  "datos": [],
+  "pasos": [],
+  "galeria": [],
+  "resenas": {
+    "nota": 4,
+    "total": 433,
+    "urlGoogle": "https://www.google.com/maps/search/?api=1&query=Navas%20Restaurante%2C%20Carrer%20Isidre%20Duran%2C%202%2C%2008420%20Canovelles",
+    "urlEscribir": "",
+    "destacadas": []
+  },
+  "zonas": [
+    "Canovelles"
+  ],
+  "geo": null,
+  "schemaTipo": "",
+  "titular": {
+    "nombre": "",
+    "nif": "",
+    "direccionFiscal": ""
+  },
+  "tema": {
+    "preset": "",
+    "primario": "",
+    "acento": ""
+  },
+  "mensajeWhatsApp": "Hola, vengo de vuestra web y quería reservar.",
+  "_revisar": [
+    "servicios"
+  ],
+  "_visita": {
+    "socio": "Mateo",
+    "cuandoIr": "Mié/Jue 15:30-16:40 · Sáb/Dom 9:30-12:00",
+    "notas": "Dueños nuevos: buen momento para estrenar web"
+  }
+}

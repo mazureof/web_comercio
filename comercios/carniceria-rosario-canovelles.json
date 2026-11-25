@@ -1,0 +1,129 @@
+{
+  "slug": "carniceria-rosario-canovelles",
+  "estado": "demo",
+  "codigoDemo": "bqhc",
+  "idioma": "es",
+  "tipo": "carniceria",
+  "nombre": "Carnicería Rosario",
+  "tipoLegible": "",
+  "poblacion": "Canovelles",
+  "claim": [
+    "Carne de confianza,",
+    "cortada a tu gusto."
+  ],
+  "resumen": "Carnicería en Canovelles. Carne fresca, elaborados y encargos.",
+  "puntosConfianza": [
+    "Encargos por teléfono",
+    "Producto fresco"
+  ],
+  "contacto": {
+    "telefono": "+34938467628",
+    "whatsapp": "",
+    "email": "",
+    "direccion": "Carrer Diagonal, 48, 08420 Canovelles",
+    "instagram": "",
+    "facebook": ""
+  },
+  "horario": {
+    "lun": [
+      [
+        "08:00",
+        "14:00"
+      ]
+    ],
+    "mar": [
+      [
+        "08:00",
+        "14:00"
+      ]
+    ],
+    "mie": [
+      [
+        "08:00",
+        "14:00"
+      ]
+    ],
+    "jue": [
+      [
+        "08:00",
+        "14:00"
+      ]
+    ],
+    "vie": [
+      [
+        "08:00",
+        "13:30"
+      ],
+      [
+        "17:00",
+        "20:00"
+      ]
+    ],
+    "sab": [
+      [
+        "08:00",
+        "14:00"
+      ]
+    ],
+    "dom": []
+  },
+  "fotoHero": "",
+  "servicios": [
+    {
+      "titulo": "Carne fresca",
+      "texto": "Ternera, cerdo, pollo y cordero.",
+      "etiquetas": [],
+      "precio": "",
+      "foto": ""
+    },
+    {
+      "titulo": "Elaborados",
+      "texto": "Hamburguesas, salchichas y preparados de la casa.",
+      "etiquetas": [],
+      "precio": "",
+      "foto": ""
+    },
+    {
+      "titulo": "Encargos",
+      "texto": "Bandejas y piezas para celebraciones.",
+      "etiquetas": [],
+      "precio": "",
+      "foto": ""
+    }
+  ],
+  "seccionServiciosTitulo": "",
+  "datos": [],
+  "pasos": [],
+  "galeria": [],
+  "resenas": {
+    "nota": 5,
+    "total": 17,
+    "urlGoogle": "https://www.google.com/maps/search/?api=1&query=Carnicer%C3%ADa%20Rosario%2C%20Carrer%20Diagonal%2C%2048%2C%2008420%20Canovelles",
+    "urlEscribir": "",
+    "destacadas": []
+  },
+  "zonas": [
+    "Canovelles"
+  ],
+  "geo": null,
+  "schemaTipo": "",
+  "titular": {
+    "nombre": "",
+    "nif": "",
+    "direccionFiscal": ""
+  },
+  "tema": {
+    "preset": "",
+    "primario": "",
+    "acento": ""
+  },
+  "mensajeWhatsApp": "Hola, vengo de vuestra web y quería hacer un encargo.",
+  "_revisar": [
+    "servicios"
+  ],
+  "_visita": {
+    "socio": "Mateo",
+    "cuandoIr": "",
+    "notas": "Añadido por Claude: sin web en Google Maps"
+  }
+}

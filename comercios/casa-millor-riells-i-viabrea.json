@@ -1,0 +1,155 @@
+{
+  "slug": "casa-millor-riells-i-viabrea",
+  "estado": "demo",
+  "codigoDemo": "3gqh",
+  "idioma": "es",
+  "tipo": "tienda",
+  "nombre": "Casa Millor",
+  "tipoLegible": "Bazar",
+  "poblacion": "Riells i Viabrea",
+  "claim": [
+    "De todo un poco,",
+    "aquí al lado."
+  ],
+  "resumen": "Bazar en Riells i Viabrea. Artículos para el hogar, regalos y lo que te haga falta, también los domingos por la mañana.",
+  "puntosConfianza": [
+    "Abierto los domingos",
+    "Trato amable"
+  ],
+  "contacto": {
+    "telefono": "",
+    "whatsapp": "",
+    "email": "",
+    "direccion": "Carrer Comerç, 11, 17404 Riells i Viabrea",
+    "instagram": "",
+    "facebook": ""
+  },
+  "horario": {
+    "lun": [
+      [
+        "09:00",
+        "14:00"
+      ],
+      [
+        "16:30",
+        "20:30"
+      ]
+    ],
+    "mar": [
+      [
+        "09:00",
+        "14:00"
+      ],
+      [
+        "16:30",
+        "20:30"
+      ]
+    ],
+    "mie": [
+      [
+        "09:00",
+        "14:00"
+      ],
+      [
+        "16:30",
+        "20:30"
+      ]
+    ],
+    "jue": [
+      [
+        "09:00",
+        "14:00"
+      ],
+      [
+        "16:30",
+        "20:30"
+      ]
+    ],
+    "vie": [
+      [
+        "09:00",
+        "14:00"
+      ],
+      [
+        "16:30",
+        "20:30"
+      ]
+    ],
+    "sab": [
+      [
+        "09:00",
+        "14:00"
+      ],
+      [
+        "16:30",
+        "20:30"
+      ]
+    ],
+    "dom": [
+      [
+        "10:00",
+        "13:30"
+      ]
+    ]
+  },
+  "fotoHero": "",
+  "servicios": [
+    {
+      "titulo": "Hogar",
+      "texto": "Menaje y artículos para casa.",
+      "etiquetas": [],
+      "precio": "",
+      "foto": ""
+    },
+    {
+      "titulo": "Regalos",
+      "texto": "Detalles y regalos para cualquier ocasión.",
+      "etiquetas": [],
+      "precio": "",
+      "foto": ""
+    },
+    {
+      "titulo": "Lo que necesites",
+      "texto": "Si no lo ves, pregúntanos.",
+      "etiquetas": [],
+      "precio": "",
+      "foto": ""
+    }
+  ],
+  "seccionServiciosTitulo": "",
+  "datos": [],
+  "pasos": [],
+  "galeria": [],
+  "resenas": {
+    "nota": 5,
+    "total": 2,
+    "urlGoogle": "https://www.google.com/maps/search/?api=1&query=Casa%20Millor%2C%20Carrer%20Comer%C3%A7%2C%2011%2C%2017404%20Riells%20i%20Viabrea",
+    "urlEscribir": "",
+    "destacadas": []
+  },
+  "zonas": [
+    "Riells i Viabrea"
+  ],
+  "geo": null,
+  "schemaTipo": "",
+  "titular": {
+    "nombre": "",
+    "nif": "",
+    "direccionFiscal": ""
+  },
+  "tema": {
+    "preset": "",
+    "primario": "",
+    "acento": "#C8102E"
+  },
+  "mensajeWhatsApp": "Hola, vengo de vuestra web y quería información.",
+  "_revisar": [
+    "servicios",
+    "contacto.telefono"
+  ],
+  "_visita": {
+    "socio": "Arnau",
+    "cuandoIr": "Mar/Jue 16:30-19:15 · Sáb 9:30-14:00 · Dom 10:00-13:30",
+    "notas": "Prioridad baja"
+  }
+}

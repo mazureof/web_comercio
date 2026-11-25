@@ -1,0 +1,126 @@
+{
+  "slug": "el-celler-de-riells",
+  "estado": "demo",
+  "codigoDemo": "dz83",
+  "idioma": "ca",
+  "tipo": "bar",
+  "nombre": "El Celler de Riells",
+  "tipoLegible": "",
+  "poblacion": "Riells i Viabrea",
+  "claim": [
+    "Bons entrepans",
+    "i ambient de casa."
+  ],
+  "resumen": "Bar restaurant a Riells i Viabrea. Esmorzars, entrepans, tapes i menú de cap de setmana.",
+  "puntosConfianza": [
+    "Ambient familiar",
+    "Menú de cap de setmana",
+    "Bona relació qualitat-preu"
+  ],
+  "contacto": {
+    "telefono": "+34972979170",
+    "whatsapp": "",
+    "email": "",
+    "direccion": "Carrer Morou, 23, 17404 Riells i Viabrea",
+    "instagram": "",
+    "facebook": ""
+  },
+  "horario": {
+    "lun": [
+      [
+        "07:30",
+        "23:00"
+      ]
+    ],
+    "mar": [
+      [
+        "07:30",
+        "23:00"
+      ]
+    ],
+    "mie": [
+      [
+        "07:30",
+        "23:00"
+      ]
+    ],
+    "jue": [],
+    "vie": [
+      [
+        "07:30",
+        "00:00"
+      ]
+    ],
+    "sab": [
+      [
+        "07:30",
+        "00:00"
+      ]
+    ],
+    "dom": [
+      [
+        "07:30",
+        "23:00"
+      ]
+    ]
+  },
+  "fotoHero": "",
+  "servicios": [
+    {
+      "titulo": "Esmorzars i entrepans",
+      "texto": "Entrepans generosos per començar bé el dia.",
+      "etiquetas": [],
+      "precio": "",
+      "foto": ""
+    },
+    {
+      "titulo": "Tapes",
+      "texto": "Tapes i racions per compartir.",
+      "etiquetas": [],
+      "precio": "",
+      "foto": ""
+    },
+    {
+      "titulo": "Menú de cap de setmana",
+      "texto": "Pregunta pel menú del dissabte i el diumenge.",
+      "etiquetas": [],
+      "precio": "",
+      "foto": ""
+    }
+  ],
+  "seccionServiciosTitulo": "",
+  "datos": [],
+  "pasos": [],
+  "galeria": [],
+  "resenas": {
+    "nota": 4.1,
+    "total": 55,
+    "urlGoogle": "https://www.google.com/maps/search/?api=1&query=El%20Celler%20de%20Riells%2C%20Carrer%20Morou%2C%2023%2C%2017404%20Riells%20i%20Viabrea",
+    "urlEscribir": "",
+    "destacadas": []
+  },
+  "zonas": [
+    "Riells i Viabrea"
+  ],
+  "geo": null,
+  "schemaTipo": "",
+  "titular": {
+    "nombre": "",
+    "nif": "",
+    "direccionFiscal": ""
+  },
+  "tema": {
+    "preset": "",
+    "primario": "#B5532A",
+    "acento": "#2B3A4A"
+  },
+  "mensajeWhatsApp": "Hola, vinc del vostre web i voldria informació.",
+  "_revisar": [
+    "horario"
+  ],
+  "_visita": {
+    "socio": "Arnau",
+    "cuandoIr": "Mar 15:30-19:15 · Sáb/Dom 9:30-11:30",
+    "notas": "Jueves cerrado. Menú de fin de semana: la web puede enseñar menú y tapas"
+  }
+}

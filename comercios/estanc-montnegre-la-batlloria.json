@@ -1,0 +1,149 @@
+{
+  "slug": "estanc-montnegre-la-batlloria",
+  "estado": "demo",
+  "codigoDemo": "cf9q",
+  "idioma": "ca",
+  "tipo": "tienda",
+  "nombre": "Estanc Montnegre",
+  "tipoLegible": "Estanc",
+  "poblacion": "La Batllòria",
+  "claim": [
+    "L'estanc de confiança",
+    "de La Batllòria."
+  ],
+  "resumen": "Estanc a La Batllòria amb llibres, papereria i punt de recollida de paquets InPost. Obert també diumenge al matí.",
+  "puntosConfianza": [
+    "Punt InPost",
+    "Obert diumenge al matí"
+  ],
+  "contacto": {
+    "telefono": "+34938472184",
+    "whatsapp": "",
+    "email": "",
+    "direccion": "Carrer Major, 3, 08476 La Batllòria",
+    "instagram": "",
+    "facebook": ""
+  },
+  "horario": {
+    "lun": [
+      [
+        "09:00",
+        "13:30"
+      ],
+      [
+        "17:00",
+        "20:30"
+      ]
+    ],
+    "mar": [
+      [
+        "09:00",
+        "13:30"
+      ],
+      [
+        "17:00",
+        "20:30"
+      ]
+    ],
+    "mie": [
+      [
+        "09:00",
+        "13:30"
+      ],
+      [
+        "17:00",
+        "20:30"
+      ]
+    ],
+    "jue": [
+      [
+        "09:00",
+        "13:30"
+      ],
+      [
+        "17:00",
+        "20:30"
+      ]
+    ],
+    "vie": [
+      [
+        "09:00",
+        "13:30"
+      ],
+      [
+        "17:00",
+        "20:30"
+      ]
+    ],
+    "sab": [
+      [
+        "08:00",
+        "14:00"
+      ]
+    ],
+    "dom": [
+      [
+        "09:00",
+        "13:30"
+      ]
+    ]
+  },
+  "fotoHero": "",
+  "servicios": [
+    {
+      "titulo": "Estanc",
+      "texto": "Tabac i articles de fumador.",
+      "etiquetas": [],
+      "precio": "",
+      "foto": ""
+    },
+    {
+      "titulo": "Llibres i papereria",
+      "texto": "Llibres, revistes i material de papereria.",
+      "etiquetas": [],
+      "precio": "",
+      "foto": ""
+    },
+    {
+      "titulo": "Punt InPost",
+      "texto": "Recull i envia els teus paquets aquí mateix.",
+      "etiquetas": [],
+      "precio": "",
+      "foto": ""
+    }
+  ],
+  "seccionServiciosTitulo": "",
+  "datos": [],
+  "pasos": [],
+  "galeria": [],
+  "resenas": {
+    "nota": 4.7,
+    "total": 94,
+    "urlGoogle": "https://www.google.com/maps/search/?api=1&query=Estanc%20Montnegre%2C%20Carrer%20Major%2C%203%2C%2008476%20La%20Batll%C3%B2ria",
+    "urlEscribir": "",
+    "destacadas": []
+  },
+  "zonas": [
+    "La Batllòria"
+  ],
+  "geo": null,
+  "schemaTipo": "",
+  "titular": {
+    "nombre": "",
+    "nif": "",
+    "direccionFiscal": ""
+  },
+  "tema": {
+    "preset": "",
+    "primario": "#2F5D3A",
+    "acento": "#C9A227",
+    "cabecera": "#1F3D27"
+  },
+  "mensajeWhatsApp": "Hola, vinc del vostre web i voldria informació.",
+  "_revisar": [],
+  "_visita": {
+    "socio": "Arnau",
+    "cuandoIr": "Mar/Jue 17:00-19:15 · Sáb/Dom 9:30-13:30",
+    "notas": "Punto InPost. Preguntar por Toni"
+  }
+}

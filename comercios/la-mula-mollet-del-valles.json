@@ -1,0 +1,150 @@
+{
+  "slug": "la-mula-mollet-del-valles",
+  "estado": "demo",
+  "codigoDemo": "hhn3",
+  "idioma": "es",
+  "tipo": "tienda",
+  "nombre": "La Mula",
+  "tipoLegible": "Tienda de ropa",
+  "poblacion": "Mollet del Vallès",
+  "claim": [
+    "Ropa con calidad",
+    "a buen precio."
+  ],
+  "resumen": "Tienda de ropa en la Rambla Nova de Mollet del Vallès. Calidad a precio asequible y ofertas puntuales.",
+  "puntosConfianza": [
+    "Precio asequible",
+    "Ofertas"
+  ],
+  "contacto": {
+    "telefono": "+34936275167",
+    "whatsapp": "",
+    "email": "",
+    "direccion": "Rambla Nova, 17, local 2, 08100 Mollet del Vallès",
+    "instagram": "",
+    "facebook": ""
+  },
+  "horario": {
+    "lun": [
+      [
+        "09:00",
+        "13:30"
+      ],
+      [
+        "16:30",
+        "20:30"
+      ]
+    ],
+    "mar": [
+      [
+        "09:00",
+        "13:30"
+      ],
+      [
+        "16:30",
+        "20:30"
+      ]
+    ],
+    "mie": [
+      [
+        "09:00",
+        "13:30"
+      ],
+      [
+        "16:30",
+        "20:30"
+      ]
+    ],
+    "jue": [
+      [
+        "09:00",
+        "13:30"
+      ],
+      [
+        "16:30",
+        "20:30"
+      ]
+    ],
+    "vie": [
+      [
+        "09:00",
+        "13:30"
+      ],
+      [
+        "16:30",
+        "20:30"
+      ]
+    ],
+    "sab": [
+      [
+        "09:00",
+        "13:30"
+      ],
+      [
+        "16:30",
+        "20:30"
+      ]
+    ],
+    "dom": []
+  },
+  "fotoHero": "",
+  "servicios": [
+    {
+      "titulo": "Moda",
+      "texto": "Ropa y complementos de temporada.",
+      "etiquetas": [],
+      "precio": "",
+      "foto": ""
+    },
+    {
+      "titulo": "Ofertas",
+      "texto": "Ofertas puntuales en tienda.",
+      "etiquetas": [],
+      "precio": "",
+      "foto": ""
+    },
+    {
+      "titulo": "Asesoramiento",
+      "texto": "Te ayudamos a encontrar lo que buscas.",
+      "etiquetas": [],
+      "precio": "",
+      "foto": ""
+    }
+  ],
+  "seccionServiciosTitulo": "",
+  "datos": [],
+  "pasos": [],
+  "galeria": [],
+  "resenas": {
+    "nota": 4.5,
+    "total": 150,
+    "urlGoogle": "https://www.google.com/maps/search/?api=1&query=La%20Mula%2C%20Rambla%20Nova%2C%2017%2C%20local%202%2C%2008100%20Mollet%20del%20Vall%C3%A8s",
+    "urlEscribir": "",
+    "destacadas": []
+  },
+  "zonas": [
+    "Mollet del Vallès"
+  ],
+  "geo": null,
+  "schemaTipo": "",
+  "titular": {
+    "nombre": "",
+    "nif": "",
+    "direccionFiscal": ""
+  },
+  "tema": {
+    "preset": "",
+    "primario": "#2B2B2B",
+    "acento": "#C8A27A",
+    "cabecera": "#2B2B2B"
+  },
+  "mensajeWhatsApp": "Hola, vengo de vuestra web y quería información.",
+  "_revisar": [
+    "servicios"
+  ],
+  "_visita": {
+    "socio": "Mateo",
+    "cuandoIr": "Sáb 9:30-13:30 o 16:30-19:00",
+    "notas": "Entre semana no cuadra con el horario de Mateo"
+  }
+}

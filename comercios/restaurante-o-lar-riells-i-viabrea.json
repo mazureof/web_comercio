@@ -1,0 +1,134 @@
+{
+  "slug": "restaurante-o-lar-riells-i-viabrea",
+  "estado": "demo",
+  "codigoDemo": "e8g5",
+  "idioma": "es",
+  "tipo": "restaurante",
+  "nombre": "Restaurante O Lar",
+  "tipoLegible": "Restaurante gallego",
+  "poblacion": "Riells i Viabrea",
+  "claim": [
+    "Cocina gallega",
+    "en Riells."
+  ],
+  "resumen": "Restaurante gallego en Riells i Viabrea. Desayunos, comidas y cenas los viernes y sábados. Reserva por teléfono.",
+  "puntosConfianza": [
+    "Cocina gallega",
+    "Cenas viernes y sábado"
+  ],
+  "contacto": {
+    "telefono": "+34938470881",
+    "whatsapp": "",
+    "email": "",
+    "direccion": "Plaça de Catalunya, 2, 17404 Riells i Viabrea",
+    "instagram": "",
+    "facebook": ""
+  },
+  "horario": {
+    "lun": [],
+    "mar": [
+      [
+        "09:00",
+        "16:00"
+      ]
+    ],
+    "mie": [
+      [
+        "09:00",
+        "16:00"
+      ]
+    ],
+    "jue": [
+      [
+        "09:00",
+        "16:00"
+      ]
+    ],
+    "vie": [
+      [
+        "08:00",
+        "16:00"
+      ],
+      [
+        "20:00",
+        "23:00"
+      ]
+    ],
+    "sab": [
+      [
+        "08:00",
+        "16:00"
+      ],
+      [
+        "20:00",
+        "23:00"
+      ]
+    ],
+    "dom": [
+      [
+        "08:00",
+        "16:00"
+      ]
+    ]
+  },
+  "fotoHero": "",
+  "servicios": [
+    {
+      "titulo": "Cocina gallega",
+      "texto": "Platos de la cocina gallega de siempre.",
+      "etiquetas": [],
+      "precio": "",
+      "foto": ""
+    },
+    {
+      "titulo": "Comidas",
+      "texto": "Comidas de martes a domingo.",
+      "etiquetas": [],
+      "precio": "",
+      "foto": ""
+    },
+    {
+      "titulo": "Cenas de fin de semana",
+      "texto": "Viernes y sábado, a partir de las 20:00.",
+      "etiquetas": [],
+      "precio": "",
+      "foto": ""
+    }
+  ],
+  "seccionServiciosTitulo": "",
+  "datos": [],
+  "pasos": [],
+  "galeria": [],
+  "resenas": {
+    "nota": 4.2,
+    "total": 100,
+    "urlGoogle": "https://www.google.com/maps/search/?api=1&query=Restaurante%20O%20Lar%2C%20Pla%C3%A7a%20de%20Catalunya%2C%202%2C%2017404%20Riells%20i%20Viabrea",
+    "urlEscribir": "",
+    "destacadas": []
+  },
+  "zonas": [
+    "Riells i Viabrea"
+  ],
+  "geo": null,
+  "schemaTipo": "",
+  "titular": {
+    "nombre": "",
+    "nif": "",
+    "direccionFiscal": ""
+  },
+  "tema": {
+    "preset": "",
+    "primario": "#24527A",
+    "acento": "#C7A15A",
+    "cabecera": "#173550"
+  },
+  "mensajeWhatsApp": "Hola, vengo de vuestra web y quería reservar.",
+  "_revisar": [
+    "servicios"
+  ],
+  "_visita": {
+    "socio": "Arnau",
+    "cuandoIr": "",
+    "notas": "Añadido por Claude: sin web en Google Maps"
+  }
+}

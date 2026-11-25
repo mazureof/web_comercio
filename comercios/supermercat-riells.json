@@ -1,0 +1,138 @@
+{
+  "slug": "supermercat-riells",
+  "estado": "demo",
+  "codigoDemo": "6hpz",
+  "idioma": "es",
+  "tipo": "alimentacion",
+  "nombre": "Supermercat Riells",
+  "tipoLegible": "Supermercado",
+  "poblacion": "Riells i Viabrea",
+  "claim": [
+    "Abierto cada día",
+    "hasta las diez."
+  ],
+  "resumen": "Supermercado en Riells i Viabrea, abierto todos los días de 9:00 a 22:00. Alimentación, pan, paquetería y envíos de dinero.",
+  "puntosConfianza": [
+    "Todos los días 9-22 h",
+    "Paquetería",
+    "Envíos de dinero"
+  ],
+  "contacto": {
+    "telefono": "",
+    "whatsapp": "",
+    "email": "",
+    "direccion": "Carrer de Santa Fe, 3, 17404 Riells i Viabrea",
+    "instagram": "",
+    "facebook": ""
+  },
+  "horario": {
+    "lun": [
+      [
+        "09:00",
+        "22:00"
+      ]
+    ],
+    "mar": [
+      [
+        "09:00",
+        "22:00"
+      ]
+    ],
+    "mie": [
+      [
+        "09:00",
+        "22:00"
+      ]
+    ],
+    "jue": [
+      [
+        "09:00",
+        "22:00"
+      ]
+    ],
+    "vie": [
+      [
+        "09:00",
+        "22:00"
+      ]
+    ],
+    "sab": [
+      [
+        "09:00",
+        "22:00"
+      ]
+    ],
+    "dom": [
+      [
+        "09:00",
+        "22:00"
+      ]
+    ]
+  },
+  "fotoHero": "",
+  "servicios": [
+    {
+      "titulo": "Alimentación",
+      "texto": "Lo básico para tu compra diaria, bebidas y cavas.",
+      "etiquetas": [],
+      "precio": "",
+      "foto": ""
+    },
+    {
+      "titulo": "Pan todo el día",
+      "texto": "Pan disponible durante todo el día.",
+      "etiquetas": [],
+      "precio": "",
+      "foto": ""
+    },
+    {
+      "titulo": "Paquetería",
+      "texto": "Recogida y entrega de paquetes de GLS y Amazon.",
+      "etiquetas": [],
+      "precio": "",
+      "foto": ""
+    },
+    {
+      "titulo": "Envíos de dinero",
+      "texto": "Envía dinero de forma rápida desde la tienda.",
+      "etiquetas": [],
+      "precio": "",
+      "foto": ""
+    }
+  ],
+  "seccionServiciosTitulo": "",
+  "datos": [],
+  "pasos": [],
+  "galeria": [],
+  "resenas": {
+    "nota": 4,
+    "total": 14,
+    "urlGoogle": "https://www.google.com/maps/search/?api=1&query=Supermercat%20Riells%2C%20Carrer%20de%20Santa%20Fe%2C%203%2C%2017404%20Riells%20i%20Viabrea",
+    "urlEscribir": "",
+    "destacadas": []
+  },
+  "zonas": [
+    "Riells i Viabrea"
+  ],
+  "geo": null,
+  "schemaTipo": "",
+  "titular": {
+    "nombre": "",
+    "nif": "",
+    "direccionFiscal": ""
+  },
+  "tema": {
+    "preset": "",
+    "primario": "",
+    "acento": ""
+  },
+  "mensajeWhatsApp": "Hola, vengo de vuestra web y quería hacer un encargo.",
+  "_revisar": [
+    "contacto.telefono"
+  ],
+  "_visita": {
+    "socio": "Arnau",
+    "cuandoIr": "Cualquier franja",
+    "notas": "Hacen paquetería (GLS, Amazon) y envíos de dinero: servicios para poner en la web. Prioridad baja"
+  }
+}

@@ -1,0 +1,131 @@
+{
+  "slug": "panaderia-bolleria-antiga-casa-asturgo-canovelles",
+  "estado": "demo",
+  "codigoDemo": "nrxk",
+  "idioma": "es",
+  "tipo": "panaderia",
+  "nombre": "Panadería Bollería Antiga Casa Asturgó",
+  "tipoLegible": "",
+  "poblacion": "Canovelles",
+  "claim": [
+    "Pan y bollería",
+    "cada mañana."
+  ],
+  "resumen": "Panadería y bollería en Canovelles, abierta todos los días de 8:00 a 14:00.",
+  "puntosConfianza": [
+    "Abierto todos los días",
+    "Encargos por WhatsApp"
+  ],
+  "contacto": {
+    "telefono": "+34661945356",
+    "whatsapp": "",
+    "email": "",
+    "direccion": "Carrer Prat, 08420 Canovelles",
+    "instagram": "",
+    "facebook": ""
+  },
+  "horario": {
+    "lun": [
+      [
+        "08:00",
+        "14:00"
+      ]
+    ],
+    "mar": [
+      [
+        "08:00",
+        "14:00"
+      ]
+    ],
+    "mie": [
+      [
+        "08:00",
+        "14:00"
+      ]
+    ],
+    "jue": [
+      [
+        "08:00",
+        "14:00"
+      ]
+    ],
+    "vie": [
+      [
+        "08:00",
+        "14:00"
+      ]
+    ],
+    "sab": [
+      [
+        "08:00",
+        "14:00"
+      ]
+    ],
+    "dom": [
+      [
+        "08:00",
+        "14:00"
+      ]
+    ]
+  },
+  "fotoHero": "",
+  "servicios": [
+    {
+      "titulo": "Pan",
+      "texto": "Barras, hogazas y panes especiales.",
+      "etiquetas": [],
+      "precio": "",
+      "foto": ""
+    },
+    {
+      "titulo": "Bollería",
+      "texto": "Croissants, ensaimadas y dulces para el desayuno.",
+      "etiquetas": [],
+      "precio": "",
+      "foto": ""
+    },
+    {
+      "titulo": "Encargos",
+      "texto": "Tartas y bandejas para celebraciones.",
+      "etiquetas": [],
+      "precio": "",
+      "foto": ""
+    }
+  ],
+  "seccionServiciosTitulo": "",
+  "datos": [],
+  "pasos": [],
+  "galeria": [],
+  "resenas": {
+    "nota": 4.5,
+    "total": 38,
+    "urlGoogle": "https://www.google.com/maps/search/?api=1&query=Panader%C3%ADa%20Boller%C3%ADa%20Antiga%20Casa%20Asturg%C3%B3%2C%20Carrer%20Prat%2C%2008420%20Canovelles",
+    "urlEscribir": "",
+    "destacadas": []
+  },
+  "zonas": [
+    "Canovelles"
+  ],
+  "geo": null,
+  "schemaTipo": "",
+  "titular": {
+    "nombre": "",
+    "nif": "",
+    "direccionFiscal": ""
+  },
+  "tema": {
+    "preset": "",
+    "primario": "#7A4B2A",
+    "acento": "",
+    "cabecera": "#4A2C17"
+  },
+  "mensajeWhatsApp": "Hola, vengo de vuestra web y quería hacer un encargo.",
+  "_revisar": [
+    "servicios"
+  ],
+  "_visita": {
+    "socio": "Mateo",
+    "cuandoIr": "",
+    "notas": "Añadido por Claude: sin web en Google Maps"
+  }
+}

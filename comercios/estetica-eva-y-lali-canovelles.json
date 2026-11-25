@@ -1,0 +1,133 @@
+{
+  "slug": "estetica-eva-y-lali-canovelles",
+  "estado": "demo",
+  "codigoDemo": "84uu",
+  "idioma": "es",
+  "tipo": "estetica",
+  "nombre": "Estética Eva y Lali",
+  "tipoLegible": "",
+  "poblacion": "Canovelles",
+  "claim": [
+    "Buenos tratamientos",
+    "y mucho cariño."
+  ],
+  "resumen": "Centro de estética en Canovelles. Tratamientos faciales y corporales, manicura y depilación.",
+  "puntosConfianza": [
+    "Trato amable",
+    "Tarjetas regalo"
+  ],
+  "contacto": {
+    "telefono": "+34938491776",
+    "whatsapp": "",
+    "email": "",
+    "direccion": "Carrer Indústria, 25, 08420 Canovelles",
+    "instagram": "",
+    "facebook": ""
+  },
+  "horario": {
+    "lun": [],
+    "mar": [
+      [
+        "10:00",
+        "13:00"
+      ],
+      [
+        "16:00",
+        "20:00"
+      ]
+    ],
+    "mie": [
+      [
+        "10:00",
+        "13:00"
+      ],
+      [
+        "16:00",
+        "20:00"
+      ]
+    ],
+    "jue": [
+      [
+        "10:00",
+        "13:00"
+      ],
+      [
+        "16:00",
+        "20:00"
+      ]
+    ],
+    "vie": [
+      [
+        "10:00",
+        "13:00"
+      ],
+      [
+        "16:00",
+        "20:00"
+      ]
+    ],
+    "sab": [],
+    "dom": []
+  },
+  "fotoHero": "",
+  "servicios": [
+    {
+      "titulo": "Tratamientos faciales",
+      "texto": "Limpieza e hidratación adaptadas a tu piel.",
+      "etiquetas": [],
+      "precio": "",
+      "foto": ""
+    },
+    {
+      "titulo": "Manicura y pedicura",
+      "texto": "Uñas cuidadas, con esmaltado normal o semipermanente.",
+      "etiquetas": [],
+      "precio": "",
+      "foto": ""
+    },
+    {
+      "titulo": "Depilación",
+      "texto": "Con cera o con el método que mejor te vaya.",
+      "etiquetas": [],
+      "precio": "",
+      "foto": ""
+    }
+  ],
+  "seccionServiciosTitulo": "",
+  "datos": [],
+  "pasos": [],
+  "galeria": [],
+  "resenas": {
+    "nota": 4.8,
+    "total": 29,
+    "urlGoogle": "https://www.google.com/maps/search/?api=1&query=Est%C3%A9tica%20Eva%20y%20Lali%2C%20Carrer%20Ind%C3%BAstria%2C%2025%2C%2008420%20Canovelles",
+    "urlEscribir": "",
+    "destacadas": []
+  },
+  "zonas": [
+    "Canovelles"
+  ],
+  "geo": null,
+  "schemaTipo": "",
+  "titular": {
+    "nombre": "",
+    "nif": "",
+    "direccionFiscal": ""
+  },
+  "tema": {
+    "preset": "",
+    "primario": "#5E6B4E",
+    "acento": "#C5CBB4",
+    "cabecera": "#3E4733"
+  },
+  "mensajeWhatsApp": "Hola, vengo de vuestra web y quería pedir cita.",
+  "_revisar": [
+    "servicios",
+    "puntosConfianza"
+  ],
+  "_visita": {
+    "socio": "Mateo",
+    "cuandoIr": "Mié/Jue 16:00-16:40",
+    "notas": "Solo cuadra miércoles o jueves a partir de las 16:00"
+  }
+}

@@ -1,0 +1,142 @@
+{
+  "slug": "barberia-icc-peluqueria-mollet-del-valles",
+  "estado": "demo",
+  "codigoDemo": "mhfm",
+  "idioma": "es",
+  "tipo": "barberia",
+  "nombre": "Barberia ICC Peluqueria",
+  "tipoLegible": "Barbería y peluquería",
+  "poblacion": "Mollet del Vallès",
+  "claim": [
+    "Más de 400 clientes",
+    "nos recomiendan."
+  ],
+  "resumen": "Barbería y peluquería en Mollet del Vallès. Corte, degradado y barba con trato profesional.",
+  "puntosConfianza": [
+    "Profesionalidad",
+    "Abierto lunes por la tarde"
+  ],
+  "contacto": {
+    "telefono": "+34931260861",
+    "whatsapp": "",
+    "email": "",
+    "direccion": "Av. de la Llibertat, 45, 08100 Mollet del Vallès",
+    "instagram": "",
+    "facebook": ""
+  },
+  "horario": {
+    "lun": [
+      [
+        "16:00",
+        "20:00"
+      ]
+    ],
+    "mar": [
+      [
+        "09:30",
+        "14:00"
+      ],
+      [
+        "16:00",
+        "20:00"
+      ]
+    ],
+    "mie": [
+      [
+        "09:30",
+        "14:00"
+      ],
+      [
+        "16:00",
+        "20:00"
+      ]
+    ],
+    "jue": [
+      [
+        "09:30",
+        "14:00"
+      ],
+      [
+        "16:00",
+        "20:00"
+      ]
+    ],
+    "vie": [
+      [
+        "09:30",
+        "14:00"
+      ],
+      [
+        "16:00",
+        "20:00"
+      ]
+    ],
+    "sab": [
+      [
+        "09:30",
+        "14:00"
+      ]
+    ],
+    "dom": []
+  },
+  "fotoHero": "",
+  "servicios": [
+    {
+      "titulo": "Corte de pelo",
+      "texto": "Clásico o degradado, a tijera o a máquina.",
+      "etiquetas": [],
+      "precio": "",
+      "foto": ""
+    },
+    {
+      "titulo": "Arreglo de barba",
+      "texto": "Perfilado a navaja y toalla caliente.",
+      "etiquetas": [],
+      "precio": "",
+      "foto": ""
+    },
+    {
+      "titulo": "Corte + barba",
+      "texto": "El servicio completo para salir como nuevo.",
+      "etiquetas": [],
+      "precio": "",
+      "foto": ""
+    }
+  ],
+  "seccionServiciosTitulo": "",
+  "datos": [],
+  "pasos": [],
+  "galeria": [],
+  "resenas": {
+    "nota": 4.9,
+    "total": 401,
+    "urlGoogle": "https://www.google.com/maps/search/?api=1&query=Barberia%20ICC%20Peluqueria%2C%20Av.%20de%20la%20Llibertat%2C%2045%2C%2008100%20Mollet%20del%20Vall%C3%A8s",
+    "urlEscribir": "",
+    "destacadas": []
+  },
+  "zonas": [
+    "Mollet del Vallès"
+  ],
+  "geo": null,
+  "schemaTipo": "",
+  "titular": {
+    "nombre": "",
+    "nif": "",
+    "direccionFiscal": ""
+  },
+  "tema": {
+    "preset": "",
+    "primario": "",
+    "acento": ""
+  },
+  "mensajeWhatsApp": "Hola, vengo de vuestra web y quería pedir cita.",
+  "_revisar": [
+    "servicios",
+    "horario"
+  ],
+  "_visita": {
+    "socio": "Mateo",
+    "cuandoIr": "Mié/Jue 16:00-16:40 · Sáb 9:30-14:00",
+    "notas": "401 reseñas (4,9): puede tener app de citas. Mirar antes"
+  }
+}

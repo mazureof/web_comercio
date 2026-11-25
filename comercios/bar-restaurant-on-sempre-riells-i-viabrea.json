@@ -1,0 +1,123 @@
+{
+  "slug": "bar-restaurant-on-sempre-riells-i-viabrea",
+  "estado": "demo",
+  "codigoDemo": "bk98",
+  "idioma": "es",
+  "tipo": "bar",
+  "nombre": "Bar Restaurant On Sempre",
+  "tipoLegible": "",
+  "poblacion": "Riells i Viabrea",
+  "claim": [
+    "A la plaça,",
+    "com sempre."
+  ],
+  "resumen": "Bar restaurante en la Plaça de la Vila de Riells i Viabrea. Bocadillos, tapas, patatas bravas y platos combinados.",
+  "puntosConfianza": [
+    "En la plaza del pueblo",
+    "Precios ajustados"
+  ],
+  "contacto": {
+    "telefono": "+34972197190",
+    "whatsapp": "",
+    "email": "",
+    "direccion": "Plaça de la Vila, 5, 17404 Riells i Viabrea",
+    "instagram": "",
+    "facebook": ""
+  },
+  "horario": {
+    "lun": [
+      [
+        "09:00",
+        "22:00"
+      ]
+    ],
+    "mar": [
+      [
+        "09:00",
+        "22:00"
+      ]
+    ],
+    "mie": [
+      [
+        "09:00",
+        "22:00"
+      ]
+    ],
+    "jue": [
+      [
+        "09:00",
+        "22:00"
+      ]
+    ],
+    "vie": [
+      [
+        "09:00",
+        "23:00"
+      ]
+    ],
+    "sab": [
+      [
+        "09:00",
+        "23:00"
+      ]
+    ],
+    "dom": []
+  },
+  "fotoHero": "",
+  "servicios": [
+    {
+      "titulo": "Bocadillos",
+      "texto": "Bocadillos para desayunar o comer.",
+      "etiquetas": [],
+      "precio": "",
+      "foto": ""
+    },
+    {
+      "titulo": "Tapas",
+      "texto": "Patatas bravas y tapas para compartir.",
+      "etiquetas": [],
+      "precio": "",
+      "foto": ""
+    },
+    {
+      "titulo": "Platos combinados",
+      "texto": "Platos combinados a buen precio.",
+      "etiquetas": [],
+      "precio": "",
+      "foto": ""
+    }
+  ],
+  "seccionServiciosTitulo": "",
+  "datos": [],
+  "pasos": [],
+  "galeria": [],
+  "resenas": {
+    "nota": 4,
+    "total": 771,
+    "urlGoogle": "https://www.google.com/maps/search/?api=1&query=Bar%20Restaurant%20On%20Sempre%2C%20Pla%C3%A7a%20de%20la%20Vila%2C%205%2C%2017404%20Riells%20i%20Viabrea",
+    "urlEscribir": "",
+    "destacadas": []
+  },
+  "zonas": [
+    "Riells i Viabrea"
+  ],
+  "geo": null,
+  "schemaTipo": "",
+  "titular": {
+    "nombre": "",
+    "nif": "",
+    "direccionFiscal": ""
+  },
+  "tema": {
+    "preset": "",
+    "primario": "#9C2F45",
+    "acento": "#1F3A32"
+  },
+  "mensajeWhatsApp": "Hola, vengo de vuestra web y quería información.",
+  "_revisar": [],
+  "_visita": {
+    "socio": "Arnau",
+    "cuandoIr": "",
+    "notas": "Añadido por Claude: sin web en Google Maps"
+  }
+}

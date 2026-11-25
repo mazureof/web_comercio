@@ -1,0 +1,134 @@
+{
+  "slug": "peluqueria-jesica-duran-canovelles",
+  "estado": "demo",
+  "codigoDemo": "mt3q",
+  "idioma": "es",
+  "tipo": "peluqueria",
+  "nombre": "Peluquería Jesica Duran",
+  "tipoLegible": "",
+  "poblacion": "Canovelles",
+  "claim": [
+    "Siempre respetando",
+    "tus gustos."
+  ],
+  "resumen": "Peluquería en Canovelles. Corte, color, peinados y fiestas spa para niñas.",
+  "puntosConfianza": [
+    "Fiestas spa para niñas",
+    "Trato cercano"
+  ],
+  "contacto": {
+    "telefono": "+34936314247",
+    "whatsapp": "",
+    "email": "",
+    "direccion": "Carrer Sant Eudald, 08420 Canovelles",
+    "instagram": "",
+    "facebook": ""
+  },
+  "horario": {
+    "lun": [],
+    "mar": [
+      [
+        "10:00",
+        "13:30"
+      ],
+      [
+        "15:00",
+        "20:00"
+      ]
+    ],
+    "mie": [
+      [
+        "10:00",
+        "13:30"
+      ],
+      [
+        "15:00",
+        "20:00"
+      ]
+    ],
+    "jue": [
+      [
+        "10:00",
+        "13:30"
+      ],
+      [
+        "15:00",
+        "20:00"
+      ]
+    ],
+    "vie": [
+      [
+        "09:00",
+        "20:00"
+      ]
+    ],
+    "sab": [
+      [
+        "08:00",
+        "14:00"
+      ]
+    ],
+    "dom": []
+  },
+  "fotoHero": "",
+  "servicios": [
+    {
+      "titulo": "Corte y peinado",
+      "texto": "Corte a tu medida, siempre respetando lo que te gusta.",
+      "etiquetas": [],
+      "precio": "",
+      "foto": ""
+    },
+    {
+      "titulo": "Color",
+      "texto": "Tintes y mechas.",
+      "etiquetas": [],
+      "precio": "",
+      "foto": ""
+    },
+    {
+      "titulo": "Fiestas spa para niñas",
+      "texto": "Celebra un cumpleaños diferente: peinados, uñas y mimos para las más pequeñas.",
+      "etiquetas": [],
+      "precio": "",
+      "foto": ""
+    }
+  ],
+  "seccionServiciosTitulo": "",
+  "datos": [],
+  "pasos": [],
+  "galeria": [],
+  "resenas": {
+    "nota": 5,
+    "total": 20,
+    "urlGoogle": "https://www.google.com/maps/search/?api=1&query=Peluquer%C3%ADa%20Jesica%20Duran%2C%20Carrer%20Sant%20Eudald%2C%2008420%20Canovelles",
+    "urlEscribir": "",
+    "destacadas": []
+  },
+  "zonas": [
+    "Canovelles"
+  ],
+  "geo": null,
+  "schemaTipo": "",
+  "titular": {
+    "nombre": "",
+    "nif": "",
+    "direccionFiscal": ""
+  },
+  "tema": {
+    "preset": "",
+    "primario": "#6B3A5A",
+    "acento": "#D6A8C2",
+    "cabecera": "#4E2A41"
+  },
+  "mensajeWhatsApp": "Hola, vengo de vuestra web y quería pedir cita.",
+  "_revisar": [
+    "servicios",
+    "horario"
+  ],
+  "_visita": {
+    "socio": "Mateo",
+    "cuandoIr": "Mié/Jue 15:15-16:40 · Sáb 9:30-14:00",
+    "notas": "Hace fiestas spa para niñas: servicio a destacar en la web"
+  }
+}

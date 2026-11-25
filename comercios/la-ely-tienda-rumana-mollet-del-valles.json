@@ -1,0 +1,154 @@
+{
+  "slug": "la-ely-tienda-rumana-mollet-del-valles",
+  "estado": "demo",
+  "codigoDemo": "4xbn",
+  "idioma": "es",
+  "tipo": "alimentacion",
+  "nombre": "La Ely Tienda Rumana",
+  "tipoLegible": "Tienda de alimentación rumana",
+  "poblacion": "Mollet del Vallès",
+  "claim": [
+    "Sabores de Rumanía",
+    "en Mollet."
+  ],
+  "resumen": "Tienda de alimentación con productos rumanos y latinos en Mollet del Vallès. Abierto también el domingo por la mañana.",
+  "puntosConfianza": [
+    "Productos rumanos",
+    "Productos latinos",
+    "Abierto domingos"
+  ],
+  "contacto": {
+    "telefono": "+34641717287",
+    "whatsapp": "",
+    "email": "",
+    "direccion": "Carrer Pamplona, 2, 08100 Mollet del Vallès",
+    "instagram": "",
+    "facebook": ""
+  },
+  "horario": {
+    "lun": [
+      [
+        "09:30",
+        "14:00"
+      ],
+      [
+        "17:00",
+        "21:00"
+      ]
+    ],
+    "mar": [
+      [
+        "09:30",
+        "14:00"
+      ],
+      [
+        "17:00",
+        "21:00"
+      ]
+    ],
+    "mie": [
+      [
+        "09:30",
+        "14:00"
+      ],
+      [
+        "17:00",
+        "21:00"
+      ]
+    ],
+    "jue": [
+      [
+        "09:30",
+        "14:00"
+      ],
+      [
+        "17:00",
+        "21:00"
+      ]
+    ],
+    "vie": [
+      [
+        "09:30",
+        "14:00"
+      ],
+      [
+        "17:00",
+        "21:00"
+      ]
+    ],
+    "sab": [
+      [
+        "10:00",
+        "14:00"
+      ],
+      [
+        "17:00",
+        "21:00"
+      ]
+    ],
+    "dom": [
+      [
+        "10:00",
+        "14:00"
+      ]
+    ]
+  },
+  "fotoHero": "",
+  "servicios": [
+    {
+      "titulo": "Productos rumanos",
+      "texto": "Lo que echas de menos de casa.",
+      "etiquetas": [],
+      "precio": "",
+      "foto": ""
+    },
+    {
+      "titulo": "Productos latinos",
+      "texto": "Una selección de productos latinos.",
+      "etiquetas": [],
+      "precio": "",
+      "foto": ""
+    },
+    {
+      "titulo": "Pedidos",
+      "texto": "Pregúntanos por WhatsApp si lo tenemos.",
+      "etiquetas": [],
+      "precio": "",
+      "foto": ""
+    }
+  ],
+  "seccionServiciosTitulo": "",
+  "datos": [],
+  "pasos": [],
+  "galeria": [],
+  "resenas": {
+    "nota": 5,
+    "total": 56,
+    "urlGoogle": "https://www.google.com/maps/search/?api=1&query=La%20Ely%20Tienda%20Rumana%2C%20Carrer%20Pamplona%2C%202%2C%2008100%20Mollet%20del%20Vall%C3%A8s",
+    "urlEscribir": "",
+    "destacadas": []
+  },
+  "zonas": [
+    "Mollet del Vallès"
+  ],
+  "geo": null,
+  "schemaTipo": "",
+  "titular": {
+    "nombre": "",
+    "nif": "",
+    "direccionFiscal": ""
+  },
+  "tema": {
+    "preset": "",
+    "primario": "#1F4E99",
+    "acento": "#F2C230",
+    "cabecera": "#16386E"
+  },
+  "mensajeWhatsApp": "Hola, vengo de vuestra web y quería hacer un encargo.",
+  "_revisar": [],
+  "_visita": {
+    "socio": "Mateo",
+    "cuandoIr": "Sáb 10:00-14:00 o 17:00-19:00 · Dom 10:00-14:00",
+    "notas": "Productos rumanos y latinos"
+  }
+}

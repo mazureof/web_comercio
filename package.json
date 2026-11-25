@@ -11,7 +11,6 @@
     "preview": "node scripts/preview.mjs",
     "nuevo": "node scripts/nuevo.mjs",
     "importar": "node scripts/importar.mjs",
-    "fotos-prueba": "node scripts/fotos-prueba.mjs",
     "dev": "npm run build && npm run preview"
   },
   "dependencies": {

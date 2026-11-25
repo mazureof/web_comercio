@@ -1,0 +1,126 @@
+{
+  "slug": "bar-molina-canovelles",
+  "estado": "demo",
+  "codigoDemo": "zrr7",
+  "idioma": "es",
+  "tipo": "bar",
+  "nombre": "Bar Molina",
+  "tipoLegible": "",
+  "poblacion": "Canovelles",
+  "claim": [
+    "Como en casa,",
+    "con buenas tapas."
+  ],
+  "resumen": "Bar restaurante en Canovelles. Tapas, bocadillos, bravas y cerveza bien fría.",
+  "puntosConfianza": [
+    "Como en casa",
+    "Buenas tapas"
+  ],
+  "contacto": {
+    "telefono": "",
+    "whatsapp": "",
+    "email": "",
+    "direccion": "Carrer Centelles, 5, 08420 Canovelles",
+    "instagram": "",
+    "facebook": ""
+  },
+  "horario": {
+    "lun": [],
+    "mar": [
+      [
+        "07:00",
+        "22:00"
+      ]
+    ],
+    "mie": [
+      [
+        "07:00",
+        "22:00"
+      ]
+    ],
+    "jue": [
+      [
+        "07:00",
+        "22:00"
+      ]
+    ],
+    "vie": [
+      [
+        "07:00",
+        "22:00"
+      ]
+    ],
+    "sab": [
+      [
+        "08:30",
+        "23:30"
+      ]
+    ],
+    "dom": [
+      [
+        "08:30",
+        "16:00"
+      ]
+    ]
+  },
+  "fotoHero": "",
+  "servicios": [
+    {
+      "titulo": "Tapas",
+      "texto": "Tapas para picar.",
+      "etiquetas": [],
+      "precio": "",
+      "foto": ""
+    },
+    {
+      "titulo": "Bocadillos",
+      "texto": "Bocadillos para desayunar o merendar.",
+      "etiquetas": [],
+      "precio": "",
+      "foto": ""
+    },
+    {
+      "titulo": "Patatas bravas",
+      "texto": "Las bravas de la casa.",
+      "etiquetas": [],
+      "precio": "",
+      "foto": ""
+    }
+  ],
+  "seccionServiciosTitulo": "",
+  "datos": [],
+  "pasos": [],
+  "galeria": [],
+  "resenas": {
+    "nota": 4.3,
+    "total": 124,
+    "urlGoogle": "https://www.google.com/maps/search/?api=1&query=Bar%20Molina%2C%20Carrer%20Centelles%2C%205%2C%2008420%20Canovelles",
+    "urlEscribir": "",
+    "destacadas": []
+  },
+  "zonas": [
+    "Canovelles"
+  ],
+  "geo": null,
+  "schemaTipo": "",
+  "titular": {
+    "nombre": "",
+    "nif": "",
+    "direccionFiscal": ""
+  },
+  "tema": {
+    "preset": "",
+    "primario": "",
+    "acento": ""
+  },
+  "mensajeWhatsApp": "Hola, vengo de vuestra web y quería información.",
+  "_revisar": [
+    "contacto.telefono",
+    "horario"
+  ],
+  "_visita": {
+    "socio": "Mateo",
+    "cuandoIr": "Mié/Jue 15:30-16:40 · Sáb/Dom 9:30-12:00",
+    "notas": "Llevan Vanesa y Daniel. Cartel desactualizado según reseñas: la web con carta lo arregla"
+  }
+}

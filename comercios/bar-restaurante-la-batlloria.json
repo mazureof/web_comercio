@@ -1,0 +1,125 @@
+{
+  "slug": "bar-restaurante-la-batlloria",
+  "estado": "demo",
+  "codigoDemo": "2dts",
+  "idioma": "es",
+  "tipo": "restaurante",
+  "nombre": "Bar Restaurante La Batllòria",
+  "tipoLegible": "",
+  "poblacion": "La Batllòria",
+  "claim": [
+    "El bar de pueblo",
+    "de toda la vida."
+  ],
+  "resumen": "Bar restaurante de cocina catalana en La Batllòria. Desayunos, bocatas, tapas y comida casera, también el fin de semana.",
+  "puntosConfianza": [
+    "Comida casera",
+    "Raciones abundantes",
+    "Abierto el fin de semana"
+  ],
+  "contacto": {
+    "telefono": "+34938472219",
+    "whatsapp": "",
+    "email": "",
+    "direccion": "Carretera Vella, 33, 08476 La Batllòria",
+    "instagram": "",
+    "facebook": ""
+  },
+  "horario": {
+    "lun": [
+      [
+        "06:30",
+        "17:00"
+      ]
+    ],
+    "mar": [
+      [
+        "06:30",
+        "17:00"
+      ]
+    ],
+    "mie": [],
+    "jue": [
+      [
+        "06:30",
+        "17:00"
+      ]
+    ],
+    "vie": [
+      [
+        "06:30",
+        "17:00"
+      ]
+    ],
+    "sab": [
+      [
+        "06:30",
+        "17:00"
+      ]
+    ],
+    "dom": [
+      [
+        "06:30",
+        "17:00"
+      ]
+    ]
+  },
+  "fotoHero": "",
+  "servicios": [
+    {
+      "titulo": "Desayunos y bocatas",
+      "texto": "Desde las 6:30 de la mañana.",
+      "etiquetas": [],
+      "precio": "",
+      "foto": ""
+    },
+    {
+      "titulo": "Tapas",
+      "texto": "Tapeo variado con raciones abundantes.",
+      "etiquetas": [],
+      "precio": "",
+      "foto": ""
+    },
+    {
+      "titulo": "Comida casera",
+      "texto": "Paella, carnes a la brasa y cocina de siempre.",
+      "etiquetas": [],
+      "precio": "",
+      "foto": ""
+    }
+  ],
+  "seccionServiciosTitulo": "",
+  "datos": [],
+  "pasos": [],
+  "galeria": [],
+  "resenas": {
+    "nota": 4.5,
+    "total": 229,
+    "urlGoogle": "https://www.google.com/maps/search/?api=1&query=Bar%20Restaurante%20La%20Batll%C3%B2ria%2C%20Carretera%20Vella%2C%2033%2C%2008476%20La%20Batll%C3%B2ria",
+    "urlEscribir": "",
+    "destacadas": []
+  },
+  "zonas": [
+    "La Batllòria"
+  ],
+  "geo": null,
+  "schemaTipo": "",
+  "titular": {
+    "nombre": "",
+    "nif": "",
+    "direccionFiscal": ""
+  },
+  "tema": {
+    "preset": "",
+    "primario": "#8C2F23",
+    "acento": "#C98B4A",
+    "cabecera": "#3A1D17"
+  },
+  "mensajeWhatsApp": "Hola, vengo de vuestra web y quería reservar.",
+  "_revisar": [],
+  "_visita": {
+    "socio": "Arnau",
+    "cuandoIr": "",
+    "notas": "Añadido por Claude: sin web en Google Maps"
+  }
+}

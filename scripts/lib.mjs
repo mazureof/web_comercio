@@ -220,9 +220,10 @@ export function validar(c, { imgDir } = {}) {
   if (!str(c.resumen)) e('resumen: obligatorio'); else if (c.resumen.length > 190) w(`resumen largo (${c.resumen.length} car.); mejor < 160`);
   if (c.puntosConfianza && (!Array.isArray(c.puntosConfianza) || c.puntosConfianza.length > 3)) w('puntosConfianza: máximo 3');
   const k = c.contacto || {};
-  if (!E164.test(k.telefono || '')) e(`contacto.telefono: formato E.164 (+34600000000), recibido «${k.telefono || ''}»`);
+  if (k.telefono && !E164.test(k.telefono)) e(`contacto.telefono: formato E.164 (+34600000000), recibido «${k.telefono}»`);
+  if (!k.telefono) (c.estado === 'publicada' ? e : w)('contacto.telefono vacío: sin botón de llamar (obligatorio para publicar)');
   if (k.whatsapp && !E164.test(k.whatsapp)) e(`contacto.whatsapp: formato E.164, recibido «${k.whatsapp}»`);
-  if (!k.whatsapp && k.telefono && !esMovilES(k.telefono)) w('sin WhatsApp: el teléfono es fijo, así que se ocultan los botones de WhatsApp y el formulario');
+  if (!k.whatsapp && k.telefono && !esMovilES(k.telefono)) w('sin WhatsApp: el teléfono es fijo, se usa el botón de llamar');
   if (k.email && !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(k.email)) e('contacto.email no válido');
   if (!str(k.direccion)) e('contacto.direccion: obligatoria');
   for (const r of ['instagram', 'facebook']) if (k[r] && !URL_RE.test(k[r])) e(`contacto.${r}: URL completa con https://`);
@@ -250,7 +251,7 @@ export function validar(c, { imgDir } = {}) {
     (r.destacadas || []).forEach((x, i) => { if (!str(x.autor) || !str(x.texto)) e(`resenas.destacadas[${i}]: autor y texto`); if (x.estrellas && (x.estrellas < 1 || x.estrellas > 5)) e(`resenas.destacadas[${i}]: estrellas 1–5`); });
   }
   const t = c.tema || {};
-  for (const kk of ['primario', 'acento']) if (t[kk] && !HEX.test(t[kk])) e(`tema.${kk}: color hex de 6 cifras (#A84B26)`);
+  for (const kk of ['primario', 'acento', 'cabecera']) if (t[kk] && !HEX.test(t[kk])) e(`tema.${kk}: color hex de 6 cifras (#A84B26)`);
   if (c.geo && (typeof c.geo.lat !== 'number' || typeof c.geo.lng !== 'number')) e('geo: { "lat": número, "lng": número }');
   if (c.estado === 'publicada') {
     const ti = c.titular || {};

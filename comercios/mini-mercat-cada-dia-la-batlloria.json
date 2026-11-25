@@ -1,0 +1,131 @@
+{
+  "slug": "mini-mercat-cada-dia-la-batlloria",
+  "estado": "demo",
+  "codigoDemo": "2knc",
+  "idioma": "es",
+  "tipo": "alimentacion",
+  "nombre": "Mini Mercat Cada Dia",
+  "tipoLegible": "Supermercado",
+  "poblacion": "La Batllòria",
+  "claim": [
+    "Abierto cada día,",
+    "cerca de casa."
+  ],
+  "resumen": "Minimercado en La Batllòria abierto todos los días de 8:30 a 21:30. Alimentación y productos del día a día.",
+  "puntosConfianza": [
+    "Todos los días 8:30-21:30",
+    "Pedidos por WhatsApp"
+  ],
+  "contacto": {
+    "telefono": "+34634021548",
+    "whatsapp": "",
+    "email": "",
+    "direccion": "08476 La Batllòria",
+    "instagram": "",
+    "facebook": ""
+  },
+  "horario": {
+    "lun": [
+      [
+        "08:30",
+        "21:30"
+      ]
+    ],
+    "mar": [
+      [
+        "08:30",
+        "21:30"
+      ]
+    ],
+    "mie": [
+      [
+        "08:30",
+        "21:30"
+      ]
+    ],
+    "jue": [
+      [
+        "08:30",
+        "21:30"
+      ]
+    ],
+    "vie": [
+      [
+        "08:30",
+        "21:30"
+      ]
+    ],
+    "sab": [
+      [
+        "08:30",
+        "21:30"
+      ]
+    ],
+    "dom": [
+      [
+        "08:30",
+        "21:30"
+      ]
+    ]
+  },
+  "fotoHero": "",
+  "servicios": [
+    {
+      "titulo": "Fruta y verdura",
+      "texto": "Producto de temporada.",
+      "etiquetas": [],
+      "precio": "",
+      "foto": ""
+    },
+    {
+      "titulo": "Despensa",
+      "texto": "Todo lo básico para tu compra diaria.",
+      "etiquetas": [],
+      "precio": "",
+      "foto": ""
+    },
+    {
+      "titulo": "Pedidos",
+      "texto": "Encarga por WhatsApp y recoge cuando quieras.",
+      "etiquetas": [],
+      "precio": "",
+      "foto": ""
+    }
+  ],
+  "seccionServiciosTitulo": "",
+  "datos": [],
+  "pasos": [],
+  "galeria": [],
+  "resenas": {
+    "nota": 5,
+    "total": 3,
+    "urlGoogle": "https://www.google.com/maps/search/?api=1&query=Mini%20Mercat%20Cada%20Dia%2C%2008476%20La%20Batll%C3%B2ria",
+    "urlEscribir": "",
+    "destacadas": []
+  },
+  "zonas": [
+    "La Batllòria"
+  ],
+  "geo": null,
+  "schemaTipo": "",
+  "titular": {
+    "nombre": "",
+    "nif": "",
+    "direccionFiscal": ""
+  },
+  "tema": {
+    "preset": "",
+    "primario": "",
+    "acento": ""
+  },
+  "mensajeWhatsApp": "Hola, vengo de vuestra web y quería hacer un encargo.",
+  "_revisar": [
+    "servicios",
+    "contacto.direccion"
+  ],
+  "_visita": {
+    "socio": "Arnau",
+    "cuandoIr": "Cualquier franja",
+    "notas": "Prioridad baja"
+  }
+}

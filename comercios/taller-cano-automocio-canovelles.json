@@ -1,0 +1,149 @@
+{
+  "slug": "taller-cano-automocio-canovelles",
+  "estado": "demo",
+  "codigoDemo": "j5an",
+  "idioma": "es",
+  "tipo": "taller",
+  "nombre": "Taller Cano Automoció",
+  "tipoLegible": "Taller de automoción",
+  "poblacion": "Canovelles",
+  "claim": [
+    "Tu coche, a punto",
+    "y sin sorpresas."
+  ],
+  "resumen": "Taller de reparación de automóviles en Canovelles. Mantenimiento, mecánica y diagnosis para todas las marcas.",
+  "puntosConfianza": [
+    "Todas las marcas",
+    "Presupuesto antes de reparar"
+  ],
+  "contacto": {
+    "telefono": "+34938467384",
+    "whatsapp": "",
+    "email": "",
+    "direccion": "Carrer Indústria, 118, 08420 Canovelles",
+    "instagram": "",
+    "facebook": ""
+  },
+  "horario": {
+    "lun": [
+      [
+        "08:00",
+        "13:00"
+      ],
+      [
+        "15:00",
+        "19:00"
+      ]
+    ],
+    "mar": [
+      [
+        "08:00",
+        "13:00"
+      ],
+      [
+        "15:00",
+        "19:00"
+      ]
+    ],
+    "mie": [
+      [
+        "08:00",
+        "13:00"
+      ],
+      [
+        "15:00",
+        "19:00"
+      ]
+    ],
+    "jue": [
+      [
+        "08:00",
+        "13:00"
+      ],
+      [
+        "15:00",
+        "19:00"
+      ]
+    ],
+    "vie": [
+      [
+        "08:00",
+        "13:00"
+      ],
+      [
+        "15:00",
+        "18:00"
+      ]
+    ],
+    "sab": [],
+    "dom": []
+  },
+  "fotoHero": "",
+  "servicios": [
+    {
+      "titulo": "Mantenimiento",
+      "texto": "Cambio de aceite, filtros y revisión general.",
+      "etiquetas": [],
+      "precio": "",
+      "foto": ""
+    },
+    {
+      "titulo": "Frenos y neumáticos",
+      "texto": "Pastillas, discos, alineado y equilibrado.",
+      "etiquetas": [],
+      "precio": "",
+      "foto": ""
+    },
+    {
+      "titulo": "Diagnosis",
+      "texto": "Lectura de averías con equipo de diagnosis.",
+      "etiquetas": [],
+      "precio": "",
+      "foto": ""
+    },
+    {
+      "titulo": "Pre-ITV",
+      "texto": "Revisamos el coche para que pase la ITV a la primera.",
+      "etiquetas": [],
+      "precio": "",
+      "foto": ""
+    }
+  ],
+  "seccionServiciosTitulo": "",
+  "datos": [],
+  "pasos": [],
+  "galeria": [],
+  "resenas": {
+    "nota": 4.7,
+    "total": 176,
+    "urlGoogle": "https://www.google.com/maps/search/?api=1&query=Taller%20Cano%20Automoci%C3%B3%2C%20Carrer%20Ind%C3%BAstria%2C%20118%2C%2008420%20Canovelles",
+    "urlEscribir": "",
+    "destacadas": []
+  },
+  "zonas": [
+    "Canovelles"
+  ],
+  "geo": null,
+  "schemaTipo": "",
+  "titular": {
+    "nombre": "",
+    "nif": "",
+    "direccionFiscal": ""
+  },
+  "tema": {
+    "preset": "",
+    "primario": "#E4572E",
+    "acento": "#E4572E",
+    "cabecera": "#1B1F24"
+  },
+  "mensajeWhatsApp": "Hola, vengo de vuestra web y quería pedir presupuesto.",
+  "_revisar": [
+    "servicios",
+    "horario"
+  ],
+  "_visita": {
+    "socio": "Mateo",
+    "cuandoIr": "Mié/Jue 15:15-16:40",
+    "notas": "176 reseñas: puede que ya tenga web. Mirar antes"
+  }
+}

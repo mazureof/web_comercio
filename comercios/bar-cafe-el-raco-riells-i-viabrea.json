@@ -1,0 +1,126 @@
+{
+  "slug": "bar-cafe-el-raco-riells-i-viabrea",
+  "estado": "demo",
+  "codigoDemo": "vzb8",
+  "idioma": "es",
+  "tipo": "bar",
+  "nombre": "Bar Café El Racó",
+  "tipoLegible": "",
+  "poblacion": "Riells i Viabrea",
+  "claim": [
+    "El racó",
+    "per fer un cafè."
+  ],
+  "resumen": "Bar cafetería en Riells i Viabrea. Desayunos, tapas y cenas, abierto hasta medianoche los fines de semana.",
+  "puntosConfianza": [
+    "Abierto hasta tarde",
+    "Terraza"
+  ],
+  "contacto": {
+    "telefono": "+34972974279",
+    "whatsapp": "",
+    "email": "",
+    "direccion": "Carrer Morou, 25-27, 17404 Riells i Viabrea",
+    "instagram": "",
+    "facebook": ""
+  },
+  "horario": {
+    "lun": [],
+    "mar": [
+      [
+        "08:00",
+        "23:00"
+      ]
+    ],
+    "mie": [
+      [
+        "08:00",
+        "23:00"
+      ]
+    ],
+    "jue": [
+      [
+        "08:00",
+        "23:00"
+      ]
+    ],
+    "vie": [
+      [
+        "08:00",
+        "00:00"
+      ]
+    ],
+    "sab": [
+      [
+        "08:00",
+        "00:00"
+      ]
+    ],
+    "dom": [
+      [
+        "08:00",
+        "23:00"
+      ]
+    ]
+  },
+  "fotoHero": "",
+  "servicios": [
+    {
+      "titulo": "Desayunos",
+      "texto": "Bocadillos, cafés y tostadas para empezar el día.",
+      "etiquetas": [],
+      "precio": "",
+      "foto": ""
+    },
+    {
+      "titulo": "Tapas",
+      "texto": "Raciones para compartir a cualquier hora.",
+      "etiquetas": [],
+      "precio": "",
+      "foto": ""
+    },
+    {
+      "titulo": "Menú del día",
+      "texto": "Cocina casera de lunes a viernes.",
+      "etiquetas": [],
+      "precio": "",
+      "foto": ""
+    }
+  ],
+  "seccionServiciosTitulo": "",
+  "datos": [],
+  "pasos": [],
+  "galeria": [],
+  "resenas": {
+    "nota": 4.3,
+    "total": 74,
+    "urlGoogle": "https://www.google.com/maps/search/?api=1&query=Bar%20Caf%C3%A9%20El%20Rac%C3%B3%2C%20Carrer%20Morou%2C%2025-27%2C%2017404%20Riells%20i%20Viabrea",
+    "urlEscribir": "",
+    "destacadas": []
+  },
+  "zonas": [
+    "Riells i Viabrea"
+  ],
+  "geo": null,
+  "schemaTipo": "",
+  "titular": {
+    "nombre": "",
+    "nif": "",
+    "direccionFiscal": ""
+  },
+  "tema": {
+    "preset": "",
+    "primario": "#946515",
+    "acento": "#33302B"
+  },
+  "mensajeWhatsApp": "Hola, vengo de vuestra web y quería información.",
+  "_revisar": [
+    "servicios",
+    "puntosConfianza"
+  ],
+  "_visita": {
+    "socio": "Arnau",
+    "cuandoIr": "",
+    "notas": "Añadido por Claude: sin web en Google Maps"
+  }
+}

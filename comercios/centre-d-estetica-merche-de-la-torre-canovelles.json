@@ -1,0 +1,121 @@
+{
+  "slug": "centre-d-estetica-merche-de-la-torre-canovelles",
+  "estado": "demo",
+  "codigoDemo": "n48n",
+  "idioma": "es",
+  "tipo": "estetica",
+  "nombre": "Centre d'Estètica Merche De La Torre",
+  "tipoLegible": "Centro de estética",
+  "poblacion": "Canovelles",
+  "claim": [
+    "Cuidarte",
+    "es lo primero."
+  ],
+  "resumen": "Centro de estética en Canovelles, abierto de lunes a viernes de 9:00 a 20:00. Tratamientos faciales, corporales y depilación.",
+  "puntosConfianza": [
+    "Abierto 9-20 h sin cerrar",
+    "Profesionalidad"
+  ],
+  "contacto": {
+    "telefono": "+34938494484",
+    "whatsapp": "",
+    "email": "",
+    "direccion": "Carrer Sol, 43, 08420 Canovelles",
+    "instagram": "",
+    "facebook": ""
+  },
+  "horario": {
+    "lun": [
+      [
+        "09:00",
+        "20:00"
+      ]
+    ],
+    "mar": [
+      [
+        "09:00",
+        "20:00"
+      ]
+    ],
+    "mie": [
+      [
+        "09:00",
+        "20:00"
+      ]
+    ],
+    "jue": [
+      [
+        "09:00",
+        "20:00"
+      ]
+    ],
+    "vie": [
+      [
+        "09:00",
+        "20:00"
+      ]
+    ],
+    "sab": [],
+    "dom": []
+  },
+  "fotoHero": "",
+  "servicios": [
+    {
+      "titulo": "Tratamientos faciales",
+      "texto": "Limpieza e hidratación adaptadas a tu piel.",
+      "etiquetas": [],
+      "precio": "",
+      "foto": ""
+    },
+    {
+      "titulo": "Manicura y pedicura",
+      "texto": "Uñas cuidadas, con esmaltado normal o semipermanente.",
+      "etiquetas": [],
+      "precio": "",
+      "foto": ""
+    },
+    {
+      "titulo": "Depilación",
+      "texto": "Con cera o con el método que mejor te vaya.",
+      "etiquetas": [],
+      "precio": "",
+      "foto": ""
+    }
+  ],
+  "seccionServiciosTitulo": "",
+  "datos": [],
+  "pasos": [],
+  "galeria": [],
+  "resenas": {
+    "nota": 4.9,
+    "total": 92,
+    "urlGoogle": "https://www.google.com/maps/search/?api=1&query=Centre%20d'Est%C3%A8tica%20Merche%20De%20La%20Torre%2C%20Carrer%20Sol%2C%2043%2C%2008420%20Canovelles",
+    "urlEscribir": "",
+    "destacadas": []
+  },
+  "zonas": [
+    "Canovelles"
+  ],
+  "geo": null,
+  "schemaTipo": "",
+  "titular": {
+    "nombre": "",
+    "nif": "",
+    "direccionFiscal": ""
+  },
+  "tema": {
+    "preset": "",
+    "primario": "#4F4A72",
+    "acento": "#C9C4E6",
+    "cabecera": "#34304F"
+  },
+  "mensajeWhatsApp": "Hola, vengo de vuestra web y quería pedir cita.",
+  "_revisar": [
+    "servicios"
+  ],
+  "_visita": {
+    "socio": "Mateo",
+    "cuandoIr": "Mié/Jue 15:15-16:40",
+    "notas": "Fin de semana cerrado"
+  }
+}

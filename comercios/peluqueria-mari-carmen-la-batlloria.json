@@ -1,0 +1,137 @@
+{
+  "slug": "peluqueria-mari-carmen-la-batlloria",
+  "estado": "demo",
+  "codigoDemo": "hpts",
+  "idioma": "es",
+  "tipo": "peluqueria",
+  "nombre": "Peluquería Marí Carmen",
+  "tipoLegible": "",
+  "poblacion": "La Batllòria",
+  "claim": [
+    "Tu peluquería",
+    "de siempre."
+  ],
+  "resumen": "Peluquería en La Batllòria para mujer y hombre. Corte, color y peinado con trato cercano.",
+  "puntosConfianza": [
+    "Trato cercano",
+    "Abierto sábados"
+  ],
+  "contacto": {
+    "telefono": "+34938470266",
+    "whatsapp": "",
+    "email": "",
+    "direccion": "Carrer de les Escoles, 08476 La Batllòria",
+    "instagram": "",
+    "facebook": ""
+  },
+  "horario": {
+    "lun": [],
+    "mar": [
+      [
+        "09:30",
+        "13:00"
+      ],
+      [
+        "15:30",
+        "19:00"
+      ]
+    ],
+    "mie": [
+      [
+        "09:30",
+        "13:00"
+      ],
+      [
+        "15:30",
+        "19:00"
+      ]
+    ],
+    "jue": [
+      [
+        "09:30",
+        "13:00"
+      ],
+      [
+        "15:30",
+        "19:00"
+      ]
+    ],
+    "vie": [
+      [
+        "09:30",
+        "13:00"
+      ],
+      [
+        "15:30",
+        "19:00"
+      ]
+    ],
+    "sab": [
+      [
+        "09:00",
+        "14:00"
+      ]
+    ],
+    "dom": []
+  },
+  "fotoHero": "",
+  "servicios": [
+    {
+      "titulo": "Corte y peinado",
+      "texto": "Corte a tu medida y peinado para el día a día o para una ocasión especial.",
+      "etiquetas": [],
+      "precio": "",
+      "foto": ""
+    },
+    {
+      "titulo": "Color y mechas",
+      "texto": "Tintes, mechas y matices pensados para tu tono de piel y tu estilo.",
+      "etiquetas": [],
+      "precio": "",
+      "foto": ""
+    },
+    {
+      "titulo": "Tratamientos",
+      "texto": "Hidratación y cuidado para un pelo más sano y con más brillo.",
+      "etiquetas": [],
+      "precio": "",
+      "foto": ""
+    }
+  ],
+  "seccionServiciosTitulo": "",
+  "datos": [],
+  "pasos": [],
+  "galeria": [],
+  "resenas": {
+    "nota": 4.8,
+    "total": 70,
+    "urlGoogle": "https://www.google.com/maps/search/?api=1&query=Peluquer%C3%ADa%20Mar%C3%AD%20Carmen%2C%20Carrer%20de%20les%20Escoles%2C%2008476%20La%20Batll%C3%B2ria",
+    "urlEscribir": "",
+    "destacadas": []
+  },
+  "zonas": [
+    "La Batllòria"
+  ],
+  "geo": null,
+  "schemaTipo": "",
+  "titular": {
+    "nombre": "",
+    "nif": "",
+    "direccionFiscal": ""
+  },
+  "tema": {
+    "preset": "",
+    "primario": "#8C4A2F",
+    "acento": "#E0B48F",
+    "cabecera": "#5E3020"
+  },
+  "mensajeWhatsApp": "Hola, vengo de vuestra web y quería pedir cita.",
+  "_revisar": [
+    "servicios"
+  ],
+  "_visita": {
+    "socio": "Arnau",
+    "cuandoIr": "",
+    "notas": "Añadido por Claude: sin web en Google Maps"
+  }
+}

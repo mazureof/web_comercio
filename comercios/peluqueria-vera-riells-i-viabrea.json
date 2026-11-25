@@ -1,0 +1,138 @@
+{
+  "slug": "peluqueria-vera-riells-i-viabrea",
+  "estado": "demo",
+  "codigoDemo": "zebs",
+  "idioma": "es",
+  "tipo": "peluqueria",
+  "nombre": "Peluquería Vera",
+  "tipoLegible": "",
+  "poblacion": "Riells i Viabrea",
+  "claim": [
+    "Te asesoramos",
+    "y te dejamos a tu gusto."
+  ],
+  "resumen": "Peluquería en Riells i Viabrea para mujer y hombre. Trabajamos con cita para atenderte con calma.",
+  "puntosConfianza": [
+    "Con cita previa",
+    "Asesoramiento personal",
+    "Cita por WhatsApp"
+  ],
+  "contacto": {
+    "telefono": "+34686176233",
+    "whatsapp": "",
+    "email": "",
+    "direccion": "Carrer Alsina, 17404 Riells i Viabrea",
+    "instagram": "",
+    "facebook": ""
+  },
+  "horario": {
+    "lun": [],
+    "mar": [
+      [
+        "09:15",
+        "12:15"
+      ],
+      [
+        "15:15",
+        "18:30"
+      ]
+    ],
+    "mie": [
+      [
+        "09:15",
+        "12:15"
+      ],
+      [
+        "15:15",
+        "18:30"
+      ]
+    ],
+    "jue": [
+      [
+        "09:15",
+        "12:15"
+      ],
+      [
+        "15:15",
+        "18:30"
+      ]
+    ],
+    "vie": [
+      [
+        "09:15",
+        "12:15"
+      ],
+      [
+        "15:15",
+        "18:30"
+      ]
+    ],
+    "sab": [
+      [
+        "09:00",
+        "12:00"
+      ]
+    ],
+    "dom": []
+  },
+  "fotoHero": "",
+  "servicios": [
+    {
+      "titulo": "Corte",
+      "texto": "Corte de mujer y de hombre, adaptado a ti.",
+      "etiquetas": [],
+      "precio": "",
+      "foto": ""
+    },
+    {
+      "titulo": "Color",
+      "texto": "Tintes y mechas con asesoramiento.",
+      "etiquetas": [],
+      "precio": "",
+      "foto": ""
+    },
+    {
+      "titulo": "Peinado",
+      "texto": "Peinados para el día a día o para una ocasión.",
+      "etiquetas": [],
+      "precio": "",
+      "foto": ""
+    }
+  ],
+  "seccionServiciosTitulo": "",
+  "datos": [],
+  "pasos": [],
+  "galeria": [],
+  "resenas": {
+    "nota": 5,
+    "total": 11,
+    "urlGoogle": "https://www.google.com/maps/search/?api=1&query=Peluquer%C3%ADa%20Vera%2C%20Carrer%20Alsina%2C%2017404%20Riells%20i%20Viabrea",
+    "urlEscribir": "",
+    "destacadas": []
+  },
+  "zonas": [
+    "Riells i Viabrea"
+  ],
+  "geo": null,
+  "schemaTipo": "",
+  "titular": {
+    "nombre": "",
+    "nif": "",
+    "direccionFiscal": ""
+  },
+  "tema": {
+    "preset": "",
+    "primario": "#3F5B4C",
+    "acento": "#A7B8A0",
+    "cabecera": "#2F4538"
+  },
+  "mensajeWhatsApp": "Hola, vengo de vuestra web y quería pedir cita.",
+  "_revisar": [
+    "servicios"
+  ],
+  "_visita": {
+    "socio": "Arnau",
+    "cuandoIr": "Mar/Jue 15:15-18:30 · Sáb 9:30-12:00",
+    "notas": "Trabaja con cita: ir sin clientas en sillón. 5,0 en Google con 11 reseñas"
+  }
+}

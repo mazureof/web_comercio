@@ -1,0 +1,136 @@
+{
+  "slug": "el-salon-del-barbero-mollet-del-valles",
+  "estado": "demo",
+  "codigoDemo": "ffhb",
+  "idioma": "es",
+  "tipo": "barberia",
+  "nombre": "El Salón del Barbero",
+  "tipoLegible": "",
+  "poblacion": "Mollet del Vallès",
+  "claim": [
+    "Buen corte,",
+    "buen precio."
+  ],
+  "resumen": "Barbería en Mollet del Vallès. Corte, degradado y barba con buen trato y buenos precios.",
+  "puntosConfianza": [
+    "Buenos precios",
+    "Buen trato"
+  ],
+  "contacto": {
+    "telefono": "+34633960586",
+    "whatsapp": "",
+    "email": "",
+    "direccion": "Carrer de Fèlix Ferran, 36-38, 08100 Mollet del Vallès",
+    "instagram": "",
+    "facebook": ""
+  },
+  "horario": {
+    "lun": [],
+    "mar": [
+      [
+        "09:00",
+        "13:00"
+      ],
+      [
+        "16:00",
+        "20:00"
+      ]
+    ],
+    "mie": [
+      [
+        "09:00",
+        "13:00"
+      ],
+      [
+        "16:00",
+        "20:00"
+      ]
+    ],
+    "jue": [
+      [
+        "09:00",
+        "13:00"
+      ],
+      [
+        "16:00",
+        "20:00"
+      ]
+    ],
+    "vie": [
+      [
+        "09:00",
+        "13:00"
+      ],
+      [
+        "16:00",
+        "20:00"
+      ]
+    ],
+    "sab": [
+      [
+        "09:00",
+        "13:30"
+      ]
+    ],
+    "dom": []
+  },
+  "fotoHero": "",
+  "servicios": [
+    {
+      "titulo": "Corte de pelo",
+      "texto": "Clásico o degradado, a tijera o a máquina.",
+      "etiquetas": [],
+      "precio": "",
+      "foto": ""
+    },
+    {
+      "titulo": "Arreglo de barba",
+      "texto": "Perfilado a navaja y toalla caliente.",
+      "etiquetas": [],
+      "precio": "",
+      "foto": ""
+    },
+    {
+      "titulo": "Corte + barba",
+      "texto": "El servicio completo para salir como nuevo.",
+      "etiquetas": [],
+      "precio": "",
+      "foto": ""
+    }
+  ],
+  "seccionServiciosTitulo": "",
+  "datos": [],
+  "pasos": [],
+  "galeria": [],
+  "resenas": {
+    "nota": 5,
+    "total": 221,
+    "urlGoogle": "https://www.google.com/maps/search/?api=1&query=El%20Sal%C3%B3n%20del%20Barbero%2C%20Carrer%20de%20F%C3%A8lix%20Ferran%2C%2036-38%2C%2008100%20Mollet%20del%20Vall%C3%A8s",
+    "urlEscribir": "",
+    "destacadas": []
+  },
+  "zonas": [
+    "Mollet del Vallès"
+  ],
+  "geo": null,
+  "schemaTipo": "",
+  "titular": {
+    "nombre": "",
+    "nif": "",
+    "direccionFiscal": ""
+  },
+  "tema": {
+    "preset": "",
+    "primario": "#C77D3A",
+    "acento": "#C77D3A"
+  },
+  "mensajeWhatsApp": "Hola, vengo de vuestra web y quería pedir cita.",
+  "_revisar": [
+    "servicios"
+  ],
+  "_visita": {
+    "socio": "Mateo",
+    "cuandoIr": "Mié/Jue 16:00-16:40 · Sáb 9:30-13:30",
+    "notas": "5,0 con 221 reseñas"
+  }
+}

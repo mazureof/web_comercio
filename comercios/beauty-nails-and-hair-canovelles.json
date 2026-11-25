@@ -1,0 +1,127 @@
+{
+  "slug": "beauty-nails-and-hair-canovelles",
+  "estado": "demo",
+  "codigoDemo": "37xp",
+  "idioma": "es",
+  "tipo": "estetica",
+  "nombre": "Beauty Nails and Hair",
+  "tipoLegible": "Peluquería y uñas",
+  "poblacion": "Canovelles",
+  "claim": [
+    "Uñas y pelo",
+    "en un mismo sitio."
+  ],
+  "resumen": "Peluquería y salón de uñas en Canovelles. Manicura, diseños de uñas, corte y color.",
+  "puntosConfianza": [
+    "Diseños de uñas",
+    "Peluquería"
+  ],
+  "contacto": {
+    "telefono": "+34936041812",
+    "whatsapp": "",
+    "email": "",
+    "direccion": "Carrer Diagonal, 47, 08420 Canovelles",
+    "instagram": "",
+    "facebook": ""
+  },
+  "horario": {
+    "lun": [],
+    "mar": [
+      [
+        "09:00",
+        "18:00"
+      ]
+    ],
+    "mie": [
+      [
+        "09:00",
+        "18:00"
+      ]
+    ],
+    "jue": [
+      [
+        "09:00",
+        "18:00"
+      ]
+    ],
+    "vie": [
+      [
+        "09:00",
+        "18:00"
+      ]
+    ],
+    "sab": [
+      [
+        "09:00",
+        "15:00"
+      ]
+    ],
+    "dom": []
+  },
+  "fotoHero": "",
+  "servicios": [
+    {
+      "titulo": "Manicura y diseños",
+      "texto": "Uñas con diseños personalizados.",
+      "etiquetas": [],
+      "precio": "",
+      "foto": ""
+    },
+    {
+      "titulo": "Pedicura",
+      "texto": "Pies cuidados y bonitos.",
+      "etiquetas": [],
+      "precio": "",
+      "foto": ""
+    },
+    {
+      "titulo": "Corte y peinado",
+      "texto": "Corte a tu medida.",
+      "etiquetas": [],
+      "precio": "",
+      "foto": ""
+    },
+    {
+      "titulo": "Color",
+      "texto": "Tintes y mechas.",
+      "etiquetas": [],
+      "precio": "",
+      "foto": ""
+    }
+  ],
+  "seccionServiciosTitulo": "",
+  "datos": [],
+  "pasos": [],
+  "galeria": [],
+  "resenas": {
+    "nota": 4.8,
+    "total": 11,
+    "urlGoogle": "https://www.google.com/maps/search/?api=1&query=Beauty%20Nails%20and%20Hair%2C%20Carrer%20Diagonal%2C%2047%2C%2008420%20Canovelles",
+    "urlEscribir": "",
+    "destacadas": []
+  },
+  "zonas": [
+    "Canovelles"
+  ],
+  "geo": null,
+  "schemaTipo": "",
+  "titular": {
+    "nombre": "",
+    "nif": "",
+    "direccionFiscal": ""
+  },
+  "tema": {
+    "preset": "",
+    "primario": "",
+    "acento": ""
+  },
+  "mensajeWhatsApp": "Hola, vengo de vuestra web y quería pedir cita.",
+  "_revisar": [
+    "servicios"
+  ],
+  "_visita": {
+    "socio": "Mateo",
+    "cuandoIr": "Mié/Jue 15:15-16:40 · Sáb 9:30-14:30",
+    "notas": "Diseños de uñas: galería de fotos en la web"
+  }
+}

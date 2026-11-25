@@ -1,0 +1,145 @@
+{
+  "slug": "el-padrino-barber-shop-mollet-del-valles",
+  "estado": "demo",
+  "codigoDemo": "bnb8",
+  "idioma": "es",
+  "tipo": "barberia",
+  "nombre": "El Padrino Barber Shop",
+  "tipoLegible": "",
+  "poblacion": "Mollet del Vallès",
+  "claim": [
+    "Buen ambiente",
+    "y mejor corte."
+  ],
+  "resumen": "Barbería en Can Borrell, Mollet del Vallès. Corte, degradado y barba con trato cercano.",
+  "puntosConfianza": [
+    "Zona Can Borrell",
+    "Abierto hasta las 21 h"
+  ],
+  "contacto": {
+    "telefono": "+34611263436",
+    "whatsapp": "",
+    "email": "",
+    "direccion": "Av. de Rivoli, 17, local 13, 08100 Mollet del Vallès",
+    "instagram": "",
+    "facebook": ""
+  },
+  "horario": {
+    "lun": [
+      [
+        "09:30",
+        "14:00"
+      ],
+      [
+        "16:00",
+        "21:00"
+      ]
+    ],
+    "mar": [
+      [
+        "09:30",
+        "14:00"
+      ],
+      [
+        "16:00",
+        "21:00"
+      ]
+    ],
+    "mie": [
+      [
+        "09:30",
+        "14:00"
+      ],
+      [
+        "16:00",
+        "21:00"
+      ]
+    ],
+    "jue": [
+      [
+        "09:30",
+        "14:00"
+      ],
+      [
+        "16:00",
+        "21:00"
+      ]
+    ],
+    "vie": [
+      [
+        "09:30",
+        "14:00"
+      ],
+      [
+        "16:00",
+        "21:00"
+      ]
+    ],
+    "sab": [
+      [
+        "09:30",
+        "16:00"
+      ]
+    ],
+    "dom": []
+  },
+  "fotoHero": "",
+  "servicios": [
+    {
+      "titulo": "Corte de pelo",
+      "texto": "Clásico o degradado, a tijera o a máquina.",
+      "etiquetas": [],
+      "precio": "",
+      "foto": ""
+    },
+    {
+      "titulo": "Arreglo de barba",
+      "texto": "Perfilado a navaja y toalla caliente.",
+      "etiquetas": [],
+      "precio": "",
+      "foto": ""
+    },
+    {
+      "titulo": "Corte + barba",
+      "texto": "El servicio completo para salir como nuevo.",
+      "etiquetas": [],
+      "precio": "",
+      "foto": ""
+    }
+  ],
+  "seccionServiciosTitulo": "",
+  "datos": [],
+  "pasos": [],
+  "galeria": [],
+  "resenas": {
+    "nota": 5,
+    "total": 123,
+    "urlGoogle": "https://www.google.com/maps/search/?api=1&query=El%20Padrino%20Barber%20Shop%2C%20Av.%20de%20Rivoli%2C%2017%2C%20local%2013%2C%2008100%20Mollet%20del%20Vall%C3%A8s",
+    "urlEscribir": "",
+    "destacadas": []
+  },
+  "zonas": [
+    "Mollet del Vallès"
+  ],
+  "geo": null,
+  "schemaTipo": "",
+  "titular": {
+    "nombre": "",
+    "nif": "",
+    "direccionFiscal": ""
+  },
+  "tema": {
+    "preset": "",
+    "primario": "#D9D2C5",
+    "acento": "#D9D2C5"
+  },
+  "mensajeWhatsApp": "Hola, vengo de vuestra web y quería pedir cita.",
+  "_revisar": [
+    "servicios"
+  ],
+  "_visita": {
+    "socio": "Mateo",
+    "cuandoIr": "Mié/Jue 16:00-16:40 · Sáb 9:30-14:30",
+    "notas": "Zona Can Borrell. Barbero: Youssef"
+  }
+}

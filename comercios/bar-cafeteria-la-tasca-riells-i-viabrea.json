@@ -1,0 +1,124 @@
+{
+  "slug": "bar-cafeteria-la-tasca-riells-i-viabrea",
+  "estado": "demo",
+  "codigoDemo": "u9hz",
+  "idioma": "es",
+  "tipo": "bar",
+  "nombre": "Bar Cafeteria La Tasca",
+  "tipoLegible": "",
+  "poblacion": "Riells i Viabrea",
+  "claim": [
+    "Bravas de la casa",
+    "y buen bocadillo."
+  ],
+  "resumen": "Bar cafetería en Riells i Viabrea. Desayunos desde las 6:30, bocadillos, patatas bravas hechas a mano y raciones.",
+  "puntosConfianza": [
+    "Abrimos a las 6:30",
+    "Patatas hechas a mano",
+    "Raciones generosas"
+  ],
+  "contacto": {
+    "telefono": "+34938472386",
+    "whatsapp": "",
+    "email": "",
+    "direccion": "Carrer d'Olzinelles, 1, 17404 Riells i Viabrea",
+    "instagram": "",
+    "facebook": ""
+  },
+  "horario": {
+    "lun": [
+      [
+        "06:30",
+        "21:00"
+      ]
+    ],
+    "mar": [
+      [
+        "06:30",
+        "21:00"
+      ]
+    ],
+    "mie": [
+      [
+        "06:30",
+        "21:00"
+      ]
+    ],
+    "jue": [
+      [
+        "06:30",
+        "21:00"
+      ]
+    ],
+    "vie": [
+      [
+        "06:30",
+        "23:00"
+      ]
+    ],
+    "sab": [
+      [
+        "06:30",
+        "23:00"
+      ]
+    ],
+    "dom": []
+  },
+  "fotoHero": "",
+  "servicios": [
+    {
+      "titulo": "Desayunos y bocadillos",
+      "texto": "Café y bocadillo desde primera hora.",
+      "etiquetas": [],
+      "precio": "",
+      "foto": ""
+    },
+    {
+      "titulo": "Patatas bravas",
+      "texto": "Hechas a mano, con alioli y salsa picante.",
+      "etiquetas": [],
+      "precio": "",
+      "foto": ""
+    },
+    {
+      "titulo": "Raciones",
+      "texto": "Raciones generosas para compartir.",
+      "etiquetas": [],
+      "precio": "",
+      "foto": ""
+    }
+  ],
+  "seccionServiciosTitulo": "",
+  "datos": [],
+  "pasos": [],
+  "galeria": [],
+  "resenas": {
+    "nota": 4.1,
+    "total": 384,
+    "urlGoogle": "https://www.google.com/maps/search/?api=1&query=Bar%20Cafeteria%20La%20Tasca%2C%20Carrer%20d'Olzinelles%2C%201%2C%2017404%20Riells%20i%20Viabrea",
+    "urlEscribir": "",
+    "destacadas": []
+  },
+  "zonas": [
+    "Riells i Viabrea"
+  ],
+  "geo": null,
+  "schemaTipo": "",
+  "titular": {
+    "nombre": "",
+    "nif": "",
+    "direccionFiscal": ""
+  },
+  "tema": {
+    "preset": "",
+    "primario": "#2F6B4F",
+    "acento": "#3B2F2A"
+  },
+  "mensajeWhatsApp": "Hola, vengo de vuestra web y quería información.",
+  "_revisar": [],
+  "_visita": {
+    "socio": "Arnau",
+    "cuandoIr": "Mar/Jue 16:00-19:15 · Sáb 9:30-11:30",
+    "notas": "Domingo cerrado"
+  }
+}
