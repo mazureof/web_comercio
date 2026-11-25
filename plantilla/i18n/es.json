@@ -3,11 +3,42 @@
   "saltar": "Saltar al contenido",
   "menuAbrir": "Abrir menú",
   "menuCerrar": "Cerrar menú",
-  "nav": { "inicio": "Inicio", "metodo": "Cómo trabajamos", "galeria": "Galería", "opiniones": "Opiniones", "horario": "Horario", "contacto": "Contacto" },
-  "seccionServicios": { "servicios": "Servicios", "carta": "La carta", "productos": "Productos", "tienda": "Qué encontrarás" },
-  "introServicios": { "servicios": "Lo que hacemos, explicado claro.", "carta": "Lo que vas a encontrar en la mesa.", "productos": "Lo que sale cada día de nuestro obrador y mostrador.", "tienda": "Una selección pensada para ti." },
-  "cta": { "cita": "Pedir cita", "reserva": "Reservar mesa", "encargo": "Hacer un encargo", "presupuesto": "Pedir presupuesto", "visita": "Escríbenos", "contacto": "Contactar" },
-  "ctaTarjeta": { "cita": "Pedir cita", "reserva": "Reservar", "encargo": "Encargar", "presupuesto": "Pedir presupuesto", "visita": "Preguntar", "contacto": "Preguntar" },
+  "nav": {
+    "inicio": "Inicio",
+    "metodo": "Cómo trabajamos",
+    "galeria": "Galería",
+    "opiniones": "Opiniones",
+    "horario": "Horario",
+    "contacto": "Contacto"
+  },
+  "seccionServicios": {
+    "servicios": "Servicios",
+    "carta": "La carta",
+    "productos": "Productos",
+    "tienda": "Qué encontrarás"
+  },
+  "introServicios": {
+    "servicios": "Lo que hacemos, explicado claro.",
+    "carta": "Lo que vas a encontrar en la mesa.",
+    "productos": "Lo que sale cada día de nuestro obrador y mostrador.",
+    "tienda": "Una selección pensada para ti."
+  },
+  "cta": {
+    "cita": "Pedir cita",
+    "reserva": "Reservar mesa",
+    "encargo": "Hacer un encargo",
+    "presupuesto": "Pedir presupuesto",
+    "visita": "Escríbenos",
+    "contacto": "Contactar"
+  },
+  "ctaTarjeta": {
+    "cita": "Pedir cita",
+    "reserva": "Reservar",
+    "encargo": "Encargar",
+    "presupuesto": "Pedir presupuesto",
+    "visita": "Preguntar",
+    "contacto": "Preguntar"
+  },
   "llamar": "Llamar",
   "llamarA": "Llamar al {telefono}",
   "whatsapp": "WhatsApp",
@@ -21,12 +52,57 @@
     "abreManana": "abre mañana a las {h}",
     "abreDia": "abre el {dia} a las {h}"
   },
-  "dias": { "lun": "lunes", "mar": "martes", "mie": "miércoles", "jue": "jueves", "vie": "viernes", "sab": "sábado", "dom": "domingo" },
-  "diasCortos": { "lun": "Lun", "mar": "Mar", "mie": "Mié", "jue": "Jue", "vie": "Vie", "sab": "Sáb", "dom": "Dom" },
+  "dias": {
+    "lun": "lunes",
+    "mar": "martes",
+    "mie": "miércoles",
+    "jue": "jueves",
+    "vie": "viernes",
+    "sab": "sábado",
+    "dom": "domingo"
+  },
+  "diasCortos": {
+    "lun": "Lun",
+    "mar": "Mar",
+    "mie": "Mié",
+    "jue": "Jue",
+    "vie": "Vie",
+    "sab": "Sáb",
+    "dom": "Dom"
+  },
   "metodoIntro": "Sencillo, cercano y sin sorpresas.",
-  "galeria": { "titulo": "Galería", "intro": "Un vistazo a nuestro día a día.", "ampliar": "Ampliar foto", "cerrar": "Cerrar", "anterior": "Foto anterior", "siguiente": "Foto siguiente", "tarjetaTitulo": "¿Te vemos pronto?", "tarjetaTexto": "Escríbenos y te atendemos encantados.", "tarjetaCta": "Contactar" },
-  "opiniones": { "titulo": "Opiniones", "intro": "Lo que dicen quienes ya nos conocen.", "resenas": "reseñas en Google", "verTodas": "Ver todas en Google", "de5": "de 5" },
-  "horario": { "titulo": "Horario y ubicación", "intro": "Te esperamos.", "tabla": "Horario semanal", "hoy": "Hoy", "cerrado": "Cerrado", "y": "y", "direccion": "Dirección", "zonas": "También atendemos en", "comoLlegar": "Cómo llegar", "verMapa": "Ver mapa", "avisoMapa": "Al pulsar se cargará Google Maps, que puede usar cookies de Google.", "mapaTitulo": "Mapa de {nombre}" },
+  "galeria": {
+    "titulo": "Galería",
+    "intro": "Un vistazo a nuestro día a día.",
+    "ampliar": "Ampliar foto",
+    "cerrar": "Cerrar",
+    "anterior": "Foto anterior",
+    "siguiente": "Foto siguiente",
+    "tarjetaTitulo": "¿Te vemos pronto?",
+    "tarjetaTexto": "Escríbenos y te atendemos encantados.",
+    "tarjetaCta": "Contactar"
+  },
+  "opiniones": {
+    "titulo": "Opiniones",
+    "intro": "Lo que dicen quienes ya nos conocen.",
+    "resenas": "reseñas en Google",
+    "verTodas": "Ver todas en Google",
+    "de5": "de 5"
+  },
+  "horario": {
+    "titulo": "Horario y ubicación",
+    "intro": "Te esperamos.",
+    "tabla": "Horario semanal",
+    "hoy": "Hoy",
+    "cerrado": "Cerrado",
+    "y": "y",
+    "direccion": "Dirección",
+    "zonas": "También atendemos en",
+    "comoLlegar": "Cómo llegar",
+    "verMapa": "Ver mapa",
+    "avisoMapa": "Al pulsar se cargará Google Maps, que puede usar cookies de Google.",
+    "mapaTitulo": "Mapa de {nombre}"
+  },
   "contacto": {
     "titulo": "Contacto",
     "intro": "Escríbenos o llámanos. Te contestamos lo antes posible.",
@@ -49,11 +125,33 @@
     "msgMensaje": " {v}",
     "error": "Escribe al menos tu nombre."
   },
-  "pie": { "enlaces": "Enlaces", "contacto": "Contacto", "redes": "Síguenos", "avisoLegal": "Aviso legal", "privacidad": "Privacidad", "creadaPor": "Web creada por", "volver": "Volver a la web" },
+  "pie": {
+    "enlaces": "Enlaces",
+    "contacto": "Contacto",
+    "redes": "Síguenos",
+    "avisoLegal": "Aviso legal",
+    "privacidad": "Privacidad",
+    "creadaPor": "Web creada por",
+    "volver": "Volver a la web"
+  },
   "demoEjemplo": "Ejemplo de diseño · negocio ficticio · Webs por MAzure",
   "demo": "Propuesta de diseño para {nombre} · MAzure",
-  "metaCta": { "cita": "Pide cita por WhatsApp.", "reserva": "Reserva por WhatsApp.", "encargo": "Haz tu encargo por WhatsApp.", "presupuesto": "Pide presupuesto por WhatsApp.", "visita": "Ven a vernos o escríbenos.", "contacto": "Contacta por WhatsApp o teléfono." },
-  "metaCtaTel": { "cita": "Pide cita por teléfono.", "reserva": "Reserva por teléfono.", "encargo": "Haz tu encargo por teléfono.", "presupuesto": "Pide presupuesto por teléfono.", "visita": "Ven a vernos o llámanos.", "contacto": "Llámanos." },
+  "metaCta": {
+    "cita": "Pide cita por WhatsApp.",
+    "reserva": "Reserva por WhatsApp.",
+    "encargo": "Haz tu encargo por WhatsApp.",
+    "presupuesto": "Pide presupuesto por WhatsApp.",
+    "visita": "Ven a vernos o escríbenos.",
+    "contacto": "Contacta por WhatsApp o teléfono."
+  },
+  "metaCtaTel": {
+    "cita": "Pide cita por teléfono.",
+    "reserva": "Reserva por teléfono.",
+    "encargo": "Haz tu encargo por teléfono.",
+    "presupuesto": "Pide presupuesto por teléfono.",
+    "visita": "Ven a vernos o llámanos.",
+    "contacto": "Llámanos."
+  },
   "tituloEn": "{nombre} · {tipo} en {poblacion}",
   "h1": "{nombre} · {tipo} en {poblacion}",
   "legal": {
@@ -62,21 +160,61 @@
     "actualizado": "Última actualización: {fecha}",
     "pendiente": "Pendiente de completar",
     "aviso": [
-      ["Datos identificativos", "En cumplimiento del artículo 10 de la Ley 34/2002, de servicios de la sociedad de la información y de comercio electrónico (LSSI), se informa de los datos del titular de esta web:"],
-      ["Objeto", "Esta web informa sobre la actividad, los servicios, el horario y los datos de contacto de {nombre}. No se venden productos ni servicios a través de ella."],
-      ["Propiedad intelectual", "Los textos, fotografías y demás contenidos de esta web pertenecen a su titular o se usan con su autorización. No se permite reproducirlos sin permiso."],
-      ["Responsabilidad", "La web enlaza a servicios de terceros (WhatsApp, Google Maps y redes sociales). El titular no se hace responsable del contenido ni del funcionamiento de esos servicios."],
-      ["Legislación aplicable", "Esta web se rige por la legislación española."]
+      [
+        "Datos identificativos",
+        "En cumplimiento del artículo 10 de la Ley 34/2002, de servicios de la sociedad de la información y de comercio electrónico (LSSI), se informa de los datos del titular de esta web:"
+      ],
+      [
+        "Objeto",
+        "Esta web informa sobre la actividad, los servicios, el horario y los datos de contacto de {nombre}. No se venden productos ni servicios a través de ella."
+      ],
+      [
+        "Propiedad intelectual",
+        "Los textos, fotografías y demás contenidos de esta web pertenecen a su titular o se usan con su autorización. No se permite reproducirlos sin permiso."
+      ],
+      [
+        "Responsabilidad",
+        "La web enlaza a servicios de terceros (WhatsApp, Google Maps y redes sociales). El titular no se hace responsable del contenido ni del funcionamiento de esos servicios."
+      ],
+      [
+        "Legislación aplicable",
+        "Esta web se rige por la legislación española."
+      ]
     ],
     "privacidad": [
-      ["Responsable", "El responsable de los datos personales que nos facilites es el titular de esta web, cuyos datos figuran a continuación."],
-      ["Esta web no recoge datos", "Esta web no tiene base de datos, no guarda la información que escribes y no usa cookies ni herramientas de analítica. El formulario de contacto no envía nada a ningún servidor: solo prepara un mensaje y abre WhatsApp en tu dispositivo. El mensaje solo nos llega si tú decides enviarlo desde WhatsApp."],
-      ["Datos que tratamos y para qué", "Si nos escribes por WhatsApp, nos llamas o nos envías un email, usaremos tu nombre, tu teléfono y lo que nos cuentes solo para responderte y atender tu solicitud (cita, reserva, encargo o presupuesto). La base legal es tu solicitud y la aplicación de medidas precontractuales (art. 6.1.b del RGPD). No cedemos tus datos a terceros salvo obligación legal."],
-      ["Cuánto tiempo los guardamos", "El tiempo necesario para atenderte y, después, durante los plazos que exija la ley. Puedes pedirnos que los borremos en cualquier momento."],
-      ["Servicios de terceros", "WhatsApp es un servicio de WhatsApp Ireland Limited, con su propia política de privacidad. El mapa de Google solo se carga si pulsas «Ver mapa»; en ese momento Google puede usar cookies propias según su política. La web está alojada en GitHub Pages (GitHub, Inc.), que puede registrar datos técnicos como la dirección IP por motivos de seguridad."],
-      ["Tus derechos", "Puedes ejercer tus derechos de acceso, rectificación, supresión, oposición, limitación y portabilidad escribiéndonos a los datos de contacto indicados. Si consideras que no hemos atendido bien tu solicitud, puedes reclamar ante la Agencia Española de Protección de Datos (www.aepd.es)."]
+      [
+        "Responsable",
+        "El responsable de los datos personales que nos facilites es el titular de esta web, cuyos datos figuran a continuación."
+      ],
+      [
+        "Esta web no recoge datos",
+        "Esta web no tiene base de datos, no guarda la información que escribes y no usa cookies ni herramientas de analítica. Los botones de WhatsApp solo abren la aplicación en tu dispositivo: el mensaje únicamente nos llega si tú decides enviarlo."
+      ],
+      [
+        "Datos que tratamos y para qué",
+        "Si nos escribes por WhatsApp, nos llamas o nos envías un email, usaremos tu nombre, tu teléfono y lo que nos cuentes solo para responderte y atender tu solicitud (cita, reserva, encargo o presupuesto). La base legal es tu solicitud y la aplicación de medidas precontractuales (art. 6.1.b del RGPD). No cedemos tus datos a terceros salvo obligación legal."
+      ],
+      [
+        "Cuánto tiempo los guardamos",
+        "El tiempo necesario para atenderte y, después, durante los plazos que exija la ley. Puedes pedirnos que los borremos en cualquier momento."
+      ],
+      [
+        "Servicios de terceros",
+        "WhatsApp es un servicio de WhatsApp Ireland Limited, con su propia política de privacidad. El mapa de Google solo se carga si pulsas «Ver mapa»; en ese momento Google puede usar cookies propias según su política. La web está alojada en GitHub Pages (GitHub, Inc.), que puede registrar datos técnicos como la dirección IP por motivos de seguridad."
+      ],
+      [
+        "Tus derechos",
+        "Puedes ejercer tus derechos de acceso, rectificación, supresión, oposición, limitación y portabilidad escribiéndonos a los datos de contacto indicados. Si consideras que no hemos atendido bien tu solicitud, puedes reclamar ante la Agencia Española de Protección de Datos (www.aepd.es)."
+      ]
     ],
-    "campos": { "titular": "Titular", "nif": "NIF", "domicilio": "Domicilio", "email": "Email", "telefono": "Teléfono", "actividad": "Actividad" }
+    "campos": {
+      "titular": "Titular",
+      "nif": "NIF",
+      "domicilio": "Domicilio",
+      "email": "Email",
+      "telefono": "Teléfono",
+      "actividad": "Actividad"
+    }
   },
   "entrega": {
     "titulo": "Tu web ya está en marcha",
@@ -105,5 +243,18 @@
     "cambiosTitulo": "¿Quieres cambiar algo?",
     "cambiosTexto": "Si cambias de horario, de precios o de teléfono, escríbenos y lo actualizamos.",
     "firma": "Gracias por confiar en MAzure."
-  }
+  },
+  "v2": {
+    "local": "Nuestro local",
+    "clientes": "Lo que dicen nuestros clientes",
+    "valoracion": "{nota} en Google · {total} reseñas",
+    "valoracionSin": "{nota} en Google",
+    "visita": "Ven a vernos",
+    "horario": "Horario",
+    "direccion": "Dirección",
+    "dudas": "¿Tienes alguna duda? Escríbenos o llámanos y te respondemos enseguida.",
+    "precios": "Precios orientativos. Pregúntanos sin compromiso.",
+    "verFotos": "Ver foto"
+  },
+  "tipoEn": "{tipo} en {poblacion}"
 }

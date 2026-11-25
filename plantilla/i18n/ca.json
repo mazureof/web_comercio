@@ -3,11 +3,42 @@
   "saltar": "Salta al contingut",
   "menuAbrir": "Obre el menú",
   "menuCerrar": "Tanca el menú",
-  "nav": { "inicio": "Inici", "metodo": "Com treballem", "galeria": "Galeria", "opiniones": "Opinions", "horario": "Horari", "contacto": "Contacte" },
-  "seccionServicios": { "servicios": "Serveis", "carta": "La carta", "productos": "Productes", "tienda": "Què hi trobaràs" },
-  "introServicios": { "servicios": "El que fem, explicat clar.", "carta": "El que trobaràs a taula.", "productos": "El que surt cada dia del nostre obrador i taulell.", "tienda": "Una selecció pensada per a tu." },
-  "cta": { "cita": "Demana hora", "reserva": "Reserva taula", "encargo": "Fes un encàrrec", "presupuesto": "Demana pressupost", "visita": "Escriu-nos", "contacto": "Contacta" },
-  "ctaTarjeta": { "cita": "Demana hora", "reserva": "Reserva", "encargo": "Encarrega", "presupuesto": "Demana pressupost", "visita": "Pregunta", "contacto": "Pregunta" },
+  "nav": {
+    "inicio": "Inici",
+    "metodo": "Com treballem",
+    "galeria": "Galeria",
+    "opiniones": "Opinions",
+    "horario": "Horari",
+    "contacto": "Contacte"
+  },
+  "seccionServicios": {
+    "servicios": "Serveis",
+    "carta": "La carta",
+    "productos": "Productes",
+    "tienda": "Què hi trobaràs"
+  },
+  "introServicios": {
+    "servicios": "El que fem, explicat clar.",
+    "carta": "El que trobaràs a taula.",
+    "productos": "El que surt cada dia del nostre obrador i taulell.",
+    "tienda": "Una selecció pensada per a tu."
+  },
+  "cta": {
+    "cita": "Demana hora",
+    "reserva": "Reserva taula",
+    "encargo": "Fes un encàrrec",
+    "presupuesto": "Demana pressupost",
+    "visita": "Escriu-nos",
+    "contacto": "Contacta"
+  },
+  "ctaTarjeta": {
+    "cita": "Demana hora",
+    "reserva": "Reserva",
+    "encargo": "Encarrega",
+    "presupuesto": "Demana pressupost",
+    "visita": "Pregunta",
+    "contacto": "Pregunta"
+  },
   "llamar": "Truca",
   "llamarA": "Truca al {telefono}",
   "whatsapp": "WhatsApp",
@@ -21,12 +52,57 @@
     "abreManana": "obre demà a les {h}",
     "abreDia": "obre el {dia} a les {h}"
   },
-  "dias": { "lun": "dilluns", "mar": "dimarts", "mie": "dimecres", "jue": "dijous", "vie": "divendres", "sab": "dissabte", "dom": "diumenge" },
-  "diasCortos": { "lun": "Dl", "mar": "Dt", "mie": "Dc", "jue": "Dj", "vie": "Dv", "sab": "Ds", "dom": "Dg" },
+  "dias": {
+    "lun": "dilluns",
+    "mar": "dimarts",
+    "mie": "dimecres",
+    "jue": "dijous",
+    "vie": "divendres",
+    "sab": "dissabte",
+    "dom": "diumenge"
+  },
+  "diasCortos": {
+    "lun": "Dl",
+    "mar": "Dt",
+    "mie": "Dc",
+    "jue": "Dj",
+    "vie": "Dv",
+    "sab": "Ds",
+    "dom": "Dg"
+  },
   "metodoIntro": "Senzill, proper i sense sorpreses.",
-  "galeria": { "titulo": "Galeria", "intro": "Una ullada al nostre dia a dia.", "ampliar": "Amplia la foto", "cerrar": "Tanca", "anterior": "Foto anterior", "siguiente": "Foto següent", "tarjetaTitulo": "Ens veiem aviat?", "tarjetaTexto": "Escriu-nos i t'atendrem encantats.", "tarjetaCta": "Contacta" },
-  "opiniones": { "titulo": "Opinions", "intro": "El que diuen els qui ja ens coneixen.", "resenas": "ressenyes a Google", "verTodas": "Veure-les totes a Google", "de5": "de 5" },
-  "horario": { "titulo": "Horari i ubicació", "intro": "T'esperem.", "tabla": "Horari setmanal", "hoy": "Avui", "cerrado": "Tancat", "y": "i", "direccion": "Adreça", "zonas": "També atenem a", "comoLlegar": "Com arribar-hi", "verMapa": "Mostra el mapa", "avisoMapa": "En prémer es carregarà Google Maps, que pot fer servir galetes de Google.", "mapaTitulo": "Mapa de {nombre}" },
+  "galeria": {
+    "titulo": "Galeria",
+    "intro": "Una ullada al nostre dia a dia.",
+    "ampliar": "Amplia la foto",
+    "cerrar": "Tanca",
+    "anterior": "Foto anterior",
+    "siguiente": "Foto següent",
+    "tarjetaTitulo": "Ens veiem aviat?",
+    "tarjetaTexto": "Escriu-nos i t'atendrem encantats.",
+    "tarjetaCta": "Contacta"
+  },
+  "opiniones": {
+    "titulo": "Opinions",
+    "intro": "El que diuen els qui ja ens coneixen.",
+    "resenas": "ressenyes a Google",
+    "verTodas": "Veure-les totes a Google",
+    "de5": "de 5"
+  },
+  "horario": {
+    "titulo": "Horari i ubicació",
+    "intro": "T'esperem.",
+    "tabla": "Horari setmanal",
+    "hoy": "Avui",
+    "cerrado": "Tancat",
+    "y": "i",
+    "direccion": "Adreça",
+    "zonas": "També atenem a",
+    "comoLlegar": "Com arribar-hi",
+    "verMapa": "Mostra el mapa",
+    "avisoMapa": "En prémer es carregarà Google Maps, que pot fer servir galetes de Google.",
+    "mapaTitulo": "Mapa de {nombre}"
+  },
   "contacto": {
     "titulo": "Contacte",
     "intro": "Escriu-nos o truca'ns. Et responem al més aviat possible.",
@@ -49,11 +125,33 @@
     "msgMensaje": " {v}",
     "error": "Escriu almenys el teu nom."
   },
-  "pie": { "enlaces": "Enllaços", "contacto": "Contacte", "redes": "Segueix-nos", "avisoLegal": "Avís legal", "privacidad": "Privacitat", "creadaPor": "Web creat per", "volver": "Torna al web" },
+  "pie": {
+    "enlaces": "Enllaços",
+    "contacto": "Contacte",
+    "redes": "Segueix-nos",
+    "avisoLegal": "Avís legal",
+    "privacidad": "Privacitat",
+    "creadaPor": "Web creat per",
+    "volver": "Torna al web"
+  },
   "demoEjemplo": "Exemple de disseny · negoci fictici · Webs per MAzure",
   "demo": "Proposta de disseny per a {nombre} · MAzure",
-  "metaCta": { "cita": "Demana hora per WhatsApp.", "reserva": "Reserva per WhatsApp.", "encargo": "Fes el teu encàrrec per WhatsApp.", "presupuesto": "Demana pressupost per WhatsApp.", "visita": "Vine a veure'ns o escriu-nos.", "contacto": "Contacta per WhatsApp o telèfon." },
-  "metaCtaTel": { "cita": "Demana hora per telèfon.", "reserva": "Reserva per telèfon.", "encargo": "Fes el teu encàrrec per telèfon.", "presupuesto": "Demana pressupost per telèfon.", "visita": "Vine a veure'ns o truca'ns.", "contacto": "Truca'ns." },
+  "metaCta": {
+    "cita": "Demana hora per WhatsApp.",
+    "reserva": "Reserva per WhatsApp.",
+    "encargo": "Fes el teu encàrrec per WhatsApp.",
+    "presupuesto": "Demana pressupost per WhatsApp.",
+    "visita": "Vine a veure'ns o escriu-nos.",
+    "contacto": "Contacta per WhatsApp o telèfon."
+  },
+  "metaCtaTel": {
+    "cita": "Demana hora per telèfon.",
+    "reserva": "Reserva per telèfon.",
+    "encargo": "Fes el teu encàrrec per telèfon.",
+    "presupuesto": "Demana pressupost per telèfon.",
+    "visita": "Vine a veure'ns o truca'ns.",
+    "contacto": "Truca'ns."
+  },
   "tituloEn": "{nombre} · {tipo} a {poblacion}",
   "h1": "{nombre} · {tipo} a {poblacion}",
   "legal": {
@@ -62,21 +160,61 @@
     "actualizado": "Darrera actualització: {fecha}",
     "pendiente": "Pendent de completar",
     "aviso": [
-      ["Dades identificatives", "En compliment de l'article 10 de la Llei 34/2002, de serveis de la societat de la informació i de comerç electrònic (LSSI), s'informa de les dades del titular d'aquest web:"],
-      ["Objecte", "Aquest web informa sobre l'activitat, els serveis, l'horari i les dades de contacte de {nombre}. No s'hi venen productes ni serveis."],
-      ["Propietat intel·lectual", "Els textos, les fotografies i la resta de continguts d'aquest web pertanyen al seu titular o s'utilitzen amb la seva autorització. No es permet reproduir-los sense permís."],
-      ["Responsabilitat", "El web enllaça amb serveis de tercers (WhatsApp, Google Maps i xarxes socials). El titular no es fa responsable del contingut ni del funcionament d'aquests serveis."],
-      ["Legislació aplicable", "Aquest web es regeix per la legislació espanyola."]
+      [
+        "Dades identificatives",
+        "En compliment de l'article 10 de la Llei 34/2002, de serveis de la societat de la informació i de comerç electrònic (LSSI), s'informa de les dades del titular d'aquest web:"
+      ],
+      [
+        "Objecte",
+        "Aquest web informa sobre l'activitat, els serveis, l'horari i les dades de contacte de {nombre}. No s'hi venen productes ni serveis."
+      ],
+      [
+        "Propietat intel·lectual",
+        "Els textos, les fotografies i la resta de continguts d'aquest web pertanyen al seu titular o s'utilitzen amb la seva autorització. No es permet reproduir-los sense permís."
+      ],
+      [
+        "Responsabilitat",
+        "El web enllaça amb serveis de tercers (WhatsApp, Google Maps i xarxes socials). El titular no es fa responsable del contingut ni del funcionament d'aquests serveis."
+      ],
+      [
+        "Legislació aplicable",
+        "Aquest web es regeix per la legislació espanyola."
+      ]
     ],
     "privacidad": [
-      ["Responsable", "El responsable de les dades personals que ens facilitis és el titular d'aquest web, les dades del qual figuren a continuació."],
-      ["Aquest web no recull dades", "Aquest web no té base de dades, no desa la informació que escrius i no fa servir galetes ni eines d'analítica. El formulari de contacte no envia res a cap servidor: només prepara un missatge i obre WhatsApp al teu dispositiu. El missatge només ens arriba si tu decideixes enviar-lo des de WhatsApp."],
-      ["Dades que tractem i per a què", "Si ens escrius per WhatsApp, ens truques o ens envies un correu, farem servir el teu nom, el teu telèfon i el que ens expliquis només per respondre't i atendre la teva sol·licitud (hora, reserva, encàrrec o pressupost). La base legal és la teva sol·licitud i l'aplicació de mesures precontractuals (art. 6.1.b del RGPD). No cedim les teves dades a tercers llevat d'obligació legal."],
-      ["Quant de temps les conservem", "El temps necessari per atendre't i, després, durant els terminis que exigeixi la llei. Ens pots demanar que les esborrem en qualsevol moment."],
-      ["Serveis de tercers", "WhatsApp és un servei de WhatsApp Ireland Limited, amb la seva pròpia política de privacitat. El mapa de Google només es carrega si prems «Mostra el mapa»; en aquell moment Google pot fer servir galetes pròpies segons la seva política. El web està allotjat a GitHub Pages (GitHub, Inc.), que pot registrar dades tècniques com l'adreça IP per motius de seguretat."],
-      ["Els teus drets", "Pots exercir els drets d'accés, rectificació, supressió, oposició, limitació i portabilitat escrivint-nos a les dades de contacte indicades. Si consideres que no hem atès bé la teva sol·licitud, pots presentar una reclamació davant l'Agència Espanyola de Protecció de Dades (www.aepd.es)."]
+      [
+        "Responsable",
+        "El responsable de les dades personals que ens facilitis és el titular d'aquest web, les dades del qual figuren a continuació."
+      ],
+      [
+        "Aquest web no recull dades",
+        "Aquest web no té base de dades, no desa la informació que escrius i no fa servir galetes ni eines d'analítica. Els botons de WhatsApp només obren l'aplicació al teu dispositiu: el missatge només ens arriba si tu decideixes enviar-lo."
+      ],
+      [
+        "Dades que tractem i per a què",
+        "Si ens escrius per WhatsApp, ens truques o ens envies un correu, farem servir el teu nom, el teu telèfon i el que ens expliquis només per respondre't i atendre la teva sol·licitud (hora, reserva, encàrrec o pressupost). La base legal és la teva sol·licitud i l'aplicació de mesures precontractuals (art. 6.1.b del RGPD). No cedim les teves dades a tercers llevat d'obligació legal."
+      ],
+      [
+        "Quant de temps les conservem",
+        "El temps necessari per atendre't i, després, durant els terminis que exigeixi la llei. Ens pots demanar que les esborrem en qualsevol moment."
+      ],
+      [
+        "Serveis de tercers",
+        "WhatsApp és un servei de WhatsApp Ireland Limited, amb la seva pròpia política de privacitat. El mapa de Google només es carrega si prems «Mostra el mapa»; en aquell moment Google pot fer servir galetes pròpies segons la seva política. El web està allotjat a GitHub Pages (GitHub, Inc.), que pot registrar dades tècniques com l'adreça IP per motius de seguretat."
+      ],
+      [
+        "Els teus drets",
+        "Pots exercir els drets d'accés, rectificació, supressió, oposició, limitació i portabilitat escrivint-nos a les dades de contacte indicades. Si consideres que no hem atès bé la teva sol·licitud, pots presentar una reclamació davant l'Agència Espanyola de Protecció de Dades (www.aepd.es)."
+      ]
     ],
-    "campos": { "titular": "Titular", "nif": "NIF", "domicilio": "Domicili", "email": "Correu", "telefono": "Telèfon", "actividad": "Activitat" }
+    "campos": {
+      "titular": "Titular",
+      "nif": "NIF",
+      "domicilio": "Domicili",
+      "email": "Correu",
+      "telefono": "Telèfon",
+      "actividad": "Activitat"
+    }
   },
   "entrega": {
     "titulo": "El teu web ja està en marxa",
@@ -105,5 +243,18 @@
     "cambiosTitulo": "Vols canviar alguna cosa?",
     "cambiosTexto": "Si canvies d'horari, de preus o de telèfon, escriu-nos i ho actualitzem.",
     "firma": "Gràcies per confiar en MAzure."
-  }
+  },
+  "v2": {
+    "local": "El nostre local",
+    "clientes": "El que diuen els nostres clients",
+    "valoracion": "{nota} a Google · {total} ressenyes",
+    "valoracionSin": "{nota} a Google",
+    "visita": "Vine a veure'ns",
+    "horario": "Horari",
+    "direccion": "Adreça",
+    "dudas": "Tens algun dubte? Escriu-nos o truca'ns i et responem de seguida.",
+    "precios": "Preus orientatius. Pregunta'ns sense compromís.",
+    "verFotos": "Veure foto"
+  },
+  "tipoEn": "{tipo} a {poblacion}"
 }

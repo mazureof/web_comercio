@@ -8,15 +8,13 @@ import opentype from 'opentype.js';
 import { P } from './lib.mjs';
 
 const fuentes = new Map();
-async function cargar(archivo, estilo) {
-  const key = `${archivo}-${estilo}`;
-  if (!fuentes.has(key)) {
-    let f = path.join(P.plantilla, 'assets/fonts', `${key}.woff2`);
-    if (!fs.existsSync(f)) f = path.join(P.plantilla, 'assets/fonts', `${archivo}-normal.woff2`);
+async function cargar(archivo) {
+  if (!fuentes.has(archivo)) {
+    const f = path.join(P.plantilla, 'assets/fonts', archivo);
     const ttf = await wawoff2.decompress(fs.readFileSync(f));
-    fuentes.set(key, opentype.parse(ttf.buffer.slice(ttf.byteOffset, ttf.byteOffset + ttf.byteLength)));
+    fuentes.set(archivo, opentype.parse(ttf.buffer.slice(ttf.byteOffset, ttf.byteOffset + ttf.byteLength)));
   }
-  return fuentes.get(key);
+  return fuentes.get(archivo);
 }
 
 function medir(font, texto, size, track) {
@@ -30,8 +28,8 @@ function medir(font, texto, size, track) {
 }
 
 /** Devuelve un <path> SVG con el texto. Reduce el tamaño si no cabe en maxW. */
-export async function textoAPath(texto, archivo, estilo, { x = 0, y = 0, size = 40, maxW = Infinity, fill = '#000', opacity = 1, upper = false, track = 0, center = null } = {}) {
-  const font = await cargar(archivo, estilo);
+export async function textoAPath(texto, archivo, { x = 0, y = 0, size = 40, maxW = Infinity, fill = '#000', opacity = 1, upper = false, track = 0, center = null } = {}) {
+  const font = await cargar(archivo);
   const txt = upper ? texto.toUpperCase() : texto;
   let sz = size;
   while (medir(font, txt, sz, track) > maxW && sz > 12) sz -= 2;

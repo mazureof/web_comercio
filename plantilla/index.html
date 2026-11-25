@@ -7,7 +7,7 @@
 <meta name="description" content="{{seo.descripcion}}">
 {{#demo}}<meta name="robots" content="noindex,nofollow">
 {{/demo}}<link rel="canonical" href="{{seo.url}}">
-<meta name="theme-color" content="{{col.primario}}">
+<meta name="theme-color" content="{{col.cabecera}}">
 <meta property="og:type" content="website">
 <meta property="og:locale" content="{{seo.locale}}">
 <meta property="og:site_name" content="{{nombre}}">
@@ -28,271 +28,138 @@
 {{/hero.foto}}<style>{{{css}}}</style>
 <script type="application/ld+json">{{{jsonld}}}</script>
 </head>
-<body class="hero-{{estilo.hero}} cards-{{estilo.tarjetas}}{{#demo}} is-demo{{/demo}}{{#estilo.mayus}} display-upper{{/estilo.mayus}}{{#estilo.oscuro}} is-dark{{/estilo.oscuro}}">
-<a class="skip" href="#main">{{t.saltar}}</a>
+<body class="srv-{{estilo.servicios}}{{#estilo.mayus}} upper{{/estilo.mayus}}{{#estilo.oscuro}} dark{{/estilo.oscuro}}{{#estilo.mano}} hand{{/estilo.mano}}{{#estilo.chalk}} chalk{{/estilo.chalk}}{{#demo}} is-demo{{/demo}}">
 {{#demo}}<div class="demo-bar" role="note">{{demoTexto}}</div>
-{{/demo}}<div class="topbar">
-  <div class="wrap topbar__in">
-    <span class="topbar__item">{{{i.pin}}}{{poblacion}}</span>
-    <a class="topbar__item" href="tel:{{contacto.telefono}}">{{{i.phone}}}{{contacto.telefonoLegible}}</a>
-    {{#tieneHorario}}<span class="topbar__item estado" data-estado><span class="estado__dot" aria-hidden="true"></span><span data-estado-texto>{{t.horario.titulo}}</span></span>{{/tieneHorario}}
-  </div>
-</div>
-<header class="nav" data-nav>
-  <div class="wrap nav__in">
-    <a class="brand" href="#inicio">{{nombre}}</a>
-    <button class="nav__toggle" type="button" aria-expanded="false" aria-controls="menu" data-menu-btn>
-      <span class="sr" data-menu-label data-open="{{t.menuAbrir}}" data-close="{{t.menuCerrar}}">{{t.menuAbrir}}</span>
-      <span class="burger" aria-hidden="true"><span></span><span></span><span></span></span>
-    </button>
-    <nav class="nav__menu" id="menu" aria-label="{{t.nav.inicio}}" data-menu>
-      <ul>
-        {{#navLinks}}<li><a href="#{{id}}">{{texto}}</a></li>
-        {{/navLinks}}
-      </ul>
-      <a class="btn btn--primary nav__cta" href="{{ctaPrincipal.href}}"{{#ctaPrincipal.externo}} target="_blank" rel="noopener"{{/ctaPrincipal.externo}}>{{ctaPrincipal.texto}}</a>
-    </nav>
+{{/demo}}<header class="top">
+  <div class="wrap top__in">
+    <a class="top__name" href="#">{{nombre}}</a>
+    {{#tieneHorario}}<span class="estado" data-estado><span class="estado__dot" aria-hidden="true"></span><span data-estado-texto>{{t.v2.horario}}</span></span>{{/tieneHorario}}
+    <a class="top__tel" href="tel:{{contacto.telefono}}" aria-label="{{t.llamar}} {{contacto.telefonoLegible}}">{{{i.phone}}}<span>{{contacto.telefonoLegible}}</span></a>
   </div>
 </header>
 
-<main id="main">
-  <section class="hero" id="inicio">
-    <div class="wrap hero__grid">
+<main>
+  <section class="hero {{#hero.foto}}hero--foto{{/hero.foto}}{{^hero.foto}}hero--color{{/hero.foto}}">
+    {{^hero.foto}}{{{hero.patron}}}{{/hero.foto}}
+    <div class="wrap hero__in">
       <div class="hero__text">
-        <h1 class="kicker">{{h1}}</h1>
-        <p class="hero__claim display"><span>{{claim1}}</span> <em>{{claim2}}</em></p>
+        <h1><span class="hero__name">{{nombre}}</span> <span class="hero__type">{{heroTipo}}</span></h1>
+        <p class="hero__claim">{{claim}}</p>
         <p class="hero__lead">{{resumen}}</p>
         <div class="hero__cta">
-          <a class="btn btn--primary btn--lg" href="{{ctaPrincipal.href}}"{{#ctaPrincipal.externo}} target="_blank" rel="noopener"{{/ctaPrincipal.externo}}>{{{ctaPrincipal.icono}}}{{ctaPrincipal.texto}}</a>
-          {{#ctaSecundario}}<a class="btn btn--ghost btn--lg" href="{{href}}"{{#externo}} target="_blank" rel="noopener"{{/externo}}>{{{icono}}}{{texto}}</a>{{/ctaSecundario}}
+          <a class="btn btn--main" href="{{ctaPrincipal.href}}"{{#ctaPrincipal.externo}} target="_blank" rel="noopener"{{/ctaPrincipal.externo}}>{{{ctaPrincipal.icono}}}{{ctaPrincipal.texto}}</a>
+          {{#ctaSecundario}}<a class="btn btn--line" href="{{href}}"{{#externo}} target="_blank" rel="noopener"{{/externo}}>{{{icono}}}{{texto}}</a>{{/ctaSecundario}}
         </div>
-        {{#tienePuntos}}<ul class="trust">
-          {{#puntosConfianza}}<li>{{{i.check}}}{{.}}</li>
-          {{/puntosConfianza}}
-        </ul>{{/tienePuntos}}
+        {{#tieneMeta}}<ul class="hero__meta">
+          {{#valoracion}}<li class="hero__rating"><span class="stars" aria-hidden="true">{{{estrellas}}}</span>{{texto}}</li>{{/valoracion}}
+          {{#metaPuntos}}<li>{{.}}</li>{{/metaPuntos}}
+        </ul>{{/tieneMeta}}
       </div>
-      <div class="hero__media">
-        {{#hero.foto}}<picture>
+      {{#hero.foto}}<div class="hero__media">
+        <picture>
           <source type="image/webp" srcset="{{srcset}}" sizes="{{sizes}}">
           <img src="{{src}}" width="{{w}}" height="{{h}}" alt="{{alt}}" fetchpriority="high" decoding="async">
-        </picture>{{/hero.foto}}
-        {{^hero.foto}}<div class="hero__panel" aria-hidden="true">
-          {{{hero.patron}}}
-          <span class="hero__panel-name display">{{nombre}}</span>
-          <span class="hero__panel-meta">{{tipoLegible}} · {{poblacion}}</span>
-        </div>{{/hero.foto}}
-      </div>
+        </picture>
+      </div>{{/hero.foto}}
     </div>
   </section>
-
-  {{#tieneCinta}}<div class="cinta" aria-hidden="true">
-    <div class="cinta__track">
-      <span class="cinta__grupo">{{#cinta}}<span>{{.}}</span><span class="cinta__sep">✦</span>{{/cinta}}</span>
-      <span class="cinta__grupo cinta__grupo--dup">{{#cinta}}<span>{{.}}</span><span class="cinta__sep">✦</span>{{/cinta}}</span>
-    </div>
-  </div>{{/tieneCinta}}
 
   <section class="sec" id="servicios" aria-labelledby="t-servicios">
     <div class="wrap">
-      <header class="sec__head reveal">
-        <p class="sec__num">{{sec.servicios}} · {{seccionServiciosTitulo}}</p>
-        <h2 class="display" id="t-servicios">{{introServicios}}</h2>
-      </header>
-      <ol class="cards cards--{{numServiciosClase}}">
-        {{#servicios}}<li class="card reveal">
-          {{#foto}}<picture class="card__img">
-            <source type="image/webp" srcset="{{srcset}}" sizes="(min-width: 900px) 33vw, 100vw">
-            <img src="{{src}}" width="{{w}}" height="{{h}}" alt="{{alt}}" loading="lazy" decoding="async">
-          </picture>{{/foto}}
-          <div class="card__body">
-            <span class="card__num">S.{{num}}</span>
-            <h3 class="card__title">{{titulo}}</h3>
-            <p class="card__text">{{texto}}</p>
-            {{#tieneEtiquetas}}<ul class="tags">{{#etiquetas}}<li>{{.}}</li>{{/etiquetas}}</ul>{{/tieneEtiquetas}}
-            <div class="card__foot">
-              {{#precio}}<span class="price">{{precio}}</span>{{/precio}}
-              <a class="card__link" href="{{href}}"{{#externo}} target="_blank" rel="noopener"{{/externo}}>{{ctaTarjeta}}<span class="sr"> · {{titulo}}</span>{{{i.arrow}}}</a>
-            </div>
+      <h2 class="sec__title{{#estilo.mano}} sec__title--hand{{/estilo.mano}}" id="t-servicios">{{seccionServiciosTitulo}}</h2>
+      {{#serviciosConFoto}}<ul class="pcards pcards--n{{numServicios}}">
+        {{#servicios}}<li class="pcard">
+          {{#foto}}<picture class="pcard__img"><source type="image/webp" srcset="{{srcset}}" sizes="(min-width: 900px) 33vw, 100vw"><img src="{{src}}" width="{{w}}" height="{{h}}" alt="{{alt}}" loading="lazy" decoding="async"></picture>{{/foto}}
+          <div class="pcard__body">
+            <div class="srv__head"><h3>{{titulo}}</h3>{{#precio}}<span class="srv__price">{{precio}}</span>{{/precio}}</div>
+            <p>{{texto}}</p>
           </div>
         </li>
         {{/servicios}}
-      </ol>
+      </ul>{{/serviciosConFoto}}
+      {{^serviciosConFoto}}<div class="board">
+        <ul class="srv srv--n{{numServicios}}">
+          {{#servicios}}<li class="srv__item">
+            <div class="srv__head"><h3>{{titulo}}</h3>{{#precio}}<span class="srv__dots" aria-hidden="true"></span><span class="srv__price">{{precio}}</span>{{/precio}}</div>
+            <p>{{texto}}</p>
+          </li>
+          {{/servicios}}
+        </ul>
+      </div>{{/serviciosConFoto}}
+      <div class="sec__foot">
+        {{#hayPrecios}}<p class="sec__note">{{t.v2.precios}}</p>{{/hayPrecios}}
+        <a class="btn btn--main" href="{{ctaPrincipal.href}}"{{#ctaPrincipal.externo}} target="_blank" rel="noopener"{{/ctaPrincipal.externo}}>{{{ctaPrincipal.icono}}}{{ctaPrincipal.texto}}</a>
+      </div>
     </div>
   </section>
 
-  <section class="sec sec--alt" id="metodo" aria-labelledby="t-metodo">
+  {{#tieneGaleria}}<section class="sec sec--alt" aria-labelledby="t-local">
     <div class="wrap">
-      <header class="sec__head reveal">
-        <p class="sec__num">{{sec.metodo}} · {{metodoTitulo}}</p>
-        <h2 class="display" id="t-metodo">{{t.metodoIntro}}</h2>
-      </header>
-      {{#tieneDatos}}<ul class="stats reveal">
-        {{#datos}}<li class="stat"><span class="stat__n display" data-count="{{numero}}" data-suffix="{{sufijo}}">{{numeroTexto}}{{sufijo}}</span><span class="stat__t">{{texto}}</span></li>
-        {{/datos}}
-      </ul>{{/tieneDatos}}
-      <ol class="steps steps--{{numPasos}}">
-        {{#pasos}}<li class="step reveal">
-          <span class="step__n display">{{num}}</span>
-          <h3 class="step__title">{{titulo}}</h3>
-          <p>{{texto}}</p>
-        </li>
-        {{/pasos}}
-      </ol>
-    </div>
-  </section>
-
-  {{#tieneGaleria}}<section class="sec" id="galeria" aria-labelledby="t-galeria">
-    <div class="wrap">
-      <header class="sec__head reveal">
-        <p class="sec__num">{{sec.galeria}} · {{t.galeria.titulo}}</p>
-        <h2 class="display" id="t-galeria">{{t.galeria.intro}}</h2>
-      </header>
-      <ul class="gallery">
-        {{#galeria}}<li class="gallery__item reveal">
-          <button type="button" class="gallery__btn" data-lb="{{idx}}" data-full="{{full}}" data-caption="{{texto}}" aria-label="{{t.galeria.ampliar}}: {{texto}}">
-            <picture>
-              <source type="image/webp" srcset="{{srcset}}" sizes="(min-width: 900px) 33vw, 50vw">
-              <img src="{{src}}" width="{{w}}" height="{{h}}" alt="{{alt}}" loading="lazy" decoding="async">
-            </picture>
-            {{#texto}}<span class="gallery__cap">{{texto}}</span>{{/texto}}
-          </button>
-        </li>
+      <h2 class="sec__title" id="t-local">{{t.v2.local}}</h2>
+      <ul class="gal gal--n{{numGaleria}}">
+        {{#galeria}}<li><button type="button" class="gal__btn" data-lb="{{idx}}" data-full="{{full}}" data-caption="{{texto}}" aria-label="{{t.v2.verFotos}}: {{texto}}">
+          <picture><source type="image/webp" srcset="{{srcset}}" sizes="(min-width: 900px) 25vw, 50vw"><img src="{{src}}" width="{{w}}" height="{{h}}" alt="{{alt}}" loading="lazy" decoding="async"></picture>
+        </button></li>
         {{/galeria}}
-        <li class="gallery__item gallery__cta reveal">
-          <a href="#contacto">
-            <span class="display">{{t.galeria.tarjetaTitulo}}</span>
-            <span>{{t.galeria.tarjetaTexto}}</span>
-            <span class="gallery__cta-link">{{t.galeria.tarjetaCta}} {{{i.arrow}}}</span>
-          </a>
-        </li>
       </ul>
     </div>
   </section>{{/tieneGaleria}}
 
-  {{#tieneResenas}}<section class="sec sec--alt" id="opiniones" aria-labelledby="t-opiniones">
+  {{#tieneResenas}}<section class="sec" aria-labelledby="t-clientes">
     <div class="wrap">
-      <header class="sec__head reveal">
-        <p class="sec__num">{{sec.opiniones}} · {{t.opiniones.titulo}}</p>
-        <h2 class="display" id="t-opiniones">{{t.opiniones.intro}}</h2>
-      </header>
-      <div class="reviews" style="--rev-cols:{{resenas.cols}}">
-        <div class="score reveal">
-          <span class="score__n display">{{resenas.notaTexto}}</span>
-          <span class="stars" role="img" aria-label="{{resenas.notaTexto}} {{t.opiniones.de5}}">{{{resenas.estrellas}}}</span>
-          {{#resenas.total}}<span class="score__t">{{resenas.totalTexto}} {{t.opiniones.resenas}}</span>{{/resenas.total}}
-          {{#resenas.urlGoogle}}<a class="btn btn--ghost" href="{{resenas.urlGoogle}}" target="_blank" rel="noopener">{{t.opiniones.verTodas}}</a>{{/resenas.urlGoogle}}
-        </div>
-        {{#resenas.destacadas}}<figure class="review reveal">
+      <h2 class="sec__title" id="t-clientes">{{t.v2.clientes}}</h2>
+      {{#resenas.tieneDestacadas}}<div class="revs" style="--rev-n:{{resenas.n}}">
+        {{#resenas.destacadas}}<figure class="rev">
           <span class="stars" role="img" aria-label="{{estrellas}} {{t.opiniones.de5}}">{{{estrellasHtml}}}</span>
           <blockquote><p>{{texto}}</p></blockquote>
           <figcaption>{{autor}}</figcaption>
         </figure>
         {{/resenas.destacadas}}
-      </div>
+      </div>{{/resenas.tieneDestacadas}}
+      <p class="revs__foot"><span class="stars" aria-hidden="true">{{{resenas.estrellas}}}</span> <strong>{{resenas.linea}}</strong>{{#resenas.urlGoogle}} · <a href="{{resenas.urlGoogle}}" target="_blank" rel="noopener">{{t.opiniones.verTodas}}</a>{{/resenas.urlGoogle}}</p>
     </div>
   </section>{{/tieneResenas}}
 
-  <section class="sec" id="horario" aria-labelledby="t-horario">
-    <div class="wrap">
-      <header class="sec__head reveal">
-        <p class="sec__num">{{sec.horario}} · {{t.horario.titulo}}</p>
-        <h2 class="display" id="t-horario">{{t.horario.intro}}</h2>
-      </header>
-      <div class="visit">
-        {{#tieneHorario}}<div class="hours reveal">
-          <p class="hours__estado estado" data-estado><span class="estado__dot" aria-hidden="true"></span><span data-estado-texto></span></p>
-          <table>
-            <caption class="sr">{{t.horario.tabla}}</caption>
-            <tbody>
-              {{#horarioFilas}}<tr data-dia="{{clave}}"><th scope="row">{{dia}}<span class="hours__hoy">{{t.horario.hoy}}</span></th><td>{{texto}}</td></tr>
-              {{/horarioFilas}}
-            </tbody>
-          </table>
-        </div>{{/tieneHorario}}
-        <div class="place reveal">
-          <p class="place__label">{{t.horario.direccion}}</p>
-          <p class="place__addr">{{contacto.direccion}}</p>
-          <div class="map" data-map data-src="{{mapa.embed}}" data-title="{{mapa.titulo}}">
-            {{{hero.patronMapa}}}
-            <div class="map__ph">
-              <span class="map__pin">{{{i.pin}}}</span>
-              <button type="button" class="btn btn--primary" data-map-btn>{{t.horario.verMapa}}</button>
-              <p class="map__note">{{t.horario.avisoMapa}}</p>
-            </div>
-          </div>
-          <a class="btn btn--ghost place__go" href="{{mapa.comoLlegar}}" target="_blank" rel="noopener">{{{i.route}}}{{t.horario.comoLlegar}}</a>
-          {{#tieneZonas}}<div class="zones">
-            <p class="place__label">{{t.horario.zonas}}</p>
-            <ul>{{#zonas}}<li>{{.}}</li>{{/zonas}}</ul>
-          </div>{{/tieneZonas}}
+  <section class="sec sec--alt" id="visita" aria-labelledby="t-visita">
+    <div class="wrap visit">
+      <div class="visit__info">
+        <h2 class="sec__title" id="t-visita">{{t.v2.visita}}</h2>
+        <p class="visit__addr">{{{i.pin}}}<span>{{contacto.direccion}}</span></p>
+        {{#tieneHorario}}<table class="hours">
+          <caption class="sr">{{t.horario.tabla}}</caption>
+          <tbody>
+            {{#horarioFilas}}<tr data-dia="{{clave}}"><th scope="row">{{dia}}</th><td>{{texto}}</td></tr>
+            {{/horarioFilas}}
+          </tbody>
+        </table>{{/tieneHorario}}
+        {{#tieneZonas}}<p class="visit__zones">{{t.horario.zonas}}: {{zonasTexto}}.</p>{{/tieneZonas}}
+        <p class="visit__help">{{t.v2.dudas}}</p>
+        <div class="visit__cta">
+          {{#wa}}<a class="btn btn--main" href="{{wa.cta}}" target="_blank" rel="noopener">{{{i.wa}}}{{t.whatsapp}}</a>{{/wa}}
+          <a class="btn {{#wa}}btn--line{{/wa}}{{^wa}}btn--main{{/wa}}" href="tel:{{contacto.telefono}}">{{{i.phone}}}{{t.llamar}}</a>
+          <a class="btn btn--line" href="{{mapa.comoLlegar}}" target="_blank" rel="noopener">{{{i.route}}}{{t.horario.comoLlegar}}</a>
         </div>
       </div>
-    </div>
-  </section>
-
-  <section class="sec sec--alt" id="contacto" aria-labelledby="t-contacto">
-    <div class="wrap">
-      <header class="sec__head reveal">
-        <p class="sec__num">{{sec.contacto}} · {{t.contacto.titulo}}</p>
-        <h2 class="display" id="t-contacto">{{t.contacto.intro}}</h2>
-      </header>
-      <div class="contact{{^wa}} contact--solo{{/wa}}">
-        <ul class="contact__cards">
-          <li class="ccard reveal"><a href="tel:{{contacto.telefono}}">{{{i.phone}}}<span><span class="ccard__k">{{t.llamar}}</span><span class="ccard__v">{{contacto.telefonoLegible}}</span></span></a></li>
-          {{#wa}}<li class="ccard reveal"><a href="{{wa.base}}" target="_blank" rel="noopener">{{{i.wa}}}<span><span class="ccard__k">{{t.whatsapp}}</span><span class="ccard__v">{{wa.legible}}</span></span></a></li>{{/wa}}
-          {{#contacto.email}}<li class="ccard reveal"><a href="mailto:{{contacto.email}}">{{{i.mail}}}<span><span class="ccard__k">{{t.email}}</span><span class="ccard__v">{{contacto.email}}</span></span></a></li>{{/contacto.email}}
-          <li class="ccard reveal"><a href="{{mapa.comoLlegar}}" target="_blank" rel="noopener">{{{i.pin}}}<span><span class="ccard__k">{{t.horario.comoLlegar}}</span><span class="ccard__v">{{contacto.direccion}}</span></span></a></li>
-        </ul>
-        {{#wa}}<form class="form reveal" data-form novalidate>
-          <h3 class="form__title display">{{t.contacto.formTitulo}}</h3>
-          <div class="field"><label for="f-nombre">{{t.contacto.nombre}}</label><input id="f-nombre" name="nombre" autocomplete="name" required></div>
-          <div class="field"><label for="f-tel">{{t.contacto.telefono}}</label><input id="f-tel" name="telefono" type="tel" autocomplete="tel" inputmode="tel"></div>
-          <div class="field"><label for="f-serv">{{t.contacto.servicio}}</label>
-            <select id="f-serv" name="servicio">
-              <option value="">{{t.contacto.elegir}}</option>
-              {{#servicios}}<option>{{titulo}}</option>{{/servicios}}
-              <option>{{t.contacto.otro}}</option>
-            </select>
-          </div>
-          <div class="field"><label for="f-msg">{{t.contacto.mensaje}}</label><textarea id="f-msg" name="mensaje" rows="4" placeholder="{{t.contacto.mensajePh}}"></textarea></div>
-          <p class="form__error" data-form-error role="alert" hidden>{{t.contacto.error}}</p>
-          <button class="btn btn--primary btn--lg btn--block" type="submit">{{{i.wa}}}{{t.contacto.enviar}}</button>
-          <p class="form__note">{{t.contacto.nota}} {{t.contacto.privacidad}} <a href="privacidad.html">{{t.contacto.privacidadLink}}</a>.</p>
-        </form>{{/wa}}
+      <div class="map" data-map data-src="{{mapa.embed}}" data-title="{{mapa.titulo}}">
+        {{{hero.patronMapa}}}
+        <div class="map__ph">
+          <span class="map__pin">{{{i.pin}}}</span>
+          <button type="button" class="btn btn--main" data-map-btn>{{t.horario.verMapa}}</button>
+          <p class="map__note">{{t.horario.avisoMapa}}</p>
+        </div>
       </div>
     </div>
   </section>
 </main>
 
 <footer class="foot">
-  <div class="wrap foot__grid">
-    <div class="foot__brand">
-      <p class="brand">{{nombre}}</p>
-      <p>{{resumen}}</p>
-    </div>
+  <div class="wrap foot__in">
     <div>
-      <p class="foot__h">{{t.pie.enlaces}}</p>
-      <ul>{{#navLinks}}<li><a href="#{{id}}">{{texto}}</a></li>{{/navLinks}}</ul>
+      <p class="foot__name">{{nombre}}</p>
+      <p>{{contacto.direccion}} · <a href="tel:{{contacto.telefono}}">{{contacto.telefonoLegible}}</a>{{#contacto.email}} · <a href="mailto:{{contacto.email}}">{{contacto.email}}</a>{{/contacto.email}}</p>
+      {{#tieneRedes}}<p class="foot__social">{{#contacto.instagram}}<a href="{{contacto.instagram}}" target="_blank" rel="noopener">Instagram</a>{{/contacto.instagram}}{{#contacto.facebook}}<a href="{{contacto.facebook}}" target="_blank" rel="noopener">Facebook</a>{{/contacto.facebook}}</p>{{/tieneRedes}}
     </div>
-    <div>
-      <p class="foot__h">{{t.pie.contacto}}</p>
-      <ul>
-        <li><a href="tel:{{contacto.telefono}}">{{contacto.telefonoLegible}}</a></li>
-        {{#wa}}<li><a href="{{wa.base}}" target="_blank" rel="noopener">{{t.whatsapp}}</a></li>{{/wa}}
-        {{#contacto.email}}<li><a href="mailto:{{contacto.email}}">{{contacto.email}}</a></li>{{/contacto.email}}
-        <li>{{contacto.direccion}}</li>
-      </ul>
-      {{#tieneRedes}}<p class="foot__h">{{t.pie.redes}}</p>
-      <ul class="foot__social">
-        {{#contacto.instagram}}<li><a href="{{contacto.instagram}}" target="_blank" rel="noopener" aria-label="Instagram">{{{i.ig}}}</a></li>{{/contacto.instagram}}
-        {{#contacto.facebook}}<li><a href="{{contacto.facebook}}" target="_blank" rel="noopener" aria-label="Facebook">{{{i.fb}}}</a></li>{{/contacto.facebook}}
-      </ul>{{/tieneRedes}}
-    </div>
-  </div>
-  <div class="wrap foot__bottom">
-    <span>© {{anio}} {{nombre}}</span>
-    <span class="foot__legal"><a href="aviso-legal.html">{{t.pie.avisoLegal}}</a> · <a href="privacidad.html">{{t.pie.privacidad}}</a></span>
-    <span class="foot__credit">{{t.pie.creadaPor}} <a href="{{mazure.url}}" rel="noopener">MAzure</a></span>
+    <p class="foot__legal">© {{anio}} {{nombre}} · <a href="aviso-legal.html">{{t.pie.avisoLegal}}</a> · <a href="privacidad.html">{{t.pie.privacidad}}</a><br><span class="foot__credit">{{t.pie.creadaPor}} <a href="{{mazure.url}}" rel="noopener">MAzure</a></span></p>
   </div>
 </footer>
 
@@ -301,7 +168,7 @@
   {{#wa}}<a class="mbar__btn mbar__btn--wa" href="{{wa.cta}}" target="_blank" rel="noopener">{{{i.wa}}}{{t.whatsapp}}</a>{{/wa}}
 </div>
 
-{{#tieneGaleria}}<dialog class="lb" data-lb-dialog aria-label="{{t.galeria.titulo}}">
+{{#tieneGaleria}}<dialog class="lb" data-lb-dialog aria-label="{{t.v2.local}}">
   <figure class="lb__fig"><img data-lb-img alt=""><figcaption data-lb-cap></figcaption></figure>
   <button type="button" class="lb__btn lb__close" data-lb-close aria-label="{{t.galeria.cerrar}}">{{{i.close}}}</button>
   <button type="button" class="lb__btn lb__prev" data-lb-prev aria-label="{{t.galeria.anterior}}">{{{i.prev}}}</button>

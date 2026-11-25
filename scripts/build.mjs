@@ -14,7 +14,11 @@ import { textoAPath } from './og.mjs';
 
 const t0 = Date.now();
 const CFG = readJson(P.config);
-const BASE = CFG.baseUrl.replace(/\/+$/, '');
+// En GitHub Actions la URL sale del nombre del repo, así un cambio de nombre no rompe nada.
+const repoCI = process.env.GITHUB_REPOSITORY || '';
+const BASE = (repoCI
+  ? (() => { const [owner, repo] = repoCI.split('/'); return repo.toLowerCase() === `${owner.toLowerCase()}.github.io` ? `https://${repo.toLowerCase()}` : `https://${owner.toLowerCase()}.github.io/${repo}`; })()
+  : CFG.baseUrl).replace(/\/+$/, '');
 const TEMAS = readJson(path.join(P.plantilla, 'temas.json'));
 const I18N = { es: readJson(path.join(P.plantilla, 'i18n/es.json')), ca: readJson(path.join(P.plantilla, 'i18n/ca.json')) };
 const TPL = Object.fromEntries(['index', 'aviso-legal', 'privacidad', 'entrega'].map((n) => [n, fs.readFileSync(path.join(P.plantilla, `${n}.html`), 'utf8')]));
@@ -41,45 +45,35 @@ function resolverTema(c) {
   if (!pre) throw new Error(`tema.preset «${nombre}» no existe en temas.json`);
   const k = { ...pre.colores };
   if (c.tema?.primario) { k.primario = c.tema.primario; k.sobrePrimario = mejorSobre(k.primario, '#FFFFFF', k.texto); }
-  if (c.tema?.acento) { k.acento = c.tema.acento; k.sobreAcento = mejorSobre(k.acento, '#FFFFFF', k.texto); }
+  if (c.tema?.acento) k.acento = c.tema.acento;
+  if (c.tema?.cabecera) { k.cabecera = c.tema.cabecera; k.sobreCabecera = mejorSobre(k.cabecera, '#FFFFFF', k.texto); }
   const oscuro = lum(k.fondo) < 0.2;
-  const hacia = oscuro ? '#FFFFFF' : '#000000';
   const primarioTexto = ajustaContraste(k.primario, [k.fondo, k.superficie], oscuro ? '#FFFFFF' : k.texto);
-  const heroFondo = k.heroFondo || mezcla(k.primario, '#000000', 0.55);
-  const heroTexto = k.heroTexto || mejorSobre(heroFondo, '#FFFFFF', k.texto);
+  // Botón principal dentro del hero de color: el primario si destaca, si no el color del texto del hero
+  const heroBtn = contraste(k.primario, k.cabecera) >= 3 ? k.primario : k.sobreCabecera;
+  const heroBtnInk = heroBtn === k.primario ? k.sobrePrimario : k.cabecera;
   const avisos = [];
   const chk = (a, b, min, que) => { const r = contraste(a, b); if (r < min) avisos.push(`contraste ${que}: ${r.toFixed(2)} (mínimo AA ${min})`); };
   chk(k.texto, k.fondo, 4.5, 'texto/fondo'); chk(k.suave, k.fondo, 4.5, 'texto suave/fondo'); chk(k.suave, k.superficie, 4.5, 'texto suave/superficie');
-  chk(k.sobrePrimario, k.primario, 4.5, 'botón (texto sobre primario)'); chk(k.sobreAcento, k.acento, 4.5, 'cinta (texto sobre acento)');
-  chk(primarioTexto, k.fondo, 4.5, 'primario como texto');
-  if (pre.hero === 'poster') { chk(heroTexto, heroFondo, 4.5, 'hero póster'); chk(k.sobreAcento, k.acento, 4.5, 'botón póster'); }
-  const F = (key) => TEMAS.fuentes[key];
-  const fd = F(pre.fuentes.display), fi = F(pre.fuentes.cursiva), fb = F(pre.fuentes.cuerpo);
-  const archivos = new Set([`${fd.archivo}-normal.woff2`, `${fb.archivo}-normal.woff2`, `${fi.archivo}-${fi.italica ? 'italic' : 'normal'}.woff2`]);
-  const faces = [...archivos].map((f) => {
-    const def = Object.values(TEMAS.fuentes).find((x) => f.startsWith(x.archivo + '-'));
-    const it = f.endsWith('-italic.woff2');
-    const w = def.archivo === 'oswald' ? '200 700' : def.archivo === 'playfair-display' ? '400 900' : '100 900';
-    return `@font-face{font-family:"${def.familia}";font-style:${it ? 'italic' : 'normal'};font-weight:${w};font-display:swap;src:url(assets/fonts/${f}) format("woff2")}`;
-  }).join('');
-  const iw = pre.fuentes.cursiva === pre.fuentes.display ? Math.max(400, pre.displayPeso - 100) : 500;
-  const panel = `linear-gradient(140deg,${k.primario} 0%,${mezcla(k.primario, '#000000', 0.38)} 100%)`;
+  chk(k.sobrePrimario, k.primario, 4.5, 'botón'); chk(k.sobreCabecera, k.cabecera, 4.5, 'hero sin foto'); chk(heroBtnInk, heroBtn, 4.5, 'botón del hero');
+  const F = (key) => { const f = TEMAS.fuentes[key]; if (!f) throw new Error(`fuente «${key}» no existe en temas.json`); return f; };
+  const ft = F(pre.fuentes.titulos), fb = F(pre.fuentes.cuerpo), fm = pre.fuentes.mano ? F(pre.fuentes.mano) : null;
+  const usadas = [ft, fb, fm].filter(Boolean).filter((v, i, a) => a.indexOf(v) === i);
+  const archivos = usadas.flatMap((f) => f.archivos.map(([file]) => file));
+  const faces = usadas.flatMap((f) => f.archivos.map(([file, w]) => `@font-face{font-family:"${f.familia}";font-style:normal;font-weight:${w};font-display:swap;src:url(assets/fonts/${file}) format("woff2")}`)).join('');
+  // archivo de títulos con el peso más alto disponible (para la imagen OG)
+  const ogTitulo = ft.archivos.at(-1)[0];
+  const tw = ft.archivos.length > 1 || ft.archivos[0][1].includes(' ') ? pre.peso : Number(ft.archivos[0][1]);
   const vars = {
-    bg: k.fondo, surface: k.superficie, 'surface-alt': k.superficie, ink: k.texto, muted: k.suave, line: k.linea,
-    'line-strong': mezcla(k.linea, k.texto, 0.22), primary: k.primario, 'primary-text': primarioTexto, 'on-primary': k.sobrePrimario,
-    'primary-soft': alpha(k.primario, oscuro ? 0.18 : 0.09), accent: k.acento, 'on-accent': k.sobreAcento,
-    'accent-line': contraste(k.acento, k.fondo) >= 1.6 ? k.acento : k.primario, focus: primarioTexto,
-    'hero-bg': heroFondo, 'hero-ink': heroTexto, 'panel-bg': panel, 'on-panel': k.sobrePrimario,
-    'poster-panel': `radial-gradient(120% 90% at 85% 15%,${mezcla(heroFondo, k.primario, 0.35)} 0%,${heroFondo} 60%)`,
-    'topbar-bg': oscuro ? mezcla(k.fondo, '#000000', 0.5) : k.texto, 'topbar-ink': oscuro ? k.suave : k.fondo,
-    'nav-bg': alpha(k.fondo, 0.9), 'foot-bg': oscuro ? mezcla(k.fondo, '#000000', 0.45) : k.texto, 'foot-ink': oscuro ? k.texto : k.fondo,
-    shadow: oscuro ? 'rgb(0 0 0/.7)' : alpha(k.texto, 0.22), star: oscuro ? '#E8B94A' : '#C98A00',
-    'f-display': `"${fd.familia}",${fd.fallback}`, 'f-italic': `"${fi.familia}",${fi.fallback}`, 'f-body': `"${fb.familia}",${fb.fallback}`,
-    dw: pre.displayPeso, iw, r: `${pre.radio}px`, 'r-lg': `${Math.round(pre.radio * 1.4)}px`,
-    'btn-r': pre.tarjetas === 'recta' ? `${Math.max(4, pre.radio)}px` : '999px',
+    bg: k.fondo, surface: k.superficie, ink: k.texto, muted: k.suave, line: k.linea, 'line-strong': mezcla(k.linea, k.texto, 0.25),
+    primary: k.primario, 'on-primary': k.sobrePrimario, 'primary-text': primarioTexto, accent: k.acento, focus: primarioTexto,
+    'head-bg': k.cabecera, 'head-ink': k.sobreCabecera, 'hero-btn': heroBtn, 'hero-btn-ink': heroBtnInk,
+    'f-title': `"${ft.familia}",${ft.fallback}`, 'f-body': `"${fb.familia}",${fb.fallback}`, 'f-hand': fm ? `"${fm.familia}",${fm.fallback}` : 'inherit',
+    tw, track: `${pre.track || 0}em`, r: `${pre.radio}px`, 'btn-r': `${Math.min(pre.radio, 10)}px`,
   };
   const root = `:root{${Object.entries(vars).map(([a, b]) => `--${a}:${b}`).join(';')};color-scheme:${oscuro ? 'dark' : 'light'}}`;
-  return { k, pre, oscuro, vars, fontsCss: faces + root, archivos: [...archivos], preload: [`${fd.archivo}-normal.woff2`, `${fi.archivo}-${fi.italica ? 'italic' : 'normal'}.woff2`].filter((v, i, a) => a.indexOf(v) === i), avisos, heroFondo, heroTexto, fd, fi };
+  const chalk = !!fm && lum(k.acento) < 0.1;
+  return { k, pre, oscuro, chalk, fontsCss: faces + root, archivos, preload: [ft.archivos.at(-1)[0], fm && fm.archivos[0][0]].filter(Boolean), avisos, ogTitulo, ogCuerpo: fb.archivos.at(-1)[0], ogMano: fm ? fm.archivos[0][0] : null };
 }
 
 /* ------------------------------------------------------------------ */
@@ -139,17 +133,16 @@ function jsonLd(c, v, tipoDef) {
 /* ------------------------------------------------------------------ */
 async function imagenes(c, v, tema, dest) {
   const { k } = tema;
-  const pat = patron(tema.pre.patron, c.slug, { w: 1200, h: 630 }).replace('class="hero__pattern"', `opacity=".16" color="${k.sobrePrimario}"`);
-  const nombre = await textoAPath(c.nombre, tema.fd.archivo, 'normal', { x: 80, y: 250, size: 92, maxW: 1040, fill: k.sobrePrimario, upper: tema.pre.displayMayus });
-  const claim1 = await textoAPath(c.claim[0], tema.fd.archivo, 'normal', { x: 80, y: 360, size: 54, maxW: 1040, fill: k.sobrePrimario, opacity: 0.92, upper: tema.pre.displayMayus });
-  const claim2 = await textoAPath(c.claim[1], tema.fi.archivo, tema.fi.italica ? 'italic' : 'normal', { x: 80, y: 425, size: 54, maxW: 1040, fill: k.acento });
-  const meta = await textoAPath(`${v.tipoLegible} · ${v.poblacion}`.toUpperCase(), 'inter', 'normal', { x: 80, y: 548, size: 24, maxW: 1040, fill: k.sobrePrimario, opacity: 0.75, track: 3 });
-  const svg = `<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
-<defs><linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="${k.primario}"/><stop offset="1" stop-color="${mezcla(k.primario, '#000000', 0.42)}"/></linearGradient></defs>
-<rect width="1200" height="630" fill="url(#g)"/>${pat}<rect x="80" y="130" width="56" height="5" fill="${k.acento}"/>${nombre}${claim1}${claim2}${meta}</svg>`;
+  const bg = k.cabecera, ink = k.sobreCabecera;
+  const pat = patron(tema.pre.patron || 'puntos', c.slug, { w: 1200, h: 630 }).replace('class="hero__pattern"', `opacity=".08" color="${ink}"`);
+  const up = tema.pre.mayus;
+  const nombre = await textoAPath(c.nombre, tema.ogTitulo, { x: 80, y: 270, size: 104, maxW: 1040, fill: ink, upper: up });
+  const tipo = await textoAPath(`${v.tipoLegible} · ${v.poblacion}`.toUpperCase(), tema.ogCuerpo, { x: 82, y: 340, size: 26, maxW: 1040, fill: ink, opacity: 0.75, track: 3 });
+  const claim = await textoAPath(v.claim, tema.ogMano || tema.ogCuerpo, { x: 80, y: 470, size: tema.ogMano ? 60 : 44, maxW: 1040, fill: tema.ogMano ? k.acento === bg ? ink : mezcla(ink, k.acento, 0.0) : ink, opacity: 0.95 });
+  const svg = `<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630"><rect width="1200" height="630" fill="${bg}"/>${pat}<rect x="80" y="150" width="64" height="6" fill="${k.primario === bg ? k.acento : k.primario}"/>${nombre}${tipo}${claim}</svg>`;
   await sharp(Buffer.from(svg)).png({ compressionLevel: 9, palette: true, quality: 90 }).toFile(path.join(dest, 'og.png'));
-  const letra = await textoAPath(c.nombre.trim()[0].toUpperCase(), tema.fd.archivo, 'normal', { x: 0, y: 0, size: 40, fill: k.sobrePrimario, center: [32, 32] });
-  const fav = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64"><rect width="64" height="64" rx="${tema.pre.tarjetas === 'recta' ? 10 : 32}" fill="${k.primario}"/>${letra}</svg>`;
+  const letra = await textoAPath(c.nombre.trim()[0].toUpperCase(), tema.ogTitulo, { size: 40, fill: ink, center: [32, 32] });
+  const fav = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64"><rect width="64" height="64" rx="${Math.min(tema.pre.radio * 2, 32)}" fill="${bg}"/>${letra}</svg>`;
   write(path.join(dest, 'favicon.svg'), fav);
   await sharp(Buffer.from(fav.replace(/rx="\d+"/, 'rx="0"'))).resize(180, 180).png().toFile(path.join(dest, 'icon-180.png'));
 }
@@ -188,7 +181,7 @@ async function generarWeb(c) {
   let heroFoto = null;
   if (c.fotoHero) {
     heroFoto = await procesarFoto(c, c.fotoHero, dest, `${c.nombre}, ${tipoLegible.toLowerCase()} en ${poblacion}`);
-    heroFoto.sizes = tema.pre.hero === 'split' ? '(min-width: 900px) 46vw, 100vw' : '100vw';
+    heroFoto.sizes = '(min-width: 900px) 52vw, 100vw';
   }
   const servicios = [];
   for (const [i, s] of (c.servicios || []).entries()) {
@@ -233,7 +226,7 @@ async function generarWeb(c) {
     lang: c.idioma, t, i: ICONOS, nombre: c.nombre, demo, demoTexto: c.ejemplo ? t.demoEjemplo : fill(t.demo, { nombre: c.nombre }),
     seo: { titulo: fill(t.tituloEn, { nombre: c.nombre, tipo: tipoLegible, poblacion }), descripcion, url, locale: c.idioma === 'ca' ? 'ca_ES' : 'es_ES' },
     h1: fill(t.h1, { nombre: c.nombre, tipo: tipoLegible, poblacion }),
-    col: tema.k, estilo: { hero: tema.pre.hero, tarjetas: tema.pre.tarjetas, mayus: tema.pre.displayMayus, oscuro: tema.oscuro },
+    col: tema.k, estilo: { servicios: tema.pre.servicios, mayus: tema.pre.mayus, oscuro: tema.oscuro, mano: !!tema.ogMano, chalk: tema.chalk }, heroTipo: fill(t.tipoEn, { tipo: tipoLegible, poblacion }),
     fuentesPreload: tema.preload, css: '', poblacion, tipoLegible,
     claim1: c.claim[0], claim2: c.claim[1], resumen: c.resumen,
     puntosConfianza: (c.puntosConfianza || []).slice(0, 3), tienePuntos: !!c.puntosConfianza?.length,
@@ -241,6 +234,7 @@ async function generarWeb(c) {
     ctaPrincipal: wa ? { href: wa.cta, texto: t.cta[ctaTipo], icono: ICONOS.wa, externo: true } : { href: telHref, texto: `${t.llamar} · ${telefonoLegible(c.contacto.telefono)}`, icono: ICONOS.phone, externo: false },
     ctaSecundario: wa ? { href: telHref, texto: t.llamar, icono: ICONOS.phone } : { href: `https://www.google.com/maps/dir/?api=1&destination=${encodeURIComponent(`${c.nombre}, ${c.contacto.direccion}`)}`, texto: t.horario.comoLlegar, icono: ICONOS.route, externo: true },
     hero: { foto: heroFoto, patron: patron(tema.pre.patron, c.slug), patronMapa: patron('mapa', c.slug) },
+    claim: c.claim.map((x) => x.trim()).join(' '), serviciosConFoto: servicios.some((s) => s.foto), numServicios: servicios.length, numGaleria: galeria.length, hayPrecios: servicios.some((s) => s.precio), zonasTexto: (c.zonas || []).join(', '),
     tieneCinta: cinta.length > 0, cinta,
     sec, navLinks, seccionServiciosTitulo, introServicios: t.introServicios[tipoDef.seccionServicios], servicios,
     numServiciosClase: n <= 4 ? String(n) : n === 6 ? '6' : 'muchas',
@@ -251,7 +245,11 @@ async function generarWeb(c) {
       total: r.total || 0, totalTexto: (r.total || 0).toLocaleString('es-ES'), urlGoogle: r.urlGoogle || '',
       destacadas: (r.destacadas || []).slice(0, 3).map((x) => ({ ...x, estrellas: x.estrellas || 5, estrellasHtml: estrellas(x.estrellas || 5) })),
       cols: Math.min(4, 1 + Math.min(3, (r.destacadas || []).length)),
+      tieneDestacadas: !!(r.destacadas || []).length, n: Math.min(3, (r.destacadas || []).length) || 1,
+      linea: r.total ? fill(t.v2.valoracion, { nota: r.nota.toFixed(1).replace('.', ','), total: r.total.toLocaleString('es-ES') }) : fill(t.v2.valoracionSin, { nota: r.nota.toFixed(1).replace('.', ',') }),
     } : null,
+    valoracion: tieneResenas ? { estrellas: estrellas(r.nota), texto: r.total ? fill(t.v2.valoracion, { nota: r.nota.toFixed(1).replace('.', ','), total: r.total.toLocaleString('es-ES') }) : fill(t.v2.valoracionSin, { nota: r.nota.toFixed(1).replace('.', ',') }) } : null,
+    metaPuntos: [...(c.datos || []).slice(0, 1).map((d) => `${String(d.numero).replace('.', ',')}${d.sufijo || ''} ${d.texto}`), ...(c.puntosConfianza || []).slice(0, tieneResenas ? 1 : 2)],
     tieneHorario, horarioFilas,
     mapa: {
       embed: `https://www.google.com/maps?q=${encodeURIComponent(`${c.nombre}, ${c.contacto.direccion}`)}&output=embed`,
@@ -262,11 +260,11 @@ async function generarWeb(c) {
     tieneRedes: !!(c.contacto.instagram || c.contacto.facebook),
     anio: ANIO, mazure: { url: CFG.mazure?.url || `${BASE}/` },
   };
+  v.tieneMeta = !!(v.valoracion || v.metaPuntos.length);
   v.jsonld = jsonLd(c, v, tipoDef);
   v.datosJs = jsonScript({
     tz: 'Europe/Madrid', horario: tieneHorario ? c.horario : null,
     t: t.estado, dias: t.dias, wa: waNum || null,
-    msg: { plantilla: t.contacto.plantillaMensaje, telefono: t.contacto.msgTelefono, servicio: t.contacto.msgServicio, mensaje: t.contacto.msgMensaje },
   });
   const cssCompleto = minCss(tema.fontsCss + CSS_BASE);
   v.css = cssCompleto;
