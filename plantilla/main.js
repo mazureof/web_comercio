@@ -99,18 +99,20 @@
       if (!sel.dia || !sel.hora || !v('nombre') || v('telefono').replace(/\D/g, '').length < 9) { err.textContent = T.falta; err.hidden = false; return; }
       err.hidden = true;
       var cuando = D.dias[DIAS[sel.dia.getDay()]] + ' ' + sel.dia.getDate() + '/' + (sel.dia.getMonth() + 1) + ' · ' + sel.hora;
-      var datos = { _subject: T.asunto + ' · ' + R.nombre, _template: 'table', _captcha: 'false', Cuando: cuando, Nombre: v('nombre'), Telefono: v('telefono') };
-      ['servicio', 'personas', 'encargo', 'coche', 'comentario'].forEach(function (k) { if (v(k)) datos[k.charAt(0).toUpperCase() + k.slice(1)] = v(k); });
+      var lin = [T.cuerpo, '', '· ' + cuando];
+      var et = { servicio: T.servicio, personas: T.personas, encargo: T.encargoQue, coche: T.coche };
+      ['servicio', 'personas', 'encargo', 'coche'].forEach(function (k) { if (v(k)) lin.push('· ' + et[k].replace(/[?¿:]/g, '') + ': ' + v(k)); });
+      lin.push('· ' + T.nombre + ': ' + v('nombre'), '· ' + T.telefono + ': ' + v('telefono'));
+      if (v('comentario')) lin.push('', v('comentario'));
       var fin = function (texto, nota) {
-        ok.innerHTML = ''; ok.appendChild(document.createTextNode(texto + ' (' + cuando + ')'));
+        ok.innerHTML = ''; ok.appendChild(document.createTextNode(texto));
         if (nota) { var s2 = document.createElement('small'); s2.textContent = nota; ok.appendChild(s2); }
-        ok.hidden = false; send.hidden = true; ok.focus && ok.setAttribute('tabindex', '-1'); ok.focus();
+        ok.hidden = false; ok.setAttribute('tabindex', '-1'); ok.focus();
       };
-      if (R.demo || !R.email) { fin(T.ok, R.demo ? T.okDemo : ''); return; }
-      send.disabled = true; send.textContent = T.enviando;
-      fetch('https://formsubmit.co/ajax/' + encodeURIComponent(R.email), { method: 'POST', headers: { 'Content-Type': 'application/json', Accept: 'application/json' }, body: JSON.stringify(datos) })
-        .then(function (r) { if (!r.ok) throw new Error(r.status); fin(T.ok); })
-        .catch(function () { send.disabled = false; send.textContent = T.enviar; err.textContent = T.error.replace('{tel}', R.tel || ''); err.hidden = false; });
+      if (R.demo) { fin(T.ok, T.okDemo); return; }
+      if (!R.email) { fin(T.sinEmail.replace('{tel}', R.tel || '')); return; }
+      window.location.href = 'mailto:' + R.email + '?subject=' + encodeURIComponent(T.asunto + ' · ' + R.nombre) + '&body=' + encodeURIComponent(lin.join('\n'));
+      fin(T.ok, T.error.replace('{email}', R.email));
     });
   }
 

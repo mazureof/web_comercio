@@ -88,15 +88,13 @@ Antes de entrar, ten abierta la demo en el móvil para enseñársela.
 6. Cambia:
    - `"estado": "demo"` → `"estado": "publicada"`
    - `"titular": { "nombre": "Montserrat Puig Vila", "nif": "12345678Z", "direccionFiscal": "" }` (con los datos reales)
-   - `"reservas": { "email": "correo@delnegocio.com" }`: el email donde le llegarán las solicitudes del calendario. Si no quiere calendario: `"reservas": { "desactivar": true }`.
+   - `"email": "correo@delnegocio.com"` dentro de `contacto`: sale escrito en la web y es adonde el calendario prepara las solicitudes. Si no quiere calendario: añade `"reservas": { "desactivar": true }`.
    - Cualquier detalle que te corrija el dueño: horario, precios, texto…
    - Si os da fotos suyas, súbelas a `comercios/img/<slug>/` y pon `"fotoHero": "local.jpg"` y `"foto": "corte.jpg"` en cada servicio: sustituyen a las de uso libre.
 7. Toca **«Commit changes…»** (botón verde) y otra vez **«Commit changes»** en la ventana que aparece. Deja «Commit directly to the main branch».
 8. Toca la pestaña **Actions**. Verás «Publicar webs» con un círculo amarillo. Cuando se pone en **verde ✓**, GitHub Pages tarda otro minuto en servir la nueva versión (en total, unos 2 minutos).
 9. Abre **`https://mazureof.github.io/web_comercio/<slug>/`** (ya **sin** el código del final). La franja de demo ha desaparecido y la web es indexable.
 10. Envíale por WhatsApp la hoja de entrega: **`https://mazureof.github.io/web_comercio/<slug>/entrega.html`**. Incluye su URL, un QR para imprimir, el paso a paso para ponerla en su ficha de Google y cómo pedir reseñas. Si queréis, haced juntos el paso de Google allí mismo.
-
-**Primera solicitud del calendario:** la primera vez que alguien pide cita, FormSubmit manda al email del negocio un correo «Confirm your email». El dueño tiene que pulsar el botón **una sola vez**; desde entonces le llegan todas las solicitudes. Lo más fácil: haced una solicitud de prueba juntos en la tienda y que lo confirme en el momento.
 
 **Si la Action sale en rojo ✗:** toca en ella → «build» → abre el paso que falló. El mensaje dice qué falta (lo normal es el NIF o una coma en el JSON). Mientras tanto, **sigue online la versión anterior**, no se rompe nada. Corrige el JSON y vuelve a guardar.
 
@@ -153,7 +151,7 @@ Plantilla completa en `comercios/_ejemplo.json` (los archivos que empiezan por `
 | `tema` | `preset` (uno de `temas.json`), `primario` y `acento` para personalizar. |
 | `mensajeWhatsApp` | Texto que se rellena al pulsar el botón principal de WhatsApp. |
 | `fotoHeroStock`, `servicios[].fotoStock` | Fotos de uso libre de Unsplash (id `photo-…`). Las asigna `node scripts/fotos-stock.mjs` según el tipo de negocio. Se descargan en el build de GitHub. Si hay `fotoHero` o `foto` propia, manda la propia. |
-| `reservas` | `{ "email": "" }`: email que recibe las solicitudes del calendario (vía FormSubmit). `{ "desactivar": true }` quita el calendario. |
+| `reservas` | Opcional. `{ "desactivar": true }` quita el calendario. `{ "email": "…" }` solo si las solicitudes deben ir a un correo distinto de `contacto.email`. |
 | `_revisar` | Lista de campos con texto genérico pendiente de repasar. `check` los lista. |
 | `_nota`, `_notas`, `_visita` | Notas internas; no salen en la web. |
 
@@ -165,7 +163,7 @@ Plantilla completa en `comercios/_ejemplo.json` (los archivos que empiezan por `
 - Secciones numeradas según las que haya: servicios con tarjetas S.01…, método con contadores y pasos, galería con lightbox (teclado, swipe, Esc) y tarjeta «¿Te vemos pronto?», opiniones, horario y ubicación (tabla con el día de hoy resaltado, mapa que solo se carga al pulsar y «Cómo llegar»), contacto (tarjetas y formulario que abre WhatsApp; no envía nada a ningún servidor).
 - **Fotos de uso libre** (Unsplash, licencia gratuita) acordes con el negocio en la portada y en los servicios, con crédito en el aviso legal. Se cambian por fotos reales cuando el dueño las dé. Nunca se usan en «Nuestro local».
 - **Teléfono y WhatsApp como números**, no como botones grandes: el cliente ve el número y pulsa si quiere.
-- **Calendario de solicitud** (citas, mesas, encargos u hora para el coche, según el tipo): el cliente elige día y hora libres según el horario, deja nombre y teléfono, y al negocio le llega un email con la solicitud. No es una reserva automática: el negocio llama o escribe para confirmarla. En las demos no se envía nada. Tiendas y supermercados no llevan calendario.
+- **Calendario de solicitud** (citas, mesas, encargos u hora para el coche, según el tipo): el cliente elige día y hora libres según el horario, deja nombre y teléfono, y al pulsar «Enviar por email» se abre **su propio correo** con la solicitud ya escrita para el negocio. Sin servidores, sin servicios externos, sin mantenimiento: la web no guarda nada. El email del negocio sale también escrito por si prefieren escribir directamente. Si el negocio no tiene email, el calendario pide que llamen al teléfono. No es una reserva automática: el negocio contesta para confirmar. Tiendas y supermercados no llevan calendario.
 - Pie con aviso legal, privacidad y «Web creada por MAzure». En el móvil, barra fija con el botón del calendario.
 - **SEO local:** `<title>` «Nombre · Tipo en Población», meta description, canonical, Open Graph y Twitter con imagen OG generada (1200×630), un solo H1, JSON-LD `LocalBusiness` con el subtipo correcto, horario, zonas y redes (sin `aggregateRating`), `sitemap.xml` por web y sitemap raíz **solo con las publicadas**, `robots.txt` y `llms.txt` por web para los buscadores de IA.
 - **Sin nada externo:** fuentes autoalojadas, sin analítica ni cookies, así que **no hace falta banner de cookies**. Google Maps solo se carga si el visitante pulsa «Ver mapa», y antes se le avisa.

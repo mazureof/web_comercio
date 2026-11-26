@@ -259,7 +259,7 @@ async function generarWeb(c) {
     ctaPrincipal: reservaTipo ? { href: '#reserva', texto: t.reserva.cta[reservaTipo] } : { href: '#visita', texto: t.reserva.cta.ninguna },
     reserva: reservaTipo ? {
       titulo: t.reserva.titulo[reservaTipo], intro: t.reserva.intro[reservaTipo], cta: t.reserva.cta[reservaTipo],
-      diaTexto: reservaTipo === 'encargo' ? t.reserva.diaEncargo : t.reserva.dia,
+      email: c.reservas?.email || c.contacto.email || '', diaTexto: reservaTipo === 'encargo' ? t.reserva.diaEncargo : t.reserva.dia,
       conServicio: ['cita', 'taller'].includes(reservaTipo) && (c.servicios || []).length > 0, conPersonas: reservaTipo === 'mesa',
       conEncargo: reservaTipo === 'encargo', conCoche: reservaTipo === 'taller',
     } : null,
@@ -296,7 +296,7 @@ async function generarWeb(c) {
   v.datosJs = jsonScript({
     tz: 'Europe/Madrid', horario: tieneHorario ? c.horario : null,
     t: t.estado, dias: t.dias, wa: waNum || null,
-    res: reservaTipo ? { email: c.reservas?.email || '', demo, tel: telefonoLegible(c.contacto.telefono || (wa ? '+' + wa.num : '')), nombre: c.nombre, t: t.reserva, cortos: t.diasCortos,
+    res: reservaTipo ? { email: c.reservas?.email || c.contacto.email || '', demo, tel: telefonoLegible(c.contacto.telefono || (wa ? '+' + wa.num : '')), nombre: c.nombre, t: t.reserva, cortos: t.diasCortos,
       meses: c.idioma === 'ca' ? ['gen', 'febr', 'març', 'abr', 'maig', 'juny', 'jul', 'ag', 'set', 'oct', 'nov', 'des'] : ['ene', 'feb', 'mar', 'abr', 'may', 'jun', 'jul', 'ago', 'sep', 'oct', 'nov', 'dic'] } : null,
   });
   const cssCompleto = minCss(tema.fontsCss + CSS_BASE);

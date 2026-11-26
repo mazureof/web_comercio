@@ -126,6 +126,7 @@
         <h2 class="sec__title" id="t-reserva">{{titulo}}</h2>
         <p>{{intro}}</p>
         <p class="res__note">{{t.reserva.nota}}</p>
+        {{#email}}<p class="res__mail">{{t.reserva.escribe}} <a href="mailto:{{email}}">{{email}}</a></p>{{/email}}
       </div>
       <form class="cal" data-reserva novalidate>
         <fieldset class="cal__step">

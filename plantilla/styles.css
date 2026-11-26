@@ -248,3 +248,5 @@ table{border-collapse:collapse}
 .page__meta{font-size:.9rem;color:var(--muted)}
 .page__back{display:inline-flex;align-items:center;min-height:44px;margin-bottom:1.5rem;font-weight:600;text-decoration:none;color:var(--primary-text)}
 .pending{color:#b42318;font-style:italic}
+
+.res__mail{margin-top:1rem;color:var(--muted)}.res__mail a{color:var(--ink);font-weight:700;word-break:break-all}
