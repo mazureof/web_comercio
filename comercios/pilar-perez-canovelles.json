@@ -81,21 +81,24 @@
       "texto": "Corte a tu medida y peinado para el día a día o para una ocasión especial.",
       "etiquetas": [],
       "precio": "",
-      "foto": ""
+      "foto": "",
+      "fotoStock": "photo-1560869713-7d0a29430803"
     },
     {
       "titulo": "Color y mechas",
       "texto": "Tintes, mechas y matices pensados para tu tono de piel y tu estilo.",
       "etiquetas": [],
       "precio": "",
-      "foto": ""
+      "foto": "",
+      "fotoStock": "photo-1580618672591-eb180b1a973f"
     },
     {
       "titulo": "Tratamientos",
       "texto": "Hidratación y cuidado para un pelo más sano y con más brillo.",
       "etiquetas": [],
       "precio": "",
-      "foto": ""
+      "foto": "",
+      "fotoStock": "photo-1562322140-8baeececf3df"
     }
   ],
   "seccionServiciosTitulo": "",
@@ -132,5 +135,9 @@
     "socio": "Mateo",
     "cuandoIr": "Mié/Jue 15:15-16:40 · Sáb 9:30-14:00",
     "notas": "4,8 con 101 reseñas"
+  },
+  "fotoHeroStock": "photo-1521590832167-7bcbfaa6381f",
+  "reservas": {
+    "email": ""
   }
 }

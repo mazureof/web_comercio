@@ -74,21 +74,24 @@
       "texto": "Ternera, cerdo, pollo y cordero.",
       "etiquetas": [],
       "precio": "",
-      "foto": ""
+      "foto": "",
+      "fotoStock": "photo-1786812594035-d9ff77d0ecb2"
     },
     {
       "titulo": "Elaborados",
       "texto": "Hamburguesas, salchichas y preparados de la casa.",
       "etiquetas": [],
       "precio": "",
-      "foto": ""
+      "foto": "",
+      "fotoStock": "photo-1602470521007-20293bd1fd31"
     },
     {
       "titulo": "Encargos",
       "texto": "Bandejas y piezas para celebraciones.",
       "etiquetas": [],
       "precio": "",
-      "foto": ""
+      "foto": "",
+      "fotoStock": "photo-1763033035770-e83f50e8e8b1"
     }
   ],
   "seccionServiciosTitulo": "",
@@ -125,5 +128,9 @@
     "socio": "Mateo",
     "cuandoIr": "",
     "notas": "Añadido por Claude: sin web en Google Maps"
+  },
+  "fotoHeroStock": "photo-1625643269470-5d3e7b69fa34",
+  "reservas": {
+    "email": ""
   }
 }

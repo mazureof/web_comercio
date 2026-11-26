@@ -80,16 +80,37 @@ function resolverTema(c) {
 /* Imágenes: WebP a 480/960/1600 con caché                             */
 /* ------------------------------------------------------------------ */
 const ANCHOS = [480, 960, 1600];
+// Fotos de uso libre (Unsplash): se descargan en el build y se guardan en .cache/stock.
+// En local sin acceso a Unsplash se omiten (la web se ve sin foto); en GitHub Actions sí se descargan.
+const STOCK = path.join(ROOT, '.cache', 'stock');
+const stockFallidos = new Set();
+async function descargarStock(id) {
+  if (!/^photo-[0-9a-z-]+$/.test(id || '')) return null;
+  const f = path.join(STOCK, `${id}.jpg`);
+  if (fs.existsSync(f) && fs.statSync(f).size > 1000) return f;
+  if (stockFallidos.has(id)) return null;
+  try {
+    const r = await fetch(`https://images.unsplash.com/${id}?w=1600&q=80&fm=jpg&fit=max`, { signal: AbortSignal.timeout(20000) });
+    if (!r.ok) throw new Error(`HTTP ${r.status}`);
+    mkdir(STOCK); fs.writeFileSync(f, Buffer.from(await r.arrayBuffer()));
+    return f;
+  } catch (e) { stockFallidos.add(id); return null; }
+}
+async function fotoStock(id, destDir, alt) {
+  const f = await descargarStock(id);
+  return f ? procesarFoto(null, f, destDir, alt) : null;
+}
+
 async function procesarFoto(c, archivo, destDir, alt) {
-  const src = path.join(P.img, c.slug, archivo);
-  const base = path.parse(archivo).name.toLowerCase().replace(/[^a-z0-9-]+/g, '-');
+  const src = c ? path.join(P.img, c.slug, archivo) : archivo;
+  const base = (c ? '' : 'st-') + path.parse(archivo).name.toLowerCase().replace(/[^a-z0-9-]+/g, '-').slice(0, 40);
   const meta = await sharp(src).rotate().metadata();
   const anchoReal = meta.autoOrient?.width || meta.width; const altoReal = meta.autoOrient?.height || meta.height;
   const anchos = ANCHOS.filter((w) => w <= anchoReal); if (!anchos.length) anchos.push(anchoReal);
   const mtime = fs.statSync(src).mtimeMs;
   const out = [];
   for (const w of anchos) {
-    const nombre = `${base}-${w}.webp`, cache = path.join(CACHE, c.slug, nombre);
+    const nombre = `${base}-${w}.webp`, cache = path.join(CACHE, c ? c.slug : '_stock', nombre);
     if (!fs.existsSync(cache) || fs.statSync(cache).mtimeMs < mtime) {
       mkdir(path.dirname(cache));
       await sharp(src).rotate().resize({ width: w, withoutEnlargement: true }).webp({ quality: 74, effort: 5 }).toFile(cache);
@@ -163,6 +184,7 @@ async function generarWeb(c) {
   const tipoLegible = c.tipoLegible || tl.legible;
   const demo = c.estado === 'demo';
   const ctaTipo = tipoDef.cta;
+  const reservaTipo = c.reservas?.desactivar ? null : (tipoDef.reserva || null);
   fs.rmSync(dest, { recursive: true, force: true });
   mkdir(dest);
 
@@ -180,18 +202,20 @@ async function generarWeb(c) {
   // Imágenes
   const fotoAlt = (txt) => [txt, c.nombre, poblacion].filter(Boolean).join(' · ');
   let heroFoto = null;
-  if (c.fotoHero) {
-    heroFoto = await procesarFoto(c, c.fotoHero, dest, `${c.nombre}, ${tipoLegible.toLowerCase()} en ${poblacion}`);
-    heroFoto.sizes = '(min-width: 900px) 52vw, 100vw';
-  }
+  const altHero = `${c.nombre}, ${tipoLegible.toLowerCase()} en ${poblacion}`;
+  if (c.fotoHero) heroFoto = await procesarFoto(c, c.fotoHero, dest, altHero);
+  else if (c.fotoHeroStock) heroFoto = await fotoStock(c.fotoHeroStock, dest, altHero);
+  if (heroFoto) heroFoto.sizes = '(min-width: 900px) 52vw, 100vw';
+  let hayStock = !!(heroFoto && !c.fotoHero);
   const servicios = [];
   for (const [i, s] of (c.servicios || []).entries()) {
     const href = wa ? `${wa.base}?text=${encodeURIComponent(fill(t.contacto.tarjetaMensaje, { servicio: s.titulo }))}` : telHref || llegarHref;
     servicios.push({
       ...s, num: String(i + 1).padStart(2, '0'), tieneEtiquetas: !!s.etiquetas?.length, href, externo: !!wa,
-      ctaTarjeta: t.ctaTarjeta[ctaTipo], foto: s.foto ? await procesarFoto(c, s.foto, dest, fotoAlt(s.titulo)) : null,
+      ctaTarjeta: t.ctaTarjeta[ctaTipo], foto: s.foto ? await procesarFoto(c, s.foto, dest, fotoAlt(s.titulo)) : s.fotoStock ? await fotoStock(s.fotoStock, dest, fotoAlt(s.titulo)) : null,
     });
   }
+  if ((c.servicios || []).some((s, i) => !s.foto && s.fotoStock && servicios[i].foto)) hayStock = true;
   const galeria = [];
   for (const [i, g] of (c.galeria || []).entries()) galeria.push({ ...(await procesarFoto(c, g.foto, dest, fotoAlt(g.texto))), texto: g.texto || '', idx: i });
 
@@ -232,8 +256,14 @@ async function generarWeb(c) {
     claim1: c.claim[0], claim2: c.claim[1], resumen: c.resumen,
     puntosConfianza: (c.puntosConfianza || []).slice(0, 3), tienePuntos: !!c.puntosConfianza?.length,
     contacto: { ...c.contacto, telefonoLegible: telefonoLegible(c.contacto.telefono) }, wa,
-    ctaPrincipal: wa ? { href: wa.cta, texto: t.cta[ctaTipo], icono: ICONOS.wa, externo: true } : telHref ? { href: telHref, texto: `${t.llamar} · ${telefonoLegible(c.contacto.telefono)}`, icono: ICONOS.phone, externo: false } : { href: llegarHref, texto: t.horario.comoLlegar, icono: ICONOS.route, externo: true },
-    ctaSecundario: wa ? { href: telHref, texto: t.llamar, icono: ICONOS.phone } : !telHref ? null : { href: `https://www.google.com/maps/dir/?api=1&destination=${encodeURIComponent(`${c.nombre}, ${c.contacto.direccion}`)}`, texto: t.horario.comoLlegar, icono: ICONOS.route, externo: true },
+    ctaPrincipal: reservaTipo ? { href: '#reserva', texto: t.reserva.cta[reservaTipo] } : { href: '#visita', texto: t.reserva.cta.ninguna },
+    reserva: reservaTipo ? {
+      titulo: t.reserva.titulo[reservaTipo], intro: t.reserva.intro[reservaTipo], cta: t.reserva.cta[reservaTipo],
+      diaTexto: reservaTipo === 'encargo' ? t.reserva.diaEncargo : t.reserva.dia,
+      conServicio: ['cita', 'taller'].includes(reservaTipo) && (c.servicios || []).length > 0, conPersonas: reservaTipo === 'mesa',
+      conEncargo: reservaTipo === 'encargo', conCoche: reservaTipo === 'taller',
+    } : null,
+    tieneNumeros: !!(c.contacto.telefono || wa), waDistinto: !!wa && ('+' + wa.num) !== c.contacto.telefono, hayStock,
     hero: { foto: heroFoto, patron: patron(tema.pre.patron, c.slug), patronMapa: patron('mapa', c.slug) },
     claim: c.claim.map((x) => x.trim()).join(' '), serviciosConFoto: servicios.some((s) => s.foto), numServicios: servicios.length, numGaleria: galeria.length, hayPrecios: servicios.some((s) => s.precio), zonasTexto: (c.zonas || []).join(', '),
     tieneCinta: cinta.length > 0, cinta,
@@ -266,6 +296,8 @@ async function generarWeb(c) {
   v.datosJs = jsonScript({
     tz: 'Europe/Madrid', horario: tieneHorario ? c.horario : null,
     t: t.estado, dias: t.dias, wa: waNum || null,
+    res: reservaTipo ? { email: c.reservas?.email || '', demo, tel: telefonoLegible(c.contacto.telefono || (wa ? '+' + wa.num : '')), nombre: c.nombre, t: t.reserva, cortos: t.diasCortos,
+      meses: c.idioma === 'ca' ? ['gen', 'febr', 'març', 'abr', 'maig', 'juny', 'jul', 'ag', 'set', 'oct', 'nov', 'des'] : ['ene', 'feb', 'mar', 'abr', 'may', 'jun', 'jul', 'ago', 'sep', 'oct', 'nov', 'dic'] } : null,
   });
   const cssCompleto = minCss(tema.fontsCss + CSS_BASE);
   v.css = cssCompleto;
@@ -393,6 +425,10 @@ async function main() {
   const publicadas = listarComercios().filter(({ datos }) => datos.estado === 'publicada' && fs.existsSync(path.join(P.docs, datos.slug, 'index.html'))).map(({ datos }) => `${BASE}/${datos.slug}/`);
   raiz(publicadas);
   panel(listarComercios());
+  if (stockFallidos.size) {
+    console.log(col.yellow(`\n⚠ ${stockFallidos.size} foto(s) de uso libre no se pudieron descargar (sin acceso a images.unsplash.com). Las webs salen sin esas fotos.`));
+    if (process.env.CI) { console.error('En CI las fotos son obligatorias: reintenta el workflow.'); process.exit(1); }
+  }
   console.log(col.dim(`\n${hechas.length} webs generadas en ${((Date.now() - t0) / 1000).toFixed(1)} s · ${publicadas.length} publicadas en el sitemap`));
   if (fatales.length) {
     console.log(col.red(`\nEl build ha fallado: ${fatales.length} web(s) publicada(s) con errores. Corrígelas o vuelve a ponerlas en "demo".`));

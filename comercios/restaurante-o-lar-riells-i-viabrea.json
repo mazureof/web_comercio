@@ -78,21 +78,24 @@
       "texto": "Platos de la cocina gallega de siempre.",
       "etiquetas": [],
       "precio": "",
-      "foto": ""
+      "foto": "",
+      "fotoStock": "photo-1630175860333-5131bda75071"
     },
     {
       "titulo": "Comidas",
       "texto": "Comidas de martes a domingo.",
       "etiquetas": [],
       "precio": "",
-      "foto": ""
+      "foto": "",
+      "fotoStock": "photo-1622883464819-e086aa5d4830"
     },
     {
       "titulo": "Cenas de fin de semana",
       "texto": "Viernes y sábado, a partir de las 20:00.",
       "etiquetas": [],
       "precio": "",
-      "foto": ""
+      "foto": "",
+      "fotoStock": "photo-1605013343009-c126c3dc2f9d"
     }
   ],
   "seccionServiciosTitulo": "",
@@ -130,5 +133,9 @@
     "socio": "Arnau",
     "cuandoIr": "",
     "notas": "Añadido por Claude: sin web en Google Maps"
+  },
+  "fotoHeroStock": "photo-1656423521731-9665583f100c",
+  "reservas": {
+    "email": ""
   }
 }

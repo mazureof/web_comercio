@@ -91,28 +91,32 @@
       "texto": "Pollastre a l'ast per emportar. Encarrega'l i passa a recollir-lo.",
       "etiquetas": [],
       "precio": "",
-      "foto": ""
+      "foto": "",
+      "fotoStock": "photo-1558030089-02acba3c214e"
     },
     {
       "titulo": "Carn fresca",
       "texto": "Vedella, porc i pollastre, tallats al teu gust.",
       "etiquetas": [],
       "precio": "",
-      "foto": ""
+      "foto": "",
+      "fotoStock": "photo-1786812594035-d9ff77d0ecb2"
     },
     {
       "titulo": "Plats preparats",
       "texto": "Plats de la casa, a punt per escalfar i menjar.",
       "etiquetas": [],
       "precio": "",
-      "foto": ""
+      "foto": "",
+      "fotoStock": "photo-1529692236671-f1f6cf9683ba"
     },
     {
       "titulo": "Embotits",
       "texto": "Embotits i elaborats per a cada dia.",
       "etiquetas": [],
       "precio": "",
-      "foto": ""
+      "foto": "",
+      "fotoStock": "photo-1592686092916-672fa9e86866"
     }
   ],
   "seccionServiciosTitulo": "",
@@ -148,5 +152,9 @@
     "socio": "Arnau",
     "cuandoIr": "Mar/Jue 17:30-19:15 · Dom 9:30-12:00",
     "notas": "Padre e hijo. Venden pollo a l'ast y platos propios: web con encargos tiene sentido. Evitar sábado (mucha cola)"
+  },
+  "fotoHeroStock": "photo-1763033035770-e83f50e8e8b1",
+  "reservas": {
+    "email": ""
   }
 }

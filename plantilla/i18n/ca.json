@@ -188,7 +188,7 @@
       ],
       [
         "Aquest web no recull dades",
-        "Aquest web no té base de dades, no desa la informació que escrius i no fa servir galetes ni eines d'analítica. Els botons de WhatsApp només obren l'aplicació al teu dispositiu: el missatge només ens arriba si tu decideixes enviar-lo."
+        "Aquest web no té base de dades ni fa servir galetes o eines d'analítica. Si ens envies una sol·licitud d'hora, reserva o encàrrec, el teu nom, el teu telèfon, el dia i l'hora triats i el teu comentari ens arriben per correu electrònic a través del servei FormSubmit (formsubmit.co), i només els fem servir per contactar-te i gestionar la sol·licitud."
       ],
       [
         "Dades que tractem i per a què",
@@ -254,7 +254,56 @@
     "direccion": "Adreça",
     "dudas": "Tens algun dubte? Escriu-nos o truca'ns i et responem de seguida.",
     "precios": "Preus orientatius. Pregunta'ns sense compromís.",
-    "verFotos": "Veure foto"
+    "verFotos": "Veure foto",
+    "tel": "Telèfon",
+    "wa": "WhatsApp",
+    "fotos": "Les fotografies d'ambient són d'Unsplash (llicència Unsplash, ús lliure) i se substituiran per fotos del mateix negoci.",
+    "fotosTitulo": "Fotografies"
   },
-  "tipoEn": "{tipo} a {poblacion}"
+  "tipoEn": "{tipo} a {poblacion}",
+  "reserva": {
+    "titulo": {
+      "cita": "Demana hora",
+      "mesa": "Reserva taula",
+      "encargo": "Fes el teu encàrrec",
+      "taller": "Demana hora per al cotxe"
+    },
+    "intro": {
+      "cita": "Tria dia i hora i envia'ns la sol·licitud. Et trucarem per confirmar-la.",
+      "mesa": "Tria dia i hora i envia'ns la sol·licitud. Et trucarem per confirmar-la.",
+      "encargo": "Digues-nos què vols i quan passaràs a recollir-ho. Et trucarem per confirmar-ho.",
+      "taller": "Tria dia i hora per portar el cotxe i et trucarem per confirmar-ho."
+    },
+    "cta": {
+      "cita": "Demana hora",
+      "mesa": "Reserva taula",
+      "encargo": "Fes un encàrrec",
+      "taller": "Demana hora",
+      "ninguna": "Horari i adreça"
+    },
+    "dia": "Dia",
+    "diaEncargo": "Dia de recollida",
+    "hora": "Hora",
+    "datos": "Les teves dades",
+    "elige": "Tria primer un dia.",
+    "sinHoras": "Avui ja no queden hores. Tria un altre dia.",
+    "servicio": "Què necessites?",
+    "personas": "Persones",
+    "encargoQue": "Què vols encarregar?",
+    "coche": "Cotxe (marca i model)",
+    "nombre": "Nom",
+    "telefono": "Telèfon",
+    "comentario": "Comentari (opcional)",
+    "enviar": "Envia la sol·licitud",
+    "enviando": "Enviant…",
+    "ok": "Sol·licitud enviada! Et trucarem per confirmar-la.",
+    "okDemo": "Així veurà el client la confirmació. En aquesta demo no s'envia res.",
+    "error": "No s'ha pogut enviar. Truca'ns al {tel}.",
+    "falta": "Tria dia i hora i escriu el teu nom i el teu telèfon.",
+    "nota": "No és una reserva automàtica: revisem la sol·licitud i et truquem per confirmar-la.",
+    "legal": "Les teves dades només s'utilitzen per gestionar la sol·licitud.",
+    "otro": "Altre",
+    "asunto": "Nova sol·licitud des del web",
+    "horaDia": "{dia} a les {hora}"
+  }
 }

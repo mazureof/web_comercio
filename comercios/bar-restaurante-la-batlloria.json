@@ -71,21 +71,24 @@
       "texto": "Desde las 6:30 de la mañana.",
       "etiquetas": [],
       "precio": "",
-      "foto": ""
+      "foto": "",
+      "fotoStock": "photo-1550507992-eb63ffee0847"
     },
     {
       "titulo": "Tapas",
       "texto": "Tapeo variado con raciones abundantes.",
       "etiquetas": [],
       "precio": "",
-      "foto": ""
+      "foto": "",
+      "fotoStock": "photo-1781115650881-bc5d55bd31d2"
     },
     {
       "titulo": "Comida casera",
       "texto": "Paella, carnes a la brasa y cocina de siempre.",
       "etiquetas": [],
       "precio": "",
-      "foto": ""
+      "foto": "",
+      "fotoStock": "photo-1622883464819-e086aa5d4830"
     }
   ],
   "seccionServiciosTitulo": "",
@@ -121,5 +124,9 @@
     "socio": "Arnau",
     "cuandoIr": "",
     "notas": "Añadido por Claude: sin web en Google Maps"
+  },
+  "fotoHeroStock": "photo-1718912334263-1518476fe9b1",
+  "reservas": {
+    "email": ""
   }
 }

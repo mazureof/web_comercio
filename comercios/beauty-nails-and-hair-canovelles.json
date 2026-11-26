@@ -65,28 +65,32 @@
       "texto": "Uñas con diseños personalizados.",
       "etiquetas": [],
       "precio": "",
-      "foto": ""
+      "foto": "",
+      "fotoStock": "photo-1775500835259-d3b3f6d6e2f2"
     },
     {
       "titulo": "Pedicura",
       "texto": "Pies cuidados y bonitos.",
       "etiquetas": [],
       "precio": "",
-      "foto": ""
+      "foto": "",
+      "fotoStock": "photo-1610992015762-45dca7fa3a85"
     },
     {
       "titulo": "Corte y peinado",
       "texto": "Corte a tu medida.",
       "etiquetas": [],
       "precio": "",
-      "foto": ""
+      "foto": "",
+      "fotoStock": "photo-1595475884562-073c30d45670"
     },
     {
       "titulo": "Color",
       "texto": "Tintes y mechas.",
       "etiquetas": [],
       "precio": "",
-      "foto": ""
+      "foto": "",
+      "fotoStock": "photo-1580618672591-eb180b1a973f"
     }
   ],
   "seccionServiciosTitulo": "",
@@ -123,5 +127,9 @@
     "socio": "Mateo",
     "cuandoIr": "Mié/Jue 15:15-16:40 · Sáb 9:30-14:30",
     "notas": "Diseños de uñas: galería de fotos en la web"
+  },
+  "fotoHeroStock": "photo-1787651343620-8d5303006ecb",
+  "reservas": {
+    "email": ""
   }
 }

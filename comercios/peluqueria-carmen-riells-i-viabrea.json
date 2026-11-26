@@ -81,21 +81,24 @@
       "texto": "Corte a tu medida y peinado para el día a día o para una ocasión especial.",
       "etiquetas": [],
       "precio": "",
-      "foto": ""
+      "foto": "",
+      "fotoStock": "photo-1560869713-7d0a29430803"
     },
     {
       "titulo": "Color y mechas",
       "texto": "Tintes, mechas y matices pensados para tu tono de piel y tu estilo.",
       "etiquetas": [],
       "precio": "",
-      "foto": ""
+      "foto": "",
+      "fotoStock": "photo-1580618672591-eb180b1a973f"
     },
     {
       "titulo": "Tratamientos",
       "texto": "Hidratación y cuidado para un pelo más sano y con más brillo.",
       "etiquetas": [],
       "precio": "",
-      "foto": ""
+      "foto": "",
+      "fotoStock": "photo-1562322140-8baeececf3df"
     }
   ],
   "seccionServiciosTitulo": "",
@@ -133,5 +136,9 @@
     "socio": "Arnau",
     "cuandoIr": "",
     "notas": "Añadido por Claude: sin web en Google Maps"
+  },
+  "fotoHeroStock": "photo-1633681926022-84c23e8cb2d6",
+  "reservas": {
+    "email": ""
   }
 }

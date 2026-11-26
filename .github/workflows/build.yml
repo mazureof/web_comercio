@@ -26,7 +26,7 @@ jobs:
       - uses: actions/cache@v4
         with:
           path: .cache
-          key: imagenes-${{ hashFiles('comercios/img/**') }}
+          key: imagenes-${{ hashFiles('comercios/**') }}
           restore-keys: imagenes-
       - run: npm ci
       - run: npm run build

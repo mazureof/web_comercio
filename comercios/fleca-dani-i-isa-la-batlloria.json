@@ -87,21 +87,24 @@
       "texto": "Pa fet cada dia al nostre obrador.",
       "etiquetas": [],
       "precio": "",
-      "foto": ""
+      "foto": "",
+      "fotoStock": "photo-1509440159596-0249088772ff"
     },
     {
       "titulo": "Brioixeria",
       "texto": "Croissants, també de pernil i formatge, i dolços per esmorzar.",
       "etiquetas": [],
       "precio": "",
-      "foto": ""
+      "foto": "",
+      "fotoStock": "photo-1609950547346-a4f431435b2b"
     },
     {
       "titulo": "Encàrrecs",
       "texto": "Coques i pastissos per encàrrec.",
       "etiquetas": [],
       "precio": "",
-      "foto": ""
+      "foto": "",
+      "fotoStock": "photo-1577595927087-dedbe84f0e4d"
     }
   ],
   "seccionServiciosTitulo": "",
@@ -138,5 +141,9 @@
     "socio": "Arnau",
     "cuandoIr": "Mar/Jue 16:30-19:15 · Dom 11:00-14:00",
     "notas": "Negocio familiar muy bien valorado (4,7 con 154 reseñas). Tarde entre semana = poca gente"
+  },
+  "fotoHeroStock": "photo-1568254183919-78a4f43a2877",
+  "reservas": {
+    "email": ""
   }
 }

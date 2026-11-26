@@ -99,21 +99,24 @@
       "texto": "Menaje y artículos para casa.",
       "etiquetas": [],
       "precio": "",
-      "foto": ""
+      "foto": "",
+      "fotoStock": "photo-1604851880472-376ce53d3244"
     },
     {
       "titulo": "Regalos",
       "texto": "Detalles y regalos para cualquier ocasión.",
       "etiquetas": [],
       "precio": "",
-      "foto": ""
+      "foto": "",
+      "fotoStock": "photo-1585221330389-24fb30535ec7"
     },
     {
       "titulo": "Lo que necesites",
       "texto": "Si no lo ves, pregúntanos.",
       "etiquetas": [],
       "precio": "",
-      "foto": ""
+      "foto": "",
+      "fotoStock": "photo-1631856954655-966f97d809de"
     }
   ],
   "seccionServiciosTitulo": "",
@@ -151,5 +154,9 @@
     "socio": "Arnau",
     "cuandoIr": "Mar/Jue 16:30-19:15 · Sáb 9:30-14:00 · Dom 10:00-13:30",
     "notas": "Prioridad baja"
+  },
+  "fotoHeroStock": "photo-1740439225991-ab26e8f6da9d",
+  "reservas": {
+    "email": ""
   }
 }

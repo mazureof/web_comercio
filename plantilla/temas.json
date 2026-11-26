@@ -515,7 +515,8 @@
             ]
           ]
         }
-      }
+      },
+      "reserva": "cita"
     },
     "barberia": {
       "preset": "laton",
@@ -619,7 +620,8 @@
             ]
           ]
         }
-      }
+      },
+      "reserva": "cita"
     },
     "estetica": {
       "preset": "rosa",
@@ -723,7 +725,8 @@
             ]
           ]
         }
-      }
+      },
+      "reserva": "cita"
     },
     "bar": {
       "preset": "taberna",
@@ -827,7 +830,8 @@
             ]
           ]
         }
-      }
+      },
+      "reserva": "mesa"
     },
     "restaurante": {
       "preset": "mesa",
@@ -931,7 +935,8 @@
             ]
           ]
         }
-      }
+      },
+      "reserva": "mesa"
     },
     "panaderia": {
       "preset": "horno",
@@ -1035,7 +1040,8 @@
             ]
           ]
         }
-      }
+      },
+      "reserva": "encargo"
     },
     "carniceria": {
       "preset": "mostrador",
@@ -1139,7 +1145,8 @@
             ]
           ]
         }
-      }
+      },
+      "reserva": "encargo"
     },
     "taller": {
       "preset": "taller",
@@ -1251,7 +1258,8 @@
             ]
           ]
         }
-      }
+      },
+      "reserva": "taller"
     },
     "oficio": {
       "preset": "obra",
@@ -1355,7 +1363,8 @@
             ]
           ]
         }
-      }
+      },
+      "reserva": "taller"
     },
     "tienda": {
       "preset": "escaparate",
@@ -1459,7 +1468,8 @@
             ]
           ]
         }
-      }
+      },
+      "reserva": null
     },
     "alimentacion": {
       "preset": "mercado",
@@ -1563,7 +1573,8 @@
             ]
           ]
         }
-      }
+      },
+      "reserva": null
     },
     "otro": {
       "preset": "neutro",
@@ -1659,7 +1670,8 @@
             ]
           ]
         }
-      }
+      },
+      "reserva": "cita"
     }
   }
 }

@@ -75,21 +75,24 @@
       "texto": "Como el bocata de pinchos con alioli.",
       "etiquetas": [],
       "precio": "",
-      "foto": ""
+      "foto": "",
+      "fotoStock": "photo-1550507992-eb63ffee0847"
     },
     {
       "titulo": "Comidas",
       "texto": "Platos para comer o cenar.",
       "etiquetas": [],
       "precio": "",
-      "foto": ""
+      "foto": "",
+      "fotoStock": "photo-1622883464819-e086aa5d4830"
     },
     {
       "titulo": "Terraza",
       "texto": "Gran terraza para disfrutar al aire libre.",
       "etiquetas": [],
       "precio": "",
-      "foto": ""
+      "foto": "",
+      "fotoStock": "photo-1469631423273-6995642a6a40"
     }
   ],
   "seccionServiciosTitulo": "",
@@ -126,5 +129,9 @@
     "socio": "Mateo",
     "cuandoIr": "Mié/Jue 15:30-16:40 · Sáb/Dom 9:30-12:00",
     "notas": "Dueños nuevos: buen momento para estrenar web"
+  },
+  "fotoHeroStock": "photo-1694685367640-05d6624e57f1",
+  "reservas": {
+    "email": ""
   }
 }

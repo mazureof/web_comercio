@@ -100,21 +100,24 @@
       "texto": "Lo que echas de menos de casa.",
       "etiquetas": [],
       "precio": "",
-      "foto": ""
+      "foto": "",
+      "fotoStock": "photo-1757801752791-8bcd63cec878"
     },
     {
       "titulo": "Productos latinos",
       "texto": "Una selección de productos latinos.",
       "etiquetas": [],
       "precio": "",
-      "foto": ""
+      "foto": "",
+      "fotoStock": "photo-1773946836315-bd8269b62b93"
     },
     {
       "titulo": "Pedidos",
       "texto": "Pregúntanos por WhatsApp si lo tenemos.",
       "etiquetas": [],
       "precio": "",
-      "foto": ""
+      "foto": "",
+      "fotoStock": "photo-1766040923580-16ad32fae8b4"
     }
   ],
   "seccionServiciosTitulo": "",
@@ -150,5 +153,9 @@
     "socio": "Mateo",
     "cuandoIr": "Sáb 10:00-14:00 o 17:00-19:00 · Dom 10:00-14:00",
     "notas": "Productos rumanos y latinos"
+  },
+  "fotoHeroStock": "photo-1670684684445-a4504dca0bbc",
+  "reservas": {
+    "email": ""
   }
 }

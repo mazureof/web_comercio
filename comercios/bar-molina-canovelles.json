@@ -70,21 +70,24 @@
       "texto": "Tapas para picar.",
       "etiquetas": [],
       "precio": "",
-      "foto": ""
+      "foto": "",
+      "fotoStock": "photo-1781115650881-bc5d55bd31d2"
     },
     {
       "titulo": "Bocadillos",
       "texto": "Bocadillos para desayunar o merendar.",
       "etiquetas": [],
       "precio": "",
-      "foto": ""
+      "foto": "",
+      "fotoStock": "photo-1550507992-eb63ffee0847"
     },
     {
       "titulo": "Patatas bravas",
       "texto": "Las bravas de la casa.",
       "etiquetas": [],
       "precio": "",
-      "foto": ""
+      "foto": "",
+      "fotoStock": "photo-1565599837634-134bc3aadce8"
     }
   ],
   "seccionServiciosTitulo": "",
@@ -122,5 +125,9 @@
     "socio": "Mateo",
     "cuandoIr": "Mié/Jue 15:30-16:40 · Sáb/Dom 9:30-12:00",
     "notas": "Llevan Vanesa y Daniel. Cartel desactualizado según reseñas: la web con carta lo arregla"
+  },
+  "fotoHeroStock": "photo-1633583960343-e258fb899aef",
+  "reservas": {
+    "email": ""
   }
 }

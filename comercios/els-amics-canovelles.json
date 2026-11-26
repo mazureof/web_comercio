@@ -75,21 +75,24 @@
       "texto": "Como el bocata de pinchos con alioli.",
       "etiquetas": [],
       "precio": "",
-      "foto": ""
+      "foto": "",
+      "fotoStock": "photo-1550507992-eb63ffee0847"
     },
     {
       "titulo": "Comida casera",
       "texto": "Platos de cocina casera.",
       "etiquetas": [],
       "precio": "",
-      "foto": ""
+      "foto": "",
+      "fotoStock": "photo-1622883464819-e086aa5d4830"
     },
     {
       "titulo": "Menú de fin de semana",
       "texto": "Pregúntanos por el menú del sábado y domingo.",
       "etiquetas": [],
       "precio": "",
-      "foto": ""
+      "foto": "",
+      "fotoStock": "photo-1605013343009-c126c3dc2f9d"
     }
   ],
   "seccionServiciosTitulo": "",
@@ -127,5 +130,9 @@
     "socio": "Mateo",
     "cuandoIr": "Mié/Jue 15:30-16:40 · Sáb/Dom 9:30-12:00",
     "notas": "Menú de fin de semana: la web puede enseñarlo. Sin teléfono visible = argumento de venta"
+  },
+  "fotoHeroStock": "photo-1555939594-58d7cb561ad1",
+  "reservas": {
+    "email": ""
   }
 }

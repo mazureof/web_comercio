@@ -252,6 +252,8 @@ export function validar(c, { imgDir } = {}) {
   }
   const t = c.tema || {};
   for (const kk of ['primario', 'acento', 'cabecera']) if (t[kk] && !HEX.test(t[kk])) e(`tema.${kk}: color hex de 6 cifras (#A84B26)`);
+  if (c.reservas?.email && !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(c.reservas.email)) e('reservas.email no válido');
+  if (c.estado === 'publicada' && !c.reservas?.email && !c.reservas?.desactivar && ['peluqueria','barberia','estetica','otro','taller','oficio','bar','restaurante','panaderia','carniceria'].includes(c.tipo)) w('reservas.email vacío: las solicitudes del calendario no llegarán a nadie. Pon el email del negocio o "desactivar": true');
   if (c.geo && (typeof c.geo.lat !== 'number' || typeof c.geo.lng !== 'number')) e('geo: { "lat": número, "lng": número }');
   if (c.estado === 'publicada') {
     const ti = c.titular || {};

@@ -188,7 +188,7 @@
       ],
       [
         "Esta web no recoge datos",
-        "Esta web no tiene base de datos, no guarda la información que escribes y no usa cookies ni herramientas de analítica. Los botones de WhatsApp solo abren la aplicación en tu dispositivo: el mensaje únicamente nos llega si tú decides enviarlo."
+        "Esta web no tiene base de datos ni usa cookies o herramientas de analítica. Si nos envías una solicitud de cita, reserva o encargo, tu nombre, tu teléfono, el día y la hora elegidos y tu comentario nos llegan por correo electrónico a través del servicio FormSubmit (formsubmit.co), y solo los usamos para contactarte y gestionar tu solicitud."
       ],
       [
         "Datos que tratamos y para qué",
@@ -254,7 +254,56 @@
     "direccion": "Dirección",
     "dudas": "¿Tienes alguna duda? Escríbenos o llámanos y te respondemos enseguida.",
     "precios": "Precios orientativos. Pregúntanos sin compromiso.",
-    "verFotos": "Ver foto"
+    "verFotos": "Ver foto",
+    "tel": "Teléfono",
+    "wa": "WhatsApp",
+    "fotos": "Las fotografías de ambiente son de Unsplash (licencia Unsplash, uso libre) y se sustituirán por fotos del propio negocio.",
+    "fotosTitulo": "Fotografías"
   },
-  "tipoEn": "{tipo} en {poblacion}"
+  "tipoEn": "{tipo} en {poblacion}",
+  "reserva": {
+    "titulo": {
+      "cita": "Pide tu cita",
+      "mesa": "Reserva tu mesa",
+      "encargo": "Haz tu encargo",
+      "taller": "Pide hora para tu coche"
+    },
+    "intro": {
+      "cita": "Elige día y hora y envíanos tu solicitud. Te llamaremos para confirmarla.",
+      "mesa": "Elige día y hora y envíanos tu solicitud. Te llamaremos para confirmarla.",
+      "encargo": "Dinos qué quieres y cuándo pasarás a recogerlo. Te llamaremos para confirmarlo.",
+      "taller": "Elige día y hora para traer el coche y te llamaremos para confirmarlo."
+    },
+    "cta": {
+      "cita": "Pedir cita",
+      "mesa": "Reservar mesa",
+      "encargo": "Hacer un encargo",
+      "taller": "Pedir hora",
+      "ninguna": "Horario y dirección"
+    },
+    "dia": "Día",
+    "diaEncargo": "Día de recogida",
+    "hora": "Hora",
+    "datos": "Tus datos",
+    "elige": "Elige primero un día.",
+    "sinHoras": "Hoy ya no quedan horas. Elige otro día.",
+    "servicio": "¿Qué necesitas?",
+    "personas": "Personas",
+    "encargoQue": "¿Qué quieres encargar?",
+    "coche": "Coche (marca y modelo)",
+    "nombre": "Nombre",
+    "telefono": "Teléfono",
+    "comentario": "Comentario (opcional)",
+    "enviar": "Enviar solicitud",
+    "enviando": "Enviando…",
+    "ok": "¡Solicitud enviada! Te llamaremos para confirmarla.",
+    "okDemo": "Así verá el cliente la confirmación. En esta demo no se envía nada.",
+    "error": "No se ha podido enviar. Llámanos al {tel}.",
+    "falta": "Elige día y hora y escribe tu nombre y tu teléfono.",
+    "nota": "No es una reserva automática: revisamos tu solicitud y te llamamos para confirmarla.",
+    "legal": "Tus datos solo se usan para gestionar tu solicitud.",
+    "otro": "Otro",
+    "asunto": "Nueva solicitud desde la web",
+    "horaDia": "{dia} a las {hora}"
+  }
 }

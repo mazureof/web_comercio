@@ -82,21 +82,24 @@
       "texto": "Corte de mujer y de hombre, adaptado a ti.",
       "etiquetas": [],
       "precio": "",
-      "foto": ""
+      "foto": "",
+      "fotoStock": "photo-1595475884562-073c30d45670"
     },
     {
       "titulo": "Color",
       "texto": "Tintes y mechas con asesoramiento.",
       "etiquetas": [],
       "precio": "",
-      "foto": ""
+      "foto": "",
+      "fotoStock": "photo-1580618672591-eb180b1a973f"
     },
     {
       "titulo": "Peinado",
       "texto": "Peinados para el día a día o para una ocasión.",
       "etiquetas": [],
       "precio": "",
-      "foto": ""
+      "foto": "",
+      "fotoStock": "photo-1560869713-7d0a29430803"
     }
   ],
   "seccionServiciosTitulo": "",
@@ -134,5 +137,9 @@
     "socio": "Arnau",
     "cuandoIr": "Mar/Jue 15:15-18:30 · Sáb 9:30-12:00",
     "notas": "Trabaja con cita: ir sin clientas en sillón. 5,0 en Google con 11 reseñas"
+  },
+  "fotoHeroStock": "photo-1600948836101-f9ffda59d250",
+  "reservas": {
+    "email": ""
   }
 }

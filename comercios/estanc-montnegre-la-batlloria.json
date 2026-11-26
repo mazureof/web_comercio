@@ -95,21 +95,24 @@
       "texto": "Tabac i articles de fumador.",
       "etiquetas": [],
       "precio": "",
-      "foto": ""
+      "foto": "",
+      "fotoStock": "photo-1521056787327-165dc2a32836"
     },
     {
       "titulo": "Llibres i papereria",
       "texto": "Llibres, revistes i material de papereria.",
       "etiquetas": [],
       "precio": "",
-      "foto": ""
+      "foto": "",
+      "fotoStock": "photo-1543002588-bfa74002ed7e"
     },
     {
       "titulo": "Punt InPost",
       "texto": "Recull i envia els teus paquets aquí mateix.",
       "etiquetas": [],
       "precio": "",
-      "foto": ""
+      "foto": "",
+      "fotoStock": "photo-1577705998148-6da4f3963bc8"
     }
   ],
   "seccionServiciosTitulo": "",
@@ -145,5 +148,9 @@
     "socio": "Arnau",
     "cuandoIr": "Mar/Jue 17:00-19:15 · Sáb/Dom 9:30-13:30",
     "notas": "Punto InPost. Preguntar por Toni"
+  },
+  "fotoHeroStock": "photo-1601469090980-fc95e8d95544",
+  "reservas": {
+    "email": ""
   }
 }

@@ -85,28 +85,32 @@
       "texto": "Cambio de aceite, filtros y revisión general.",
       "etiquetas": [],
       "precio": "",
-      "foto": ""
+      "foto": "",
+      "fotoStock": "photo-1487754180451-c456f719a1fc"
     },
     {
       "titulo": "Frenos y neumáticos",
       "texto": "Pastillas, discos, alineado y equilibrado.",
       "etiquetas": [],
       "precio": "",
-      "foto": ""
+      "foto": "",
+      "fotoStock": "photo-1645445522156-9ac06bc7a767"
     },
     {
       "titulo": "Diagnosis",
       "texto": "Lectura de averías con equipo de diagnosis.",
       "etiquetas": [],
       "precio": "",
-      "foto": ""
+      "foto": "",
+      "fotoStock": "photo-1486262715619-67b85e0b08d3"
     },
     {
       "titulo": "Pre-ITV",
       "texto": "Revisamos el coche para que pase la ITV a la primera.",
       "etiquetas": [],
       "precio": "",
-      "foto": ""
+      "foto": "",
+      "fotoStock": "photo-1498887960847-2a5e46312788"
     }
   ],
   "seccionServiciosTitulo": "",
@@ -145,5 +149,9 @@
     "socio": "Mateo",
     "cuandoIr": "Mié/Jue 15:15-16:40",
     "notas": "176 reseñas: puede que ya tenga web. Mirar antes"
+  },
+  "fotoHeroStock": "photo-1727893119356-1702fe921cf9",
+  "reservas": {
+    "email": ""
   }
 }

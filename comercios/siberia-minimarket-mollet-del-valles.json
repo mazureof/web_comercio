@@ -40,21 +40,24 @@
       "texto": "Cervezas que no encontrarás en el súper.",
       "etiquetas": [],
       "precio": "",
-      "foto": ""
+      "foto": "",
+      "fotoStock": "photo-1760776140488-32fcfab4066a"
     },
     {
       "titulo": "Embutidos",
       "texto": "Embutidos y ahumados.",
       "etiquetas": [],
       "precio": "",
-      "foto": ""
+      "foto": "",
+      "fotoStock": "photo-1592686092916-672fa9e86866"
     },
     {
       "titulo": "Despensa",
       "texto": "Conservas, dulces y productos del día a día.",
       "etiquetas": [],
       "precio": "",
-      "foto": ""
+      "foto": "",
+      "fotoStock": "photo-1757801752791-8bcd63cec878"
     }
   ],
   "seccionServiciosTitulo": "",
@@ -92,5 +95,9 @@
     "socio": "Mateo",
     "cuandoIr": "Mié 16:00-16:40 · Jue 15:15-16:40 · Sáb/Dom 10:00-14:30",
     "notas": "Prioridad baja"
+  },
+  "fotoHeroStock": "photo-1583258292688-d0213dc5a3a8",
+  "reservas": {
+    "email": ""
   }
 }

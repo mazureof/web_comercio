@@ -71,21 +71,24 @@
       "texto": "Entrepans generosos per començar bé el dia.",
       "etiquetas": [],
       "precio": "",
-      "foto": ""
+      "foto": "",
+      "fotoStock": "photo-1550507992-eb63ffee0847"
     },
     {
       "titulo": "Tapes",
       "texto": "Tapes i racions per compartir.",
       "etiquetas": [],
       "precio": "",
-      "foto": ""
+      "foto": "",
+      "fotoStock": "photo-1781115650881-bc5d55bd31d2"
     },
     {
       "titulo": "Menú de cap de setmana",
       "texto": "Pregunta pel menú del dissabte i el diumenge.",
       "etiquetas": [],
       "precio": "",
-      "foto": ""
+      "foto": "",
+      "fotoStock": "photo-1605013343009-c126c3dc2f9d"
     }
   ],
   "seccionServiciosTitulo": "",
@@ -122,5 +125,9 @@
     "socio": "Arnau",
     "cuandoIr": "Mar 15:30-19:15 · Sáb/Dom 9:30-11:30",
     "notas": "Jueves cerrado. Menú de fin de semana: la web puede enseñar menú y tapas"
+  },
+  "fotoHeroStock": "photo-1721715115717-8dfeea6bfb8a",
+  "reservas": {
+    "email": ""
   }
 }

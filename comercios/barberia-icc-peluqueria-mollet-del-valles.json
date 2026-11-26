@@ -86,21 +86,24 @@
       "texto": "Clásico o degradado, a tijera o a máquina.",
       "etiquetas": [],
       "precio": "",
-      "foto": ""
+      "foto": "",
+      "fotoStock": "photo-1621605815971-fbc98d665033"
     },
     {
       "titulo": "Arreglo de barba",
       "texto": "Perfilado a navaja y toalla caliente.",
       "etiquetas": [],
       "precio": "",
-      "foto": ""
+      "foto": "",
+      "fotoStock": "photo-1599351431202-1e0f0137899a"
     },
     {
       "titulo": "Corte + barba",
       "texto": "El servicio completo para salir como nuevo.",
       "etiquetas": [],
       "precio": "",
-      "foto": ""
+      "foto": "",
+      "fotoStock": "photo-1536520002442-39764a41e987"
     }
   ],
   "seccionServiciosTitulo": "",
@@ -138,5 +141,9 @@
     "socio": "Mateo",
     "cuandoIr": "Mié/Jue 16:00-16:40 · Sáb 9:30-14:00",
     "notas": "401 reseñas (4,9): puede tener app de citas. Mirar antes"
+  },
+  "fotoHeroStock": "photo-1621645582931-d1d3e6564943",
+  "reservas": {
+    "email": ""
   }
 }

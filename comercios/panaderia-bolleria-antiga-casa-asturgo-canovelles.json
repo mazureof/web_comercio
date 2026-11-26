@@ -75,21 +75,24 @@
       "texto": "Barras, hogazas y panes especiales.",
       "etiquetas": [],
       "precio": "",
-      "foto": ""
+      "foto": "",
+      "fotoStock": "photo-1509440159596-0249088772ff"
     },
     {
       "titulo": "Bollería",
       "texto": "Croissants, ensaimadas y dulces para el desayuno.",
       "etiquetas": [],
       "precio": "",
-      "foto": ""
+      "foto": "",
+      "fotoStock": "photo-1609950547346-a4f431435b2b"
     },
     {
       "titulo": "Encargos",
       "texto": "Tartas y bandejas para celebraciones.",
       "etiquetas": [],
       "precio": "",
-      "foto": ""
+      "foto": "",
+      "fotoStock": "photo-1730406928830-25b6133a6ebb"
     }
   ],
   "seccionServiciosTitulo": "",
@@ -127,5 +130,9 @@
     "socio": "Mateo",
     "cuandoIr": "",
     "notas": "Añadido por Claude: sin web en Google Maps"
+  },
+  "fotoHeroStock": "photo-1577595927087-dedbe84f0e4d",
+  "reservas": {
+    "email": ""
   }
 }

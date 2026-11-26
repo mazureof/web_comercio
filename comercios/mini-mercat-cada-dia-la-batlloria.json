@@ -75,21 +75,24 @@
       "texto": "Producto de temporada.",
       "etiquetas": [],
       "precio": "",
-      "foto": ""
+      "foto": "",
+      "fotoStock": "photo-1607349913338-fca6f7fc42d0"
     },
     {
       "titulo": "Despensa",
       "texto": "Todo lo básico para tu compra diaria.",
       "etiquetas": [],
       "precio": "",
-      "foto": ""
+      "foto": "",
+      "fotoStock": "photo-1757801752791-8bcd63cec878"
     },
     {
       "titulo": "Pedidos",
       "texto": "Encarga por WhatsApp y recoge cuando quieras.",
       "etiquetas": [],
       "precio": "",
-      "foto": ""
+      "foto": "",
+      "fotoStock": "photo-1766040923580-16ad32fae8b4"
     }
   ],
   "seccionServiciosTitulo": "",
@@ -127,5 +130,9 @@
     "socio": "Arnau",
     "cuandoIr": "Cualquier franja",
     "notas": "Prioridad baja"
+  },
+  "fotoHeroStock": "photo-1773946836315-bd8269b62b93",
+  "reservas": {
+    "email": ""
   }
 }

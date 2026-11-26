@@ -70,21 +70,24 @@
       "texto": "Bocadillos para desayunar o comer.",
       "etiquetas": [],
       "precio": "",
-      "foto": ""
+      "foto": "",
+      "fotoStock": "photo-1550507992-eb63ffee0847"
     },
     {
       "titulo": "Tapas",
       "texto": "Patatas bravas y tapas para compartir.",
       "etiquetas": [],
       "precio": "",
-      "foto": ""
+      "foto": "",
+      "fotoStock": "photo-1781115650881-bc5d55bd31d2"
     },
     {
       "titulo": "Platos combinados",
       "texto": "Platos combinados a buen precio.",
       "etiquetas": [],
       "precio": "",
-      "foto": ""
+      "foto": "",
+      "fotoStock": "photo-1767096088529-1ba1ecc457ee"
     }
   ],
   "seccionServiciosTitulo": "",
@@ -119,5 +122,9 @@
     "socio": "Arnau",
     "cuandoIr": "",
     "notas": "Añadido por Claude: sin web en Google Maps"
+  },
+  "fotoHeroStock": "photo-1738894715313-9f952be758b0",
+  "reservas": {
+    "email": ""
   }
 }

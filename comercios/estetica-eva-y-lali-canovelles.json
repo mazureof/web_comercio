@@ -76,21 +76,24 @@
       "texto": "Limpieza e hidratación adaptadas a tu piel.",
       "etiquetas": [],
       "precio": "",
-      "foto": ""
+      "foto": "",
+      "fotoStock": "photo-1761718209835-c8586b7dcac0"
     },
     {
       "titulo": "Manicura y pedicura",
       "texto": "Uñas cuidadas, con esmaltado normal o semipermanente.",
       "etiquetas": [],
       "precio": "",
-      "foto": ""
+      "foto": "",
+      "fotoStock": "photo-1775500835259-d3b3f6d6e2f2"
     },
     {
       "titulo": "Depilación",
       "texto": "Con cera o con el método que mejor te vaya.",
       "etiquetas": [],
       "precio": "",
-      "foto": ""
+      "foto": "",
+      "fotoStock": "photo-1639162906614-0603b0ae95fd"
     }
   ],
   "seccionServiciosTitulo": "",
@@ -129,5 +132,9 @@
     "socio": "Mateo",
     "cuandoIr": "Mié/Jue 16:00-16:40",
     "notas": "Solo cuadra miércoles o jueves a partir de las 16:00"
+  },
+  "fotoHeroStock": "photo-1619607146034-5a05296c8f9a",
+  "reservas": {
+    "email": ""
   }
 }

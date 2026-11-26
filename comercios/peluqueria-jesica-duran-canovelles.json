@@ -77,21 +77,24 @@
       "texto": "Corte a tu medida, siempre respetando lo que te gusta.",
       "etiquetas": [],
       "precio": "",
-      "foto": ""
+      "foto": "",
+      "fotoStock": "photo-1560869713-7d0a29430803"
     },
     {
       "titulo": "Color",
       "texto": "Tintes y mechas.",
       "etiquetas": [],
       "precio": "",
-      "foto": ""
+      "foto": "",
+      "fotoStock": "photo-1580618672591-eb180b1a973f"
     },
     {
       "titulo": "Fiestas spa para niñas",
       "texto": "Celebra un cumpleaños diferente: peinados, uñas y mimos para las más pequeñas.",
       "etiquetas": [],
       "precio": "",
-      "foto": ""
+      "foto": "",
+      "fotoStock": "photo-1562322140-8baeececf3df"
     }
   ],
   "seccionServiciosTitulo": "",
@@ -130,5 +133,9 @@
     "socio": "Mateo",
     "cuandoIr": "Mié/Jue 15:15-16:40 · Sáb 9:30-14:00",
     "notas": "Hace fiestas spa para niñas: servicio a destacar en la web"
+  },
+  "fotoHeroStock": "photo-1521590832167-7bcbfaa6381f",
+  "reservas": {
+    "email": ""
   }
 }

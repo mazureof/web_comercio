@@ -94,21 +94,24 @@
       "texto": "Ropa y complementos de temporada.",
       "etiquetas": [],
       "precio": "",
-      "foto": ""
+      "foto": "",
+      "fotoStock": "photo-1489987707025-afc232f7ea0f"
     },
     {
       "titulo": "Ofertas",
       "texto": "Ofertas puntuales en tienda.",
       "etiquetas": [],
       "precio": "",
-      "foto": ""
+      "foto": "",
+      "fotoStock": "photo-1532453288672-3a27e9be9efd"
     },
     {
       "titulo": "Asesoramiento",
       "texto": "Te ayudamos a encontrar lo que buscas.",
       "etiquetas": [],
       "precio": "",
-      "foto": ""
+      "foto": "",
+      "fotoStock": "photo-1603400521630-9f2de124b33b"
     }
   ],
   "seccionServiciosTitulo": "",
@@ -146,5 +149,9 @@
     "socio": "Mateo",
     "cuandoIr": "Sáb 9:30-13:30 o 16:30-19:00",
     "notas": "Entre semana no cuadra con el horario de Mateo"
+  },
+  "fotoHeroStock": "photo-1441984904996-e0b6ba687e04",
+  "reservas": {
+    "email": ""
   }
 }

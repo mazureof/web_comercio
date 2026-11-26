@@ -71,21 +71,24 @@
       "texto": "Café y bocadillo desde primera hora.",
       "etiquetas": [],
       "precio": "",
-      "foto": ""
+      "foto": "",
+      "fotoStock": "photo-1550507992-eb63ffee0847"
     },
     {
       "titulo": "Patatas bravas",
       "texto": "Hechas a mano, con alioli y salsa picante.",
       "etiquetas": [],
       "precio": "",
-      "foto": ""
+      "foto": "",
+      "fotoStock": "photo-1565599837634-134bc3aadce8"
     },
     {
       "titulo": "Raciones",
       "texto": "Raciones generosas para compartir.",
       "etiquetas": [],
       "precio": "",
-      "foto": ""
+      "foto": "",
+      "fotoStock": "photo-1767096088529-1ba1ecc457ee"
     }
   ],
   "seccionServiciosTitulo": "",
@@ -120,5 +123,9 @@
     "socio": "Arnau",
     "cuandoIr": "Mar/Jue 16:00-19:15 · Sáb 9:30-11:30",
     "notas": "Domingo cerrado"
+  },
+  "fotoHeroStock": "photo-1721715115717-8dfeea6bfb8a",
+  "reservas": {
+    "email": ""
   }
 }

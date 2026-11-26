@@ -70,21 +70,24 @@
       "texto": "Como el secreto, hecho a la brasa.",
       "etiquetas": [],
       "precio": "",
-      "foto": ""
+      "foto": "",
+      "fotoStock": "photo-1508615263227-c5d58c1e5821"
     },
     {
       "titulo": "Comida casera",
       "texto": "Platos de siempre, hechos en casa.",
       "etiquetas": [],
       "precio": "",
-      "foto": ""
+      "foto": "",
+      "fotoStock": "photo-1622883464819-e086aa5d4830"
     },
     {
       "titulo": "Fines de semana",
       "texto": "Viernes y sábado abrimos también por la noche.",
       "etiquetas": [],
       "precio": "",
-      "foto": ""
+      "foto": "",
+      "fotoStock": "photo-1718912334263-1518476fe9b1"
     }
   ],
   "seccionServiciosTitulo": "",
@@ -120,5 +123,9 @@
     "socio": "Mateo",
     "cuandoIr": "Mié/Jue 15:15-16:00 · Sáb 11:00-12:30",
     "notas": "Ir cuando acaben las comidas. Preguntar por Angi"
+  },
+  "fotoHeroStock": "photo-1656423521731-9665583f100c",
+  "reservas": {
+    "email": ""
   }
 }

@@ -50,6 +50,70 @@
   }
   pinta(); setInterval(pinta, 60000);
 
+
+  /* Calendario de solicitud (no reserva al momento: envía la petición al negocio) */
+  var form = $('[data-reserva]');
+  if (form && D.res) {
+    var R = D.res, T = R.t, H = D.horario, daysBox = $('[data-days]', form), slotsBox = $('[data-slots]', form);
+    var sel = { dia: null, hora: null };
+    var abiertoPor = function (d) { // tramos del día (Date)
+      if (!H) return d.getDay() === 0 ? [] : [['09:00', '13:30'], ['16:00', '20:00']];
+      return H[DIAS[d.getDay()]] || [];
+    };
+    var hoy = new Date(), ahoraMin = ahora().min;
+    var dias = [];
+    for (var i = 0; dias.length < 12 && i < 30; i++) {
+      var d = new Date(hoy.getFullYear(), hoy.getMonth(), hoy.getDate() + i);
+      if (abiertoPor(d).length) dias.push(d);
+    }
+    var iso = function (d) { return d.getFullYear() + '-' + ('0' + (d.getMonth() + 1)).slice(-2) + '-' + ('0' + d.getDate()).slice(-2); };
+    var marca = function (box, btn) { $$('[role="radio"]', box).forEach(function (b) { b.setAttribute('aria-checked', b === btn ? 'true' : 'false'); b.tabIndex = b === btn ? 0 : -1; }); };
+    var pintaSlots = function (d) {
+      slotsBox.innerHTML = ''; sel.hora = null;
+      var tr = abiertoPor(d), esHoy = iso(d) === iso(hoy), n = 0;
+      tr.forEach(function (t) {
+        var a = m(t[0]), b = m(t[1]); if (b <= a) b += 1440;
+        for (var x = Math.ceil(a / 30) * 30; x <= b - 30; x += 30) {
+          if (esHoy && x < ahoraMin + 60) continue;
+          var h = Math.floor(x / 60) % 24 + ':' + ('0' + (x % 60)).slice(-2);
+          var btn = document.createElement('button');
+          btn.type = 'button'; btn.className = 'cal__slot'; btn.setAttribute('role', 'radio'); btn.setAttribute('aria-checked', 'false'); btn.textContent = h; btn.tabIndex = n ? -1 : 0;
+          btn.addEventListener('click', function () { sel.hora = this.textContent; marca(slotsBox, this); });
+          slotsBox.appendChild(btn); n++;
+        }
+      });
+      if (!n) slotsBox.innerHTML = '<p class="cal__hint">' + T.sinHoras + '</p>';
+    };
+    dias.forEach(function (d, k) {
+      var b = document.createElement('button');
+      b.type = 'button'; b.className = 'cal__day'; b.setAttribute('role', 'radio'); b.setAttribute('aria-checked', 'false'); b.tabIndex = k ? -1 : 0;
+      b.innerHTML = '<small>' + R.cortos[DIAS[d.getDay()]] + '</small><b>' + d.getDate() + '</b><small>' + R.meses[d.getMonth()] + '</small>';
+      b.setAttribute('aria-label', D.dias[DIAS[d.getDay()]] + ' ' + d.getDate());
+      b.addEventListener('click', function () { sel.dia = d; marca(daysBox, b); pintaSlots(d); });
+      daysBox.appendChild(b);
+    });
+    var err = $('[data-err]', form), ok = $('[data-ok]', form), send = $('[data-send]', form);
+    form.addEventListener('submit', function (e) {
+      e.preventDefault();
+      var v = function (n) { return (form.elements[n] && form.elements[n].value || '').trim(); };
+      if (!sel.dia || !sel.hora || !v('nombre') || v('telefono').replace(/\D/g, '').length < 9) { err.textContent = T.falta; err.hidden = false; return; }
+      err.hidden = true;
+      var cuando = D.dias[DIAS[sel.dia.getDay()]] + ' ' + sel.dia.getDate() + '/' + (sel.dia.getMonth() + 1) + ' · ' + sel.hora;
+      var datos = { _subject: T.asunto + ' · ' + R.nombre, _template: 'table', _captcha: 'false', Cuando: cuando, Nombre: v('nombre'), Telefono: v('telefono') };
+      ['servicio', 'personas', 'encargo', 'coche', 'comentario'].forEach(function (k) { if (v(k)) datos[k.charAt(0).toUpperCase() + k.slice(1)] = v(k); });
+      var fin = function (texto, nota) {
+        ok.innerHTML = ''; ok.appendChild(document.createTextNode(texto + ' (' + cuando + ')'));
+        if (nota) { var s2 = document.createElement('small'); s2.textContent = nota; ok.appendChild(s2); }
+        ok.hidden = false; send.hidden = true; ok.focus && ok.setAttribute('tabindex', '-1'); ok.focus();
+      };
+      if (R.demo || !R.email) { fin(T.ok, R.demo ? T.okDemo : ''); return; }
+      send.disabled = true; send.textContent = T.enviando;
+      fetch('https://formsubmit.co/ajax/' + encodeURIComponent(R.email), { method: 'POST', headers: { 'Content-Type': 'application/json', Accept: 'application/json' }, body: JSON.stringify(datos) })
+        .then(function (r) { if (!r.ok) throw new Error(r.status); fin(T.ok); })
+        .catch(function () { send.disabled = false; send.textContent = T.enviar; err.textContent = T.error.replace('{tel}', R.tel || ''); err.hidden = false; });
+    });
+  }
+
   /* Lightbox */
   var dlg = $('[data-lb-dialog]');
   if (dlg && typeof dlg.showModal === 'function') {

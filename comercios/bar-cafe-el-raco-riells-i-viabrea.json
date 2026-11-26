@@ -70,21 +70,24 @@
       "texto": "Bocadillos, cafés y tostadas para empezar el día.",
       "etiquetas": [],
       "precio": "",
-      "foto": ""
+      "foto": "",
+      "fotoStock": "photo-1484251065541-c9770829890f"
     },
     {
       "titulo": "Tapas",
       "texto": "Raciones para compartir a cualquier hora.",
       "etiquetas": [],
       "precio": "",
-      "foto": ""
+      "foto": "",
+      "fotoStock": "photo-1781115650881-bc5d55bd31d2"
     },
     {
       "titulo": "Menú del día",
       "texto": "Cocina casera de lunes a viernes.",
       "etiquetas": [],
       "precio": "",
-      "foto": ""
+      "foto": "",
+      "fotoStock": "photo-1605013343009-c126c3dc2f9d"
     }
   ],
   "seccionServiciosTitulo": "",
@@ -122,5 +125,9 @@
     "socio": "Arnau",
     "cuandoIr": "",
     "notas": "Añadido por Claude: sin web en Google Maps"
+  },
+  "fotoHeroStock": "photo-1738894715313-9f952be758b0",
+  "reservas": {
+    "email": ""
   }
 }
