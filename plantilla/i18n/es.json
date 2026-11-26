@@ -188,7 +188,7 @@
       ],
       [
         "Esta web no recoge datos",
-        "Esta web no tiene base de datos ni usa cookies o herramientas de analítica. El calendario no envía datos a ningún servidor: solo prepara un email en tu propio programa de correo, que tú decides enviar. Ese email y los datos que incluyas (nombre, teléfono, día y hora) los recibimos únicamente nosotros y solo los usamos para contestarte y gestionar tu solicitud."
+        "Esta web no tiene formularios ni base de datos y no usa cookies ni herramientas de analítica. Si quieres pedir cita, reservar o hacer un encargo, lo haces escribiéndonos por WhatsApp o llamándonos."
       ],
       [
         "Datos que tratamos y para qué",
@@ -262,50 +262,24 @@
   },
   "tipoEn": "{tipo} en {poblacion}",
   "reserva": {
-    "titulo": {
-      "cita": "Pide tu cita",
-      "mesa": "Reserva tu mesa",
-      "encargo": "Haz tu encargo",
-      "taller": "Pide hora para tu coche"
+    "wa": {
+      "cita": "Hola, quería pedir cita.",
+      "mesa": "Hola, quería reservar mesa.",
+      "encargo": "Hola, quería hacer un encargo.",
+      "taller": "Hola, quería pedir hora para el coche."
     },
-    "intro": {
-      "cita": "Elige día y hora y envíanos la solicitud por email. Te contestaremos para confirmarla.",
-      "mesa": "Elige día y hora y envíanos la solicitud por email. Te contestaremos para confirmarla.",
-      "encargo": "Dinos qué quieres y cuándo pasarás a recogerlo, y envíanoslo por email. Te contestaremos para confirmarlo.",
-      "taller": "Elige día y hora para traer el coche y envíanoslo por email. Te contestaremos para confirmarlo."
+    "ctaWa": {
+      "cita": "Pedir cita por WhatsApp",
+      "mesa": "Reservar por WhatsApp",
+      "encargo": "Encargar por WhatsApp",
+      "taller": "Pedir hora por WhatsApp"
     },
-    "cta": {
-      "cita": "Pedir cita",
-      "mesa": "Reservar mesa",
-      "encargo": "Hacer un encargo",
-      "taller": "Pedir hora",
-      "ninguna": "Horario y dirección"
+    "ctaTel": {
+      "cita": "Llamar para pedir cita",
+      "mesa": "Llamar para reservar",
+      "encargo": "Llamar para encargar",
+      "taller": "Llamar para pedir hora"
     },
-    "dia": "Día",
-    "diaEncargo": "Día de recogida",
-    "hora": "Hora",
-    "datos": "Tus datos",
-    "elige": "Elige primero un día.",
-    "sinHoras": "Hoy ya no quedan horas. Elige otro día.",
-    "servicio": "¿Qué necesitas?",
-    "personas": "Personas",
-    "encargoQue": "¿Qué quieres encargar?",
-    "coche": "Coche (marca y modelo)",
-    "nombre": "Nombre",
-    "telefono": "Teléfono",
-    "comentario": "Comentario (opcional)",
-    "enviar": "Enviar por email",
-    "ok": "Se ha abierto tu correo con la solicitud ya escrita. Solo tienes que pulsar enviar.",
-    "okDemo": "En la web final se abrirá el correo del cliente con la solicitud ya escrita para el negocio. En esta demo no se abre nada.",
-    "error": "Si no se ha abierto tu correo, escríbenos a {email}.",
-    "falta": "Elige día y hora y escribe tu nombre y tu teléfono.",
-    "nota": "No es una reserva automática: te contestamos para confirmarla.",
-    "legal": "La web no guarda tus datos: se envían desde tu propio correo.",
-    "otro": "Otro",
-    "asunto": "Nueva solicitud desde la web",
-    "horaDia": "{dia} a las {hora}",
-    "sinEmail": "Llámanos al {tel} y dinos el día y la hora que te van bien.",
-    "escribe": "También puedes escribirnos directamente a",
-    "cuerpo": "Hola, quería pedir:"
+    "ninguna": "Horario y dirección"
   }
 }

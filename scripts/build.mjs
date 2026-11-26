@@ -256,13 +256,10 @@ async function generarWeb(c) {
     claim1: c.claim[0], claim2: c.claim[1], resumen: c.resumen,
     puntosConfianza: (c.puntosConfianza || []).slice(0, 3), tienePuntos: !!c.puntosConfianza?.length,
     contacto: { ...c.contacto, telefonoLegible: telefonoLegible(c.contacto.telefono) }, wa,
-    ctaPrincipal: reservaTipo ? { href: '#reserva', texto: t.reserva.cta[reservaTipo] } : { href: '#visita', texto: t.reserva.cta.ninguna },
-    reserva: reservaTipo ? {
-      titulo: t.reserva.titulo[reservaTipo], intro: t.reserva.intro[reservaTipo], cta: t.reserva.cta[reservaTipo],
-      email: c.reservas?.email || c.contacto.email || '', diaTexto: reservaTipo === 'encargo' ? t.reserva.diaEncargo : t.reserva.dia,
-      conServicio: ['cita', 'taller'].includes(reservaTipo) && (c.servicios || []).length > 0, conPersonas: reservaTipo === 'mesa',
-      conEncargo: reservaTipo === 'encargo', conCoche: reservaTipo === 'taller',
-    } : null,
+    ctaPrincipal: !reservaTipo ? { href: '#visita', texto: t.reserva.ninguna }
+      : wa ? { href: `${wa.base}?text=${encodeURIComponent(t.reserva.wa[reservaTipo])}`, texto: t.reserva.ctaWa[reservaTipo], externo: true }
+      : telHref ? { href: telHref, texto: t.reserva.ctaTel[reservaTipo] } : { href: '#visita', texto: t.reserva.ninguna },
+    mbar: !!reservaTipo && !!(wa || telHref),
     tieneNumeros: !!(c.contacto.telefono || wa), waDistinto: !!wa && ('+' + wa.num) !== c.contacto.telefono, hayStock,
     hero: { foto: heroFoto, patron: patron(tema.pre.patron, c.slug), patronMapa: patron('mapa', c.slug) },
     claim: c.claim.map((x) => x.trim()).join(' '), serviciosConFoto: servicios.some((s) => s.foto), numServicios: servicios.length, numGaleria: galeria.length, hayPrecios: servicios.some((s) => s.precio), zonasTexto: (c.zonas || []).join(', '),
@@ -296,8 +293,6 @@ async function generarWeb(c) {
   v.datosJs = jsonScript({
     tz: 'Europe/Madrid', horario: tieneHorario ? c.horario : null,
     t: t.estado, dias: t.dias, wa: waNum || null,
-    res: reservaTipo ? { email: c.reservas?.email || c.contacto.email || '', demo, tel: telefonoLegible(c.contacto.telefono || (wa ? '+' + wa.num : '')), nombre: c.nombre, t: t.reserva, cortos: t.diasCortos,
-      meses: c.idioma === 'ca' ? ['gen', 'febr', 'març', 'abr', 'maig', 'juny', 'jul', 'ag', 'set', 'oct', 'nov', 'des'] : ['ene', 'feb', 'mar', 'abr', 'may', 'jun', 'jul', 'ago', 'sep', 'oct', 'nov', 'dic'] } : null,
   });
   const cssCompleto = minCss(tema.fontsCss + CSS_BASE);
   v.css = cssCompleto;

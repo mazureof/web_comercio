@@ -188,7 +188,7 @@
       ],
       [
         "Aquest web no recull dades",
-        "Aquest web no té base de dades ni fa servir galetes o eines d'analítica. El calendari no envia dades a cap servidor: només prepara un correu al teu propi programa de correu, que tu decideixes enviar. Aquest correu i les dades que hi incloguis (nom, telèfon, dia i hora) els rebem només nosaltres i només els fem servir per contestar-te i gestionar la teva sol·licitud."
+        "Aquest web no té formularis ni base de dades i no fa servir galetes ni eines d'analítica. Si vols demanar hora, reservar o fer un encàrrec, ho fas escrivint-nos per WhatsApp o trucant-nos."
       ],
       [
         "Dades que tractem i per a què",
@@ -262,50 +262,24 @@
   },
   "tipoEn": "{tipo} a {poblacion}",
   "reserva": {
-    "titulo": {
-      "cita": "Demana hora",
-      "mesa": "Reserva taula",
-      "encargo": "Fes el teu encàrrec",
-      "taller": "Demana hora per al cotxe"
+    "wa": {
+      "cita": "Hola, voldria demanar hora.",
+      "mesa": "Hola, voldria reservar taula.",
+      "encargo": "Hola, voldria fer un encàrrec.",
+      "taller": "Hola, voldria demanar hora per al cotxe."
     },
-    "intro": {
-      "cita": "Tria dia i hora i envia'ns la sol·licitud per correu. Et contestarem per confirmar-la.",
-      "mesa": "Tria dia i hora i envia'ns la sol·licitud per correu. Et contestarem per confirmar-la.",
-      "encargo": "Digues-nos què vols i quan passaràs a recollir-ho, i envia-ho per correu. Et contestarem per confirmar-ho.",
-      "taller": "Tria dia i hora per portar el cotxe i envia-ho per correu. Et contestarem per confirmar-ho."
+    "ctaWa": {
+      "cita": "Demanar hora per WhatsApp",
+      "mesa": "Reservar per WhatsApp",
+      "encargo": "Encarregar per WhatsApp",
+      "taller": "Demanar hora per WhatsApp"
     },
-    "cta": {
-      "cita": "Demana hora",
-      "mesa": "Reserva taula",
-      "encargo": "Fes un encàrrec",
-      "taller": "Demana hora",
-      "ninguna": "Horari i adreça"
+    "ctaTel": {
+      "cita": "Trucar per demanar hora",
+      "mesa": "Trucar per reservar",
+      "encargo": "Trucar per encarregar",
+      "taller": "Trucar per demanar hora"
     },
-    "dia": "Dia",
-    "diaEncargo": "Dia de recollida",
-    "hora": "Hora",
-    "datos": "Les teves dades",
-    "elige": "Tria primer un dia.",
-    "sinHoras": "Avui ja no queden hores. Tria un altre dia.",
-    "servicio": "Què necessites?",
-    "personas": "Persones",
-    "encargoQue": "Què vols encarregar?",
-    "coche": "Cotxe (marca i model)",
-    "nombre": "Nom",
-    "telefono": "Telèfon",
-    "comentario": "Comentari (opcional)",
-    "enviar": "Enviar per correu",
-    "ok": "S'ha obert el teu correu amb la sol·licitud ja escrita. Només has de prémer enviar.",
-    "okDemo": "Al web final s'obrirà el correu del client amb la sol·licitud ja escrita per al negoci. En aquesta demo no s'obre res.",
-    "error": "Si no s'ha obert el teu correu, escriu-nos a {email}.",
-    "falta": "Tria dia i hora i escriu el teu nom i el teu telèfon.",
-    "nota": "No és una reserva automàtica: et contestem per confirmar-la.",
-    "legal": "El web no guarda les teves dades: s'envien des del teu propi correu.",
-    "otro": "Altre",
-    "asunto": "Nova sol·licitud des del web",
-    "horaDia": "{dia} a les {hora}",
-    "sinEmail": "Truca'ns al {tel} i digues-nos el dia i l'hora que et van bé.",
-    "escribe": "També ens pots escriure directament a",
-    "cuerpo": "Hola, voldria demanar:"
+    "ninguna": "Horari i adreça"
   }
 }

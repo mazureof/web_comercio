@@ -47,7 +47,7 @@
         <p class="hero__claim">{{claim}}</p>
         <p class="hero__lead">{{resumen}}</p>
         <div class="hero__cta">
-          <a class="btn btn--main" href="{{ctaPrincipal.href}}">{{ctaPrincipal.texto}}</a>
+          <a class="btn btn--main" href="{{ctaPrincipal.href}}"{{#ctaPrincipal.externo}} target="_blank" rel="noopener"{{/ctaPrincipal.externo}}>{{ctaPrincipal.texto}}</a>
         </div>
         {{#tieneNumeros}}<p class="hero__nums">{{#contacto.telefono}}<span>{{{i.phone}}}{{t.v2.tel}} <a href="tel:{{contacto.telefono}}">{{contacto.telefonoLegible}}</a></span>{{/contacto.telefono}}{{#waDistinto}}<span>{{{i.wa}}}{{t.v2.wa}} <a href="{{wa.base}}" target="_blank" rel="noopener">{{wa.legible}}</a></span>{{/waDistinto}}</p>{{/tieneNumeros}}
         {{#tieneMeta}}<ul class="hero__meta">
@@ -88,7 +88,7 @@
       </div>{{/serviciosConFoto}}
       <div class="sec__foot">
         {{#hayPrecios}}<p class="sec__note">{{t.v2.precios}}</p>{{/hayPrecios}}
-        <a class="btn btn--main" href="{{ctaPrincipal.href}}">{{ctaPrincipal.texto}}</a>
+        <a class="btn btn--main" href="{{ctaPrincipal.href}}"{{#ctaPrincipal.externo}} target="_blank" rel="noopener"{{/ctaPrincipal.externo}}>{{ctaPrincipal.texto}}</a>
       </div>
     </div>
   </section>
@@ -119,43 +119,6 @@
       <p class="revs__foot"><span class="stars" aria-hidden="true">{{{resenas.estrellas}}}</span> <strong>{{resenas.linea}}</strong>{{#resenas.urlGoogle}} · <a href="{{resenas.urlGoogle}}" target="_blank" rel="noopener">{{t.opiniones.verTodas}}</a>{{/resenas.urlGoogle}}</p>
     </div>
   </section>{{/tieneResenas}}
-
-  {{#reserva}}<section class="sec" id="reserva" aria-labelledby="t-reserva">
-    <div class="wrap res">
-      <div class="res__intro">
-        <h2 class="sec__title" id="t-reserva">{{titulo}}</h2>
-        <p>{{intro}}</p>
-        <p class="res__note">{{t.reserva.nota}}</p>
-        {{#email}}<p class="res__mail">{{t.reserva.escribe}} <a href="mailto:{{email}}">{{email}}</a></p>{{/email}}
-      </div>
-      <form class="cal" data-reserva novalidate>
-        <fieldset class="cal__step">
-          <legend>1 · {{diaTexto}}</legend>
-          <div class="cal__days" data-days role="radiogroup" aria-label="{{diaTexto}}"></div>
-        </fieldset>
-        <fieldset class="cal__step">
-          <legend>2 · {{t.reserva.hora}}</legend>
-          <div class="cal__slots" data-slots role="radiogroup" aria-label="{{t.reserva.hora}}"><p class="cal__hint">{{t.reserva.elige}}</p></div>
-        </fieldset>
-        <fieldset class="cal__step">
-          <legend>3 · {{t.reserva.datos}}</legend>
-          {{#conServicio}}<div class="field"><label for="r-serv">{{t.reserva.servicio}}</label><select id="r-serv" name="servicio"><option value="">—</option>{{#servicios}}<option>{{titulo}}</option>{{/servicios}}<option>{{t.reserva.otro}}</option></select></div>{{/conServicio}}
-          {{#conPersonas}}<div class="field"><label for="r-pers">{{t.reserva.personas}}</label><select id="r-pers" name="personas"><option>1</option><option selected>2</option><option>3</option><option>4</option><option>5</option><option>6</option><option>7</option><option>8</option><option>9</option><option>10+</option></select></div>{{/conPersonas}}
-          {{#conEncargo}}<div class="field"><label for="r-enc">{{t.reserva.encargoQue}}</label><textarea id="r-enc" name="encargo" rows="2"></textarea></div>{{/conEncargo}}
-          {{#conCoche}}<div class="field"><label for="r-coche">{{t.reserva.coche}}</label><input id="r-coche" name="coche"></div>{{/conCoche}}
-          <div class="field-row">
-            <div class="field"><label for="r-nom">{{t.reserva.nombre}}</label><input id="r-nom" name="nombre" autocomplete="name" required></div>
-            <div class="field"><label for="r-tel">{{t.reserva.telefono}}</label><input id="r-tel" name="telefono" type="tel" autocomplete="tel" inputmode="tel" required></div>
-          </div>
-          <div class="field"><label for="r-com">{{t.reserva.comentario}}</label><textarea id="r-com" name="comentario" rows="2"></textarea></div>
-        </fieldset>
-        <p class="cal__err" data-err role="alert" hidden></p>
-        <button class="btn btn--main btn--block" type="submit" data-send>{{t.reserva.enviar}}</button>
-        <p class="cal__legal">{{t.reserva.legal}} <a href="privacidad.html">{{t.contacto.privacidadLink}}</a>.</p>
-        <div class="cal__ok" data-ok hidden role="status"></div>
-      </form>
-    </div>
-  </section>{{/reserva}}
 
   <section class="sec sec--alt" id="visita" aria-labelledby="t-visita">
     <div class="wrap visit">
@@ -200,7 +163,7 @@
   </div>
 </footer>
 
-{{#reserva}}<div class="mbar"><a class="mbar__btn mbar__btn--main" href="#reserva">{{cta}}</a></div>{{/reserva}}
+{{#mbar}}<div class="mbar"><a class="mbar__btn mbar__btn--main" href="{{ctaPrincipal.href}}"{{#ctaPrincipal.externo}} target="_blank" rel="noopener"{{/ctaPrincipal.externo}}>{{ctaPrincipal.texto}}</a></div>{{/mbar}}
 
 {{#tieneGaleria}}<dialog class="lb" data-lb-dialog aria-label="{{t.v2.local}}">
   <figure class="lb__fig"><img data-lb-img alt=""><figcaption data-lb-cap></figcaption></figure>
