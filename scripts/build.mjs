@@ -341,6 +341,24 @@ function raiz(publicadas) {
   write(path.join(P.docs, '.nojekyll'), '');
 }
 
+/* Panel interno con enlaces a todas las webs (noindex, dirección no pública) */
+function panel(todas) {
+  if (!CFG.panel) return;
+  const grupos = new Map();
+  for (const { datos: c } of todas) {
+    const k = `${c._visita?.socio || 'Sin asignar'} · ${poblacionDe(c)}`;
+    if (!grupos.has(k)) grupos.set(k, []);
+    grupos.get(k).push(c);
+  }
+  const items = [...grupos].sort((a, b) => a[0].localeCompare(b[0])).map(([g, cs]) => `<h2>${esc(g)}</h2><ul>${cs.sort((a, b) => a.nombre.localeCompare(b.nombre)).map((c) => {
+    const url = `${BASE}/${carpetaDe(c)}/`;
+    const rev = Array.isArray(c._revisar) && c._revisar.length ? `<small>Revisar: ${esc(c._revisar.join(', '))}</small>` : '';
+    return `<li><a href="${url}">${esc(c.nombre)}<span class="e ${c.estado}">${c.estado === 'demo' ? 'demo' : 'publicada'}</span></a>${rev}<span class="x"><a href="${url}entrega.html">hoja de entrega</a></span></li>`;
+  }).join('')}</ul>`).join('');
+  const css = `body{margin:0;background:#FAF7F2;color:#161512;font:16px/1.5 system-ui,sans-serif}main{max-width:720px;margin:auto;padding:1.25rem}h1{font-size:1.6rem;color:#4B4E51;margin:.5rem 0}p{color:#4B4E51}h2{font-size:1rem;text-transform:uppercase;letter-spacing:.08em;color:#4B4E51;margin:1.75rem 0 .6rem}ul{list-style:none;padding:0;margin:0;display:grid;gap:.5rem}li{background:#fff;border:1px solid #E7E0D5;border-radius:12px;padding:.85rem 1rem}li>a{display:flex;justify-content:space-between;align-items:center;gap:.75rem;font-weight:700;color:#161512;text-decoration:none;font-size:1.05rem;min-height:32px}small{display:block;color:#8a5a00;font-size:.8rem;margin-top:.2rem}.x{display:block;font-size:.85rem;margin-top:.25rem}.x a{color:#4B4E51}.e{font-size:.7rem;font-weight:600;padding:.15rem .55rem;border-radius:99px;background:#F5E6D3;white-space:nowrap}.e.publicada{background:#d1fadf}`;
+  write(path.join(P.docs, CFG.panel, 'index.html'), `<!doctype html><html lang="es"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="robots" content="noindex,nofollow"><title>Panel de webs · MAzure</title><style>${css}</style></head><body><main><h1>Panel de webs</h1><p>${todas.length} comercios. Toca uno para abrir su web.</p>${items}</main></body></html>`);
+}
+
 /* ------------------------------------------------------------------ */
 async function main() {
   const todos = listarComercios().filter(({ datos }) => !SOLO.length || SOLO.includes(datos.slug));
@@ -348,7 +366,7 @@ async function main() {
     // Limpia carpetas de comercios que ya no existen (demos borradas o publicadas)
     mkdir(P.docs);
     const validas = new Set(listarComercios().map(({ datos }) => carpetaDe(datos)));
-    for (const d of fs.readdirSync(P.docs, { withFileTypes: true })) if (d.isDirectory() && d.name !== 'assets' && !validas.has(d.name)) fs.rmSync(path.join(P.docs, d.name), { recursive: true, force: true });
+    for (const d of fs.readdirSync(P.docs, { withFileTypes: true })) if (d.isDirectory() && d.name !== 'assets' && d.name !== CFG.panel && !validas.has(d.name)) fs.rmSync(path.join(P.docs, d.name), { recursive: true, force: true });
   }
   const fatales = [], hechas = [];
   for (const { archivo, datos } of todos) {
@@ -374,6 +392,7 @@ async function main() {
   }
   const publicadas = listarComercios().filter(({ datos }) => datos.estado === 'publicada' && fs.existsSync(path.join(P.docs, datos.slug, 'index.html'))).map(({ datos }) => `${BASE}/${datos.slug}/`);
   raiz(publicadas);
+  panel(listarComercios());
   console.log(col.dim(`\n${hechas.length} webs generadas en ${((Date.now() - t0) / 1000).toFixed(1)} s · ${publicadas.length} publicadas en el sitemap`));
   if (fatales.length) {
     console.log(col.red(`\nEl build ha fallado: ${fatales.length} web(s) publicada(s) con errores. Corrígelas o vuelve a ponerlas en "demo".`));
