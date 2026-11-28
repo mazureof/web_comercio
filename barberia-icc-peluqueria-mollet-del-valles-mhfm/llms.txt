@@ -1,0 +1,25 @@
+# Barberia ICC Peluqueria
+
+> Barbería y peluquería en Mollet del Vallès. Corte, degradado y barba con trato profesional.
+
+Barbería y peluquería en Mollet del Vallès.
+
+## Servicios
+- Corte de pelo: Clásico o degradado, a tijera o a máquina.
+- Arreglo de barba: Perfilado a navaja y toalla caliente.
+- Corte + barba: El servicio completo para salir como nuevo.
+
+## Horario
+- lunes: 16:00 – 20:00
+- martes: 9:30 – 14:00 y 16:00 – 20:00
+- miércoles: 9:30 – 14:00 y 16:00 – 20:00
+- jueves: 9:30 – 14:00 y 16:00 – 20:00
+- viernes: 9:30 – 14:00 y 16:00 – 20:00
+- sábado: 9:30 – 14:00
+- domingo: Cerrado
+
+## Contacto
+- Teléfono: +34931260861
+- Dirección: Av. de la Llibertat, 45, 08100 Mollet del Vallès
+- Zonas: Mollet del Vallès
+- Web: https://mazureof.github.io/web/barberia-icc-peluqueria-mollet-del-valles-mhfm/

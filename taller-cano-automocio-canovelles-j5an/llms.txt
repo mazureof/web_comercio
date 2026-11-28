@@ -1,0 +1,26 @@
+# Taller Cano Automoció
+
+> Taller de reparación de automóviles en Canovelles. Mantenimiento, mecánica y diagnosis para todas las marcas.
+
+Taller de automoción en Canovelles.
+
+## Servicios
+- Mantenimiento: Cambio de aceite, filtros y revisión general.
+- Frenos y neumáticos: Pastillas, discos, alineado y equilibrado.
+- Diagnosis: Lectura de averías con equipo de diagnosis.
+- Pre-ITV: Revisamos el coche para que pase la ITV a la primera.
+
+## Horario
+- lunes: 8:00 – 13:00 y 15:00 – 19:00
+- martes: 8:00 – 13:00 y 15:00 – 19:00
+- miércoles: 8:00 – 13:00 y 15:00 – 19:00
+- jueves: 8:00 – 13:00 y 15:00 – 19:00
+- viernes: 8:00 – 13:00 y 15:00 – 18:00
+- sábado: Cerrado
+- domingo: Cerrado
+
+## Contacto
+- Teléfono: +34938467384
+- Dirección: Carrer Indústria, 118, 08420 Canovelles
+- Zonas: Canovelles
+- Web: https://mazureof.github.io/web/taller-cano-automocio-canovelles-j5an/

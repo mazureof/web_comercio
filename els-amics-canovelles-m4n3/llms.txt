@@ -1,0 +1,24 @@
+# Els Amics
+
+> Bar restaurante en Canovelles. Bocadillos, comida casera y menú de fin de semana.
+
+Bar restaurante en Canovelles.
+
+## Servicios
+- Bocadillos: Como el bocata de pinchos con alioli.
+- Comida casera: Platos de cocina casera.
+- Menú de fin de semana: Pregúntanos por el menú del sábado y domingo.
+
+## Horario
+- lunes: 8:00 – 22:00
+- martes: 8:00 – 22:00
+- miércoles: 8:00 – 22:00
+- jueves: 8:00 – 22:00
+- viernes: 8:00 – 0:00
+- sábado: 9:00 – 22:30
+- domingo: 9:00 – 22:30
+
+## Contacto
+- Dirección: Carrer Indústria, 45, 08420 Canovelles
+- Zonas: Canovelles
+- Web: https://mazureof.github.io/web/els-amics-canovelles-m4n3/

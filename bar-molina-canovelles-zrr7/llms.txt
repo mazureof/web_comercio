@@ -1,0 +1,24 @@
+# Bar Molina
+
+> Bar restaurante en Canovelles. Tapas, bocadillos, bravas y cerveza bien fría.
+
+Bar en Canovelles.
+
+## Servicios
+- Tapas: Tapas para picar.
+- Bocadillos: Bocadillos para desayunar o merendar.
+- Patatas bravas: Las bravas de la casa.
+
+## Horario
+- lunes: Cerrado
+- martes: 7:00 – 22:00
+- miércoles: 7:00 – 22:00
+- jueves: 7:00 – 22:00
+- viernes: 7:00 – 22:00
+- sábado: 8:30 – 23:30
+- domingo: 8:30 – 16:00
+
+## Contacto
+- Dirección: Carrer Centelles, 5, 08420 Canovelles
+- Zonas: Canovelles
+- Web: https://mazureof.github.io/web/bar-molina-canovelles-zrr7/

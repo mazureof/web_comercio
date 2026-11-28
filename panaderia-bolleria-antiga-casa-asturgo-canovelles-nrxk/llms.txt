@@ -1,0 +1,26 @@
+# Panadería Bollería Antiga Casa Asturgó
+
+> Panadería y bollería en Canovelles, abierta todos los días de 8:00 a 14:00.
+
+Panadería en Canovelles.
+
+## Servicios
+- Pan: Barras, hogazas y panes especiales.
+- Bollería: Croissants, ensaimadas y dulces para el desayuno.
+- Encargos: Tartas y bandejas para celebraciones.
+
+## Horario
+- lunes: 8:00 – 14:00
+- martes: 8:00 – 14:00
+- miércoles: 8:00 – 14:00
+- jueves: 8:00 – 14:00
+- viernes: 8:00 – 14:00
+- sábado: 8:00 – 14:00
+- domingo: 8:00 – 14:00
+
+## Contacto
+- Teléfono: +34661945356
+- WhatsApp: https://wa.me/34661945356
+- Dirección: Carrer Prat, 08420 Canovelles
+- Zonas: Canovelles
+- Web: https://mazureof.github.io/web/panaderia-bolleria-antiga-casa-asturgo-canovelles-nrxk/

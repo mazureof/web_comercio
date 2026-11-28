@@ -1,0 +1,25 @@
+# Bar Cafeteria La Tasca
+
+> Bar cafetería en Riells i Viabrea. Desayunos desde las 6:30, bocadillos, patatas bravas hechas a mano y raciones.
+
+Bar en Riells i Viabrea.
+
+## Servicios
+- Desayunos y bocadillos: Café y bocadillo desde primera hora.
+- Patatas bravas: Hechas a mano, con alioli y salsa picante.
+- Raciones: Raciones generosas para compartir.
+
+## Horario
+- lunes: 6:30 – 21:00
+- martes: 6:30 – 21:00
+- miércoles: 6:30 – 21:00
+- jueves: 6:30 – 21:00
+- viernes: 6:30 – 23:00
+- sábado: 6:30 – 23:00
+- domingo: Cerrado
+
+## Contacto
+- Teléfono: +34938472386
+- Dirección: Carrer d'Olzinelles, 1, 17404 Riells i Viabrea
+- Zonas: Riells i Viabrea
+- Web: https://mazureof.github.io/web/bar-cafeteria-la-tasca-riells-i-viabrea-u9hz/

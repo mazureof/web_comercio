@@ -1,0 +1,25 @@
+# Estética Eva y Lali
+
+> Centro de estética en Canovelles. Tratamientos faciales y corporales, manicura y depilación.
+
+Centro de estética en Canovelles.
+
+## Servicios
+- Tratamientos faciales: Limpieza e hidratación adaptadas a tu piel.
+- Manicura y pedicura: Uñas cuidadas, con esmaltado normal o semipermanente.
+- Depilación: Con cera o con el método que mejor te vaya.
+
+## Horario
+- lunes: Cerrado
+- martes: 10:00 – 13:00 y 16:00 – 20:00
+- miércoles: 10:00 – 13:00 y 16:00 – 20:00
+- jueves: 10:00 – 13:00 y 16:00 – 20:00
+- viernes: 10:00 – 13:00 y 16:00 – 20:00
+- sábado: Cerrado
+- domingo: Cerrado
+
+## Contacto
+- Teléfono: +34938491776
+- Dirección: Carrer Indústria, 25, 08420 Canovelles
+- Zonas: Canovelles
+- Web: https://mazureof.github.io/web/estetica-eva-y-lali-canovelles-84uu/

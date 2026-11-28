@@ -1,0 +1,25 @@
+# Estanc Montnegre
+
+> Estanc a La Batllòria amb llibres, papereria i punt de recollida de paquets InPost. Obert també diumenge al matí.
+
+Estanc en La Batllòria.
+
+## Servicios
+- Estanc: Tabac i articles de fumador.
+- Llibres i papereria: Llibres, revistes i material de papereria.
+- Punt InPost: Recull i envia els teus paquets aquí mateix.
+
+## Horario
+- dilluns: 9:00 – 13:30 i 17:00 – 20:30
+- dimarts: 9:00 – 13:30 i 17:00 – 20:30
+- dimecres: 9:00 – 13:30 i 17:00 – 20:30
+- dijous: 9:00 – 13:30 i 17:00 – 20:30
+- divendres: 9:00 – 13:30 i 17:00 – 20:30
+- dissabte: 8:00 – 14:00
+- diumenge: 9:00 – 13:30
+
+## Contacto
+- Teléfono: +34938472184
+- Dirección: Carrer Major, 3, 08476 La Batllòria
+- Zonas: La Batllòria
+- Web: https://mazureof.github.io/web/estanc-montnegre-la-batlloria-cf9q/

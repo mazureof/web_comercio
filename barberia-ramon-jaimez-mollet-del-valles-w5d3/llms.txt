@@ -1,0 +1,25 @@
+# Barberia Ramón Jaimez
+
+> Peluquería y barbería en Mollet del Vallès. Trabajamos con cita: llámanos y te damos hora.
+
+Peluquería y barbería en Mollet del Vallès.
+
+## Servicios
+- Corte de pelo: Clásico o degradado, a tijera o a máquina.
+- Arreglo de barba: Perfilado a navaja y toalla caliente.
+- Corte + barba: El servicio completo para salir como nuevo.
+
+## Horario
+- lunes: Cerrado
+- martes: 9:00 – 13:30 y 16:00 – 20:30
+- miércoles: 9:00 – 13:30 y 16:00 – 20:30
+- jueves: 9:00 – 13:30 y 16:00 – 20:30
+- viernes: 9:00 – 13:30 y 16:00 – 20:30
+- sábado: 9:00 – 18:00
+- domingo: Cerrado
+
+## Contacto
+- Teléfono: +34935700630
+- Dirección: Carrer del Sol, 36, 08100 Mollet del Vallès
+- Zonas: Mollet del Vallès
+- Web: https://mazureof.github.io/web/barberia-ramon-jaimez-mollet-del-valles-w5d3/

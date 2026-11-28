@@ -1,0 +1,26 @@
+# El Salón del Barbero
+
+> Barbería en Mollet del Vallès. Corte, degradado y barba con buen trato y buenos precios.
+
+Barbería en Mollet del Vallès.
+
+## Servicios
+- Corte de pelo: Clásico o degradado, a tijera o a máquina.
+- Arreglo de barba: Perfilado a navaja y toalla caliente.
+- Corte + barba: El servicio completo para salir como nuevo.
+
+## Horario
+- lunes: Cerrado
+- martes: 9:00 – 13:00 y 16:00 – 20:00
+- miércoles: 9:00 – 13:00 y 16:00 – 20:00
+- jueves: 9:00 – 13:00 y 16:00 – 20:00
+- viernes: 9:00 – 13:00 y 16:00 – 20:00
+- sábado: 9:00 – 13:30
+- domingo: Cerrado
+
+## Contacto
+- Teléfono: +34633960586
+- WhatsApp: https://wa.me/34633960586
+- Dirección: Carrer de Fèlix Ferran, 36-38, 08100 Mollet del Vallès
+- Zonas: Mollet del Vallès
+- Web: https://mazureof.github.io/web/el-salon-del-barbero-mollet-del-valles-ffhb/

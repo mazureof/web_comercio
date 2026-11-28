@@ -1,0 +1,25 @@
+# Carnicería Rosario
+
+> Carnicería en Canovelles. Carne fresca, elaborados y encargos.
+
+Carnicería en Canovelles.
+
+## Servicios
+- Carne fresca: Ternera, cerdo, pollo y cordero.
+- Elaborados: Hamburguesas, salchichas y preparados de la casa.
+- Encargos: Bandejas y piezas para celebraciones.
+
+## Horario
+- lunes: 8:00 – 14:00
+- martes: 8:00 – 14:00
+- miércoles: 8:00 – 14:00
+- jueves: 8:00 – 14:00
+- viernes: 8:00 – 13:30 y 17:00 – 20:00
+- sábado: 8:00 – 14:00
+- domingo: Cerrado
+
+## Contacto
+- Teléfono: +34938467628
+- Dirección: Carrer Diagonal, 48, 08420 Canovelles
+- Zonas: Canovelles
+- Web: https://mazureof.github.io/web/carniceria-rosario-canovelles-bqhc/

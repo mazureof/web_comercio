@@ -1,0 +1,26 @@
+# Mini Mercat Cada Dia
+
+> Minimercado en La Batllòria abierto todos los días de 8:30 a 21:30. Alimentación y productos del día a día.
+
+Supermercado en La Batllòria.
+
+## Servicios
+- Fruta y verdura: Producto de temporada.
+- Despensa: Todo lo básico para tu compra diaria.
+- Pedidos: Encarga por WhatsApp y recoge cuando quieras.
+
+## Horario
+- lunes: 8:30 – 21:30
+- martes: 8:30 – 21:30
+- miércoles: 8:30 – 21:30
+- jueves: 8:30 – 21:30
+- viernes: 8:30 – 21:30
+- sábado: 8:30 – 21:30
+- domingo: 8:30 – 21:30
+
+## Contacto
+- Teléfono: +34634021548
+- WhatsApp: https://wa.me/34634021548
+- Dirección: 08476 La Batllòria
+- Zonas: La Batllòria
+- Web: https://mazureof.github.io/web/mini-mercat-cada-dia-la-batlloria-2knc/

@@ -1,0 +1,25 @@
+# Fleca Dani i Isa
+
+> Fleca i obrador familiar a La Batllòria. Pa del dia, brioixeria i encàrrecs.
+
+Fleca en La Batllòria.
+
+## Servicios
+- Pa del dia: Pa fet cada dia al nostre obrador.
+- Brioixeria: Croissants, també de pernil i formatge, i dolços per esmorzar.
+- Encàrrecs: Coques i pastissos per encàrrec.
+
+## Horario
+- dilluns: Tancat
+- dimarts: 8:00 – 13:30 i 16:30 – 20:00
+- dimecres: 8:00 – 13:30 i 16:30 – 20:00
+- dijous: 8:00 – 13:30 i 16:30 – 20:00
+- divendres: 8:00 – 13:30 i 16:30 – 20:00
+- dissabte: 8:00 – 14:00
+- diumenge: 8:00 – 14:00
+
+## Contacto
+- Teléfono: +34938472260
+- Dirección: Carrer Major, 1, 08476 La Batllòria
+- Zonas: La Batllòria
+- Web: https://mazureof.github.io/web/fleca-dani-i-isa-la-batlloria-4vhh/

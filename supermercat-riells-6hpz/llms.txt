@@ -1,0 +1,25 @@
+# Supermercat Riells
+
+> Supermercado en Riells i Viabrea, abierto todos los días de 9:00 a 22:00. Alimentación, pan, paquetería y envíos de dinero.
+
+Supermercado en Riells i Viabrea.
+
+## Servicios
+- Alimentación: Lo básico para tu compra diaria, bebidas y cavas.
+- Pan todo el día: Pan disponible durante todo el día.
+- Paquetería: Recogida y entrega de paquetes de GLS y Amazon.
+- Envíos de dinero: Envía dinero de forma rápida desde la tienda.
+
+## Horario
+- lunes: 9:00 – 22:00
+- martes: 9:00 – 22:00
+- miércoles: 9:00 – 22:00
+- jueves: 9:00 – 22:00
+- viernes: 9:00 – 22:00
+- sábado: 9:00 – 22:00
+- domingo: 9:00 – 22:00
+
+## Contacto
+- Dirección: Carrer de Santa Fe, 3, 17404 Riells i Viabrea
+- Zonas: Riells i Viabrea
+- Web: https://mazureof.github.io/web/supermercat-riells-6hpz/

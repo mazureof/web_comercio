@@ -1,0 +1,25 @@
+# Tamu The Barber
+
+> Barbería en La Batllòria. Corte, degradado y arreglo de barba con buen trato.
+
+Barbería en La Batllòria.
+
+## Servicios
+- Corte de pelo: Clásico o degradado, a tijera o a máquina.
+- Arreglo de barba: Perfilado a navaja y toalla caliente.
+- Corte + barba: El servicio completo para salir como nuevo.
+
+## Horario
+- lunes: 9:30 – 13:30 y 15:00 – 20:00
+- martes: 9:30 – 13:30 y 15:00 – 20:00
+- miércoles: 9:30 – 13:30 y 15:00 – 20:00
+- jueves: 9:30 – 13:30 y 15:00 – 20:00
+- viernes: 9:30 – 13:30 y 15:00 – 20:00
+- sábado: 9:30 – 14:00
+- domingo: Cerrado
+
+## Contacto
+- Teléfono: +34936775686
+- Dirección: Carretera Vella, 33, 08476 La Batllòria
+- Zonas: La Batllòria
+- Web: https://mazureof.github.io/web/tamu-the-barber-la-batlloria-b37b/

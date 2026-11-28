@@ -1,0 +1,25 @@
+# Bar Café El Racó
+
+> Bar cafetería en Riells i Viabrea. Desayunos, tapas y cenas, abierto hasta medianoche los fines de semana.
+
+Bar en Riells i Viabrea.
+
+## Servicios
+- Desayunos: Bocadillos, cafés y tostadas para empezar el día.
+- Tapas: Raciones para compartir a cualquier hora.
+- Menú del día: Cocina casera de lunes a viernes.
+
+## Horario
+- lunes: Cerrado
+- martes: 8:00 – 23:00
+- miércoles: 8:00 – 23:00
+- jueves: 8:00 – 23:00
+- viernes: 8:00 – 0:00
+- sábado: 8:00 – 0:00
+- domingo: 8:00 – 23:00
+
+## Contacto
+- Teléfono: +34972974279
+- Dirección: Carrer Morou, 25-27, 17404 Riells i Viabrea
+- Zonas: Riells i Viabrea
+- Web: https://mazureof.github.io/web/bar-cafe-el-raco-riells-i-viabrea-vzb8/

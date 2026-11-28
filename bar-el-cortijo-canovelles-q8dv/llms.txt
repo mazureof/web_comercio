@@ -1,0 +1,25 @@
+# Bar El Cortijo
+
+> Brasería en Canovelles. Carnes a la brasa y comida casera en un sitio acogedor.
+
+Brasería en Canovelles.
+
+## Servicios
+- Carnes a la brasa: Como el secreto, hecho a la brasa.
+- Comida casera: Platos de siempre, hechos en casa.
+- Fines de semana: Viernes y sábado abrimos también por la noche.
+
+## Horario
+- lunes: Cerrado
+- martes: 9:00 – 16:00
+- miércoles: 9:00 – 16:00
+- jueves: 9:00 – 16:00
+- viernes: 11:00 – 23:00
+- sábado: 11:00 – 23:00
+- domingo: 11:00 – 16:00
+
+## Contacto
+- Teléfono: +34938496741
+- Dirección: Carrer Sant Jordi, 35, 08420 Canovelles
+- Zonas: Canovelles
+- Web: https://mazureof.github.io/web/bar-el-cortijo-canovelles-q8dv/

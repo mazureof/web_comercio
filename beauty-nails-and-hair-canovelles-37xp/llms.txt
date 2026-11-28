@@ -1,0 +1,26 @@
+# Beauty Nails and Hair
+
+> Peluquería y salón de uñas en Canovelles. Manicura, diseños de uñas, corte y color.
+
+Peluquería y uñas en Canovelles.
+
+## Servicios
+- Manicura y diseños: Uñas con diseños personalizados.
+- Pedicura: Pies cuidados y bonitos.
+- Corte y peinado: Corte a tu medida.
+- Color: Tintes y mechas.
+
+## Horario
+- lunes: Cerrado
+- martes: 9:00 – 18:00
+- miércoles: 9:00 – 18:00
+- jueves: 9:00 – 18:00
+- viernes: 9:00 – 18:00
+- sábado: 9:00 – 15:00
+- domingo: Cerrado
+
+## Contacto
+- Teléfono: +34936041812
+- Dirección: Carrer Diagonal, 47, 08420 Canovelles
+- Zonas: Canovelles
+- Web: https://mazureof.github.io/web/beauty-nails-and-hair-canovelles-37xp/

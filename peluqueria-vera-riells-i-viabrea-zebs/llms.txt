@@ -1,0 +1,26 @@
+# Peluquería Vera
+
+> Peluquería en Riells i Viabrea para mujer y hombre. Trabajamos con cita para atenderte con calma.
+
+Peluquería en Riells i Viabrea.
+
+## Servicios
+- Corte: Corte de mujer y de hombre, adaptado a ti.
+- Color: Tintes y mechas con asesoramiento.
+- Peinado: Peinados para el día a día o para una ocasión.
+
+## Horario
+- lunes: Cerrado
+- martes: 9:15 – 12:15 y 15:15 – 18:30
+- miércoles: 9:15 – 12:15 y 15:15 – 18:30
+- jueves: 9:15 – 12:15 y 15:15 – 18:30
+- viernes: 9:15 – 12:15 y 15:15 – 18:30
+- sábado: 9:00 – 12:00
+- domingo: Cerrado
+
+## Contacto
+- Teléfono: +34686176233
+- WhatsApp: https://wa.me/34686176233
+- Dirección: Carrer Alsina, 17404 Riells i Viabrea
+- Zonas: Riells i Viabrea
+- Web: https://mazureof.github.io/web/peluqueria-vera-riells-i-viabrea-zebs/

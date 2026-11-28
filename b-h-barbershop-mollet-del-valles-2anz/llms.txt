@@ -1,0 +1,26 @@
+# B&H Barbershop
+
+> Barbería en Mollet del Vallès. Corte, degradado y barba, abierto de lunes a sábado hasta las 21:00.
+
+Barbería en Mollet del Vallès.
+
+## Servicios
+- Corte de pelo: Clásico o degradado, a tijera o a máquina.
+- Arreglo de barba: Perfilado a navaja y toalla caliente.
+- Corte + barba: El servicio completo para salir como nuevo.
+
+## Horario
+- lunes: 9:30 – 14:00 y 15:00 – 21:00
+- martes: 9:30 – 14:00 y 15:00 – 21:00
+- miércoles: 9:30 – 14:00 y 15:00 – 21:00
+- jueves: 9:30 – 14:00 y 15:00 – 21:00
+- viernes: 9:30 – 14:00 y 15:00 – 21:00
+- sábado: 8:00 – 14:00 y 15:00 – 21:00
+- domingo: Cerrado
+
+## Contacto
+- Teléfono: +34600820747
+- WhatsApp: https://wa.me/34600820747
+- Dirección: Carrer d'Anselm Clavé, 31, 08100 Mollet del Vallès
+- Zonas: Mollet del Vallès
+- Web: https://mazureof.github.io/web/b-h-barbershop-mollet-del-valles-2anz/

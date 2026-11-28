@@ -1,0 +1,26 @@
+# El Padrino Barber Shop
+
+> Barbería en Can Borrell, Mollet del Vallès. Corte, degradado y barba con trato cercano.
+
+Barbería en Mollet del Vallès.
+
+## Servicios
+- Corte de pelo: Clásico o degradado, a tijera o a máquina.
+- Arreglo de barba: Perfilado a navaja y toalla caliente.
+- Corte + barba: El servicio completo para salir como nuevo.
+
+## Horario
+- lunes: 9:30 – 14:00 y 16:00 – 21:00
+- martes: 9:30 – 14:00 y 16:00 – 21:00
+- miércoles: 9:30 – 14:00 y 16:00 – 21:00
+- jueves: 9:30 – 14:00 y 16:00 – 21:00
+- viernes: 9:30 – 14:00 y 16:00 – 21:00
+- sábado: 9:30 – 16:00
+- domingo: Cerrado
+
+## Contacto
+- Teléfono: +34611263436
+- WhatsApp: https://wa.me/34611263436
+- Dirección: Av. de Rivoli, 17, local 13, 08100 Mollet del Vallès
+- Zonas: Mollet del Vallès
+- Web: https://mazureof.github.io/web/el-padrino-barber-shop-mollet-del-valles-bnb8/

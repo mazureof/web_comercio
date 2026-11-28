@@ -1,0 +1,25 @@
+# Peluquería Retallades Montse
+
+> Peluquería en Canovelles, abierta también los lunes. Corte, color y peinado para mujer y hombre.
+
+Peluquería en Canovelles.
+
+## Servicios
+- Corte y peinado: Corte a tu medida y peinado para el día a día o para una ocasión especial.
+- Color y mechas: Tintes, mechas y matices pensados para tu tono de piel y tu estilo.
+- Tratamientos: Hidratación y cuidado para un pelo más sano y con más brillo.
+
+## Horario
+- lunes: 9:00 – 13:00 y 15:00 – 19:00
+- martes: 9:00 – 13:00 y 15:00 – 19:00
+- miércoles: 9:00 – 13:00 y 15:00 – 19:00
+- jueves: 9:00 – 13:00 y 15:00 – 19:00
+- viernes: 9:00 – 13:00 y 15:00 – 19:00
+- sábado: 9:00 – 13:00
+- domingo: Cerrado
+
+## Contacto
+- Teléfono: +34935384488
+- Dirección: Carrer Indústria, 25, local 1, 08420 Canovelles
+- Zonas: Canovelles
+- Web: https://mazureof.github.io/web/peluqueria-retallades-montse-canovelles-na2t/

@@ -1,0 +1,25 @@
+# Navas Restaurante
+
+> Restaurante en Canovelles abierto todos los días de 7:30 a 23:00. Desayunos, bocadillos, comidas y gran terraza.
+
+Restaurante en Canovelles.
+
+## Servicios
+- Desayunos y bocadillos: Como el bocata de pinchos con alioli.
+- Comidas: Platos para comer o cenar.
+- Terraza: Gran terraza para disfrutar al aire libre.
+
+## Horario
+- lunes: 7:30 – 23:00
+- martes: 7:30 – 23:00
+- miércoles: 7:30 – 23:00
+- jueves: 7:30 – 23:00
+- viernes: 7:30 – 23:00
+- sábado: 7:30 – 23:00
+- domingo: 7:30 – 23:00
+
+## Contacto
+- Teléfono: +34931422805
+- Dirección: Carrer Isidre Duran, 2, 08420 Canovelles
+- Zonas: Canovelles
+- Web: https://mazureof.github.io/web/navas-restaurante-canovelles-pwx4/

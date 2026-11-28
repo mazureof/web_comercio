@@ -1,0 +1,24 @@
+# Casa Millor
+
+> Bazar en Riells i Viabrea. Artículos para el hogar, regalos y lo que te haga falta, también los domingos por la mañana.
+
+Bazar en Riells i Viabrea.
+
+## Servicios
+- Hogar: Menaje y artículos para casa.
+- Regalos: Detalles y regalos para cualquier ocasión.
+- Lo que necesites: Si no lo ves, pregúntanos.
+
+## Horario
+- lunes: 9:00 – 14:00 y 16:30 – 20:30
+- martes: 9:00 – 14:00 y 16:30 – 20:30
+- miércoles: 9:00 – 14:00 y 16:30 – 20:30
+- jueves: 9:00 – 14:00 y 16:30 – 20:30
+- viernes: 9:00 – 14:00 y 16:30 – 20:30
+- sábado: 9:00 – 14:00 y 16:30 – 20:30
+- domingo: 10:00 – 13:30
+
+## Contacto
+- Dirección: Carrer Comerç, 11, 17404 Riells i Viabrea
+- Zonas: Riells i Viabrea
+- Web: https://mazureof.github.io/web/casa-millor-riells-i-viabrea-3gqh/

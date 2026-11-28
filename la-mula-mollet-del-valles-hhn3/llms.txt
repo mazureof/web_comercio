@@ -1,0 +1,25 @@
+# La Mula
+
+> Tienda de ropa en la Rambla Nova de Mollet del Vallès. Calidad a precio asequible y ofertas puntuales.
+
+Tienda de ropa en Mollet del Vallès.
+
+## Servicios
+- Moda: Ropa y complementos de temporada.
+- Ofertas: Ofertas puntuales en tienda.
+- Asesoramiento: Te ayudamos a encontrar lo que buscas.
+
+## Horario
+- lunes: 9:00 – 13:30 y 16:30 – 20:30
+- martes: 9:00 – 13:30 y 16:30 – 20:30
+- miércoles: 9:00 – 13:30 y 16:30 – 20:30
+- jueves: 9:00 – 13:30 y 16:30 – 20:30
+- viernes: 9:00 – 13:30 y 16:30 – 20:30
+- sábado: 9:00 – 13:30 y 16:30 – 20:30
+- domingo: Cerrado
+
+## Contacto
+- Teléfono: +34936275167
+- Dirección: Rambla Nova, 17, local 2, 08100 Mollet del Vallès
+- Zonas: Mollet del Vallès
+- Web: https://mazureof.github.io/web/la-mula-mollet-del-valles-hhn3/

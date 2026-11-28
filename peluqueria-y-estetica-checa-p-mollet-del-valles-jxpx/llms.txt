@@ -1,0 +1,25 @@
+# Peluquería y Estética Checa P
+
+> Peluquería y centro de estética en Mollet del Vallès, de martes a viernes de 9:30 a 20:00 sin cerrar al mediodía.
+
+Peluquería y estética en Mollet del Vallès.
+
+## Servicios
+- Tratamientos faciales: Limpieza e hidratación adaptadas a tu piel.
+- Manicura y pedicura: Uñas cuidadas, con esmaltado normal o semipermanente.
+- Depilación: Con cera o con el método que mejor te vaya.
+
+## Horario
+- lunes: Cerrado
+- martes: 9:30 – 20:00
+- miércoles: 9:30 – 20:00
+- jueves: 9:30 – 20:00
+- viernes: 9:30 – 20:00
+- sábado: Cerrado
+- domingo: Cerrado
+
+## Contacto
+- Teléfono: +34935936050
+- Dirección: Avinguda de Burgos, 64, 08100 Mollet del Vallès
+- Zonas: Mollet del Vallès
+- Web: https://mazureof.github.io/web/peluqueria-y-estetica-checa-p-mollet-del-valles-jxpx/

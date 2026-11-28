@@ -1,0 +1,25 @@
+# Bar Restaurant On Sempre
+
+> Bar restaurante en la Plaça de la Vila de Riells i Viabrea. Bocadillos, tapas, patatas bravas y platos combinados.
+
+Bar en Riells i Viabrea.
+
+## Servicios
+- Bocadillos: Bocadillos para desayunar o comer.
+- Tapas: Patatas bravas y tapas para compartir.
+- Platos combinados: Platos combinados a buen precio.
+
+## Horario
+- lunes: 9:00 – 22:00
+- martes: 9:00 – 22:00
+- miércoles: 9:00 – 22:00
+- jueves: 9:00 – 22:00
+- viernes: 9:00 – 23:00
+- sábado: 9:00 – 23:00
+- domingo: Cerrado
+
+## Contacto
+- Teléfono: +34972197190
+- Dirección: Plaça de la Vila, 5, 17404 Riells i Viabrea
+- Zonas: Riells i Viabrea
+- Web: https://mazureof.github.io/web/bar-restaurant-on-sempre-riells-i-viabrea-bk98/

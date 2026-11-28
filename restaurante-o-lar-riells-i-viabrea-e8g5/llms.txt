@@ -1,0 +1,25 @@
+# Restaurante O Lar
+
+> Restaurante gallego en Riells i Viabrea. Desayunos, comidas y cenas los viernes y sábados. Reserva por teléfono.
+
+Restaurante gallego en Riells i Viabrea.
+
+## Servicios
+- Cocina gallega: Platos de la cocina gallega de siempre.
+- Comidas: Comidas de martes a domingo.
+- Cenas de fin de semana: Viernes y sábado, a partir de las 20:00.
+
+## Horario
+- lunes: Cerrado
+- martes: 9:00 – 16:00
+- miércoles: 9:00 – 16:00
+- jueves: 9:00 – 16:00
+- viernes: 8:00 – 16:00 y 20:00 – 23:00
+- sábado: 8:00 – 16:00 y 20:00 – 23:00
+- domingo: 8:00 – 16:00
+
+## Contacto
+- Teléfono: +34938470881
+- Dirección: Plaça de Catalunya, 2, 17404 Riells i Viabrea
+- Zonas: Riells i Viabrea
+- Web: https://mazureof.github.io/web/restaurante-o-lar-riells-i-viabrea-e8g5/

@@ -1,0 +1,26 @@
+# Taller Roca
+
+> Taller mecánico en Canovelles. Mantenimiento, reparación y diagnosis con presupuesto claro antes de empezar.
+
+Taller mecánico en Canovelles.
+
+## Servicios
+- Mantenimiento: Cambio de aceite, filtros y revisión general.
+- Frenos y neumáticos: Pastillas, discos, alineado y equilibrado.
+- Diagnosis: Lectura de averías con equipo de diagnosis.
+- Pre-ITV: Revisamos el coche para que pase la ITV a la primera.
+
+## Horario
+- lunes: 8:00 – 16:00
+- martes: 8:00 – 16:00
+- miércoles: 8:00 – 16:00
+- jueves: 8:00 – 16:00
+- viernes: 8:00 – 15:00
+- sábado: Cerrado
+- domingo: Cerrado
+
+## Contacto
+- Teléfono: +34938401600
+- Dirección: Ctra. de Caldes, km 10,5, 08420 Canovelles
+- Zonas: Canovelles
+- Web: https://mazureof.github.io/web/taller-roca-canovelles-4x64/

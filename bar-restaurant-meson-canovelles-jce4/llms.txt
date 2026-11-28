@@ -1,0 +1,16 @@
+# Bar Restaurant Mesón Canovelles
+
+> Bar restaurante en Canovelles para tomar algo con buen ambiente y buena atención.
+
+Bar en Canovelles.
+
+## Servicios
+- Desayunos: Bocadillos, cafés y tostadas para empezar el día.
+- Tapas: Raciones para compartir a cualquier hora.
+- Menú del día: Cocina casera de lunes a viernes.
+
+## Contacto
+- Teléfono: +34938617084
+- Dirección: Carrer Prat, 4, 08420 Canovelles
+- Zonas: Canovelles
+- Web: https://mazureof.github.io/web/bar-restaurant-meson-canovelles-jce4/

@@ -1,0 +1,25 @@
+# Peluquería Jesica Duran
+
+> Peluquería en Canovelles. Corte, color, peinados y fiestas spa para niñas.
+
+Peluquería en Canovelles.
+
+## Servicios
+- Corte y peinado: Corte a tu medida, siempre respetando lo que te gusta.
+- Color: Tintes y mechas.
+- Fiestas spa para niñas: Celebra un cumpleaños diferente: peinados, uñas y mimos para las más pequeñas.
+
+## Horario
+- lunes: Cerrado
+- martes: 10:00 – 13:30 y 15:00 – 20:00
+- miércoles: 10:00 – 13:30 y 15:00 – 20:00
+- jueves: 10:00 – 13:30 y 15:00 – 20:00
+- viernes: 9:00 – 20:00
+- sábado: 8:00 – 14:00
+- domingo: Cerrado
+
+## Contacto
+- Teléfono: +34936314247
+- Dirección: Carrer Sant Eudald, 08420 Canovelles
+- Zonas: Canovelles
+- Web: https://mazureof.github.io/web/peluqueria-jesica-duran-canovelles-mt3q/
