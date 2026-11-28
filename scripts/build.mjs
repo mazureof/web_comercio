@@ -322,9 +322,10 @@ async function generarWeb(c) {
   write(path.join(dest, 'privacidad.html'), render(TPL.privacidad, { ...legalV, titulo: t.legal.privacidadTitulo, secciones: secs(t.legal.privacidad) }));
 
   // Hoja de entrega
-  const qr = await QRCode.toString(urlFinal, { type: 'svg', margin: 0, errorCorrectionLevel: 'M', color: { dark: '#161512', light: '#00000000' } });
+  const urlEntrega = url; // dirección real en este momento (en demo lleva el código)
+  const qr = await QRCode.toString(urlEntrega, { type: 'svg', margin: 0, errorCorrectionLevel: 'M', color: { dark: '#161512', light: '#00000000' } });
   write(path.join(dest, 'entrega.html'), render(TPL.entrega, {
-    ...v, e: t.entrega, urlFinal, qr: qr.replace('<svg', '<svg role="img" aria-label="QR"'),
+    ...v, e: t.entrega, urlFinal: urlEntrega, avisoDemo: demo ? `Hoja de la demo. Al publicar la web, la dirección pasa a ser ${urlFinal} y esta hoja se actualiza sola.` : '', qr: qr.replace('<svg', '<svg role="img" aria-label="QR"'),
     hola: fill(t.entrega.hola, { nombre: c.nombre }), resenasUrl: c.resenas?.urlEscribir || '',
   }));
   for (const f of ['inclusive-sans-400.woff2', 'inclusive-sans-700.woff2', 'alegreya-italic.woff2']) {
